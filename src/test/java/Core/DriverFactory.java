@@ -25,13 +25,14 @@ public class DriverFactory {
         capacidade.setCapability("noReset", "true");
         capacidade.setCapability("appPackage", "br.gov.sp.artesp.sisf.mobile");
         capacidade.setCapability("appActivity", "br.gov.sp.artesp.sisf.mobile.LoginActivity");
+        capacidade.setCapability("newCommandTimeout", 300);
 
         try {
             driver = new AndroidDriver(new URL("http://127.0.01:4723/wd/hub"), capacidade);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
     }
 
     public static void killDriver(){
