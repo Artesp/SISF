@@ -1,8 +1,15 @@
 package Core;
 
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+
+import java.time.Duration;
 
 import static Core.DriverFactory.*;
 
@@ -53,29 +60,30 @@ public class BaseTest {
 
         //getDriver().Swipe(startX, startY, startX, endY, 1000);
     }
-
-    public void BotaoAddFiscalizacao()
-    {
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add").Click();
+*/
+    public void botaoAddFiscalizacao(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add").click();
     }
+
+    /*
 
     public void BotaoAddFiscalizacaoRetorno()
     {
         getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_add_retorno").Click();
     }
 
-    public void Salvar()
-    {
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:comp/fschdr_starred").Click();
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_save").Click();
+*/
+    public void salvar(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/fschdr_starred").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_save").click();
     }
 
-    public void Enviar(int milisegundos)
-    {
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_enviar").Click();
-        EsperaCarregar(milisegundos);
+    public void enviar(int milisegundos){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_enviar").click();
+        new BaseTest().esperaCarregar(milisegundos);
     }
 
+    /*
     public void AtualizarTelaConsultaSisf()
     {
         getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_refresh").Click();
@@ -91,13 +99,11 @@ public class BaseTest {
         }
     }
 
-    /*
-    public string ObterTextoElemento(By by)
-    {
-        string texto = getDriver().FindElement(by).Text;
+    public String obterTextoElemento(By by){
+        String texto = getDriver().findElement(by).getText();
         return texto;
     }
-
+/*
     public bool ExisteObjetoNaTela(By by)
     {
         var existeElemento = getDriver().FindElement(by);
@@ -107,22 +113,28 @@ public class BaseTest {
         }
         return true;
     }
+*/
+    public void ModalData_ScroollUpDia(){
 
-    public void ModalData_ScroollUpDia()
-    {
+        Dimension size = getDriver().findElementById("android:id/pickers").getSize();
 
-        var size = getDriver().FindElementById("android:id/pickers").Size;
-
-        int startX = size.Width * 2;
-        int startY = (size.Width * 3) / 2;
+        int startX = size.width * 2;
+        int startY = (size.width * 3) / 2;
         int endX = startX - 2;
-        int endY = startY - ((startY - size.Width) / 2);
+        int endY = startY - ((startY - size.width) / 2);
 
-        // getDriver().Swipe(startX, startY, endX, endY, 1000);
+        PointOption point = new PointOption();
+        WaitOptions espera = new WaitOptions();
 
-        getDriver().FindElementById("android:id/button1").Click();
+        new TouchAction(getDriver()).press(point.withCoordinates(startX, startY))
+                .waitAction(espera.withDuration(Duration.ofMillis(500)))
+                .moveTo(point.withCoordinates(endX, endY))
+                .release()
+                .perform();
+
+        getDriver().findElementById("android:id/button1").click();
     }
-    */
+
 
 
 }
