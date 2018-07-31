@@ -1,6 +1,5 @@
 package Tests;
 
-import Assistant.MenuConsRotinaAssistant;
 import Core.BaseTest;
 import Pages.ConsRotinaPage;
 import Pages.LoginPage;

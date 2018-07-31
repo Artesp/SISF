@@ -36,7 +36,7 @@ public class BasePage {
 
         String actual = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").getText();
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").click();
-        new BaseTest().esperaCarregar(35000);
+        new BaseTest().esperaCarregar(20000);
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").click();
     }
 

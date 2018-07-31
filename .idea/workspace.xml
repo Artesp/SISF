@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/DriverFactory.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,34 +25,37 @@
     <session id="-176511474">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="48" />
+          <entry key="java" value="54" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="48" />
+          <entry key="JAVA" value="54" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1925" />
-          <entry key="txt" value="81" />
+          <entry key="java" value="1946" />
+          <entry key="txt" value="125" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1925" />
-          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="JAVA" value="1946" />
+          <entry key="PLAIN_TEXT" value="125" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -63,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsRotinaTest#0" />
@@ -78,27 +81,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="425">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+                <element signature="method#preencherRodovia#0;class#BasePage#0" />
                 <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
                 <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
                 <element signature="method#CapturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+                <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
                 <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,9 +123,9 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/MenuConsRotinaPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
       </list>
     </option>
   </component>
@@ -145,8 +137,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="158" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -158,7 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,23 +182,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Assistant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
@@ -220,7 +196,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,28 +294,17 @@
       <option name="project" value="LOCAL" />
       <updated>1532703231677</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Primeiro Teste de conservação de Rotina OK">
+      <created>1532714789949</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532714789949</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTest_realizaLoginSisf - 2018.07.27 at 10h 59m 45s.xml">
-      <configuration name="LoginTest.realizaLoginSisf" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.27 at 14h 40m 08s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.27 at 14h 43m 28s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.27 at 14h 46m 44s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_realizaLoginSisf - 2018.07.27 at 14h 47m 41s.xml">
-      <configuration name="LoginTest.realizaLoginSisf" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.27 at 14h 47m 51s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginTest_realizaLoginSisf - 2018.07.27 at 14h 48m 19s.xml">
       <configuration name="LoginTest.realizaLoginSisf" configurationId="JUnit" />
     </history-entry>
@@ -350,6 +315,24 @@
       <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.27 at 15h 03m 25s.xml">
+      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.31 at 16h 02m 37s.xml">
+      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.31 at 16h 04m 37s.xml">
+      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.31 at 16h 05m 45s.xml">
+      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.31 at 16h 07m 04s.xml">
+      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.31 at 16h 08m 30s.xml">
+      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComSucesso - 2018.07.31 at 16h 11m 44s.xml">
       <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -363,7 +346,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -372,8 +355,8 @@
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30010834" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30010834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -387,7 +370,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="6" visible="true" weight="0.25799572" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="6" visible="true" weight="0.26066098" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -397,7 +380,8 @@
     <MESSAGE value="Trying" />
     <MESSAGE value="Passando para o Fox" />
     <MESSAGE value="estruturando Pages, Tests e Core&#10;criando Assistant" />
-    <option name="LAST_COMMIT_MESSAGE" value="estruturando Pages, Tests e Core&#10;criando Assistant" />
+    <MESSAGE value="Primeiro Teste de conservação de Rotina OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeiro Teste de conservação de Rotina OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -418,13 +402,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -436,9 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,29 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,19 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testInitialize#0;class#BaseTest#0" />
-            <element signature="method#esperaCarregar#0;class#BaseTest#0" />
-            <element signature="method#ModalData_ScroollUpDia#0;class#BaseTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -537,9 +475,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="346">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -547,16 +515,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="1462">
+          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+            <element signature="method#testInitialize#0;class#BaseTest#0" />
+            <element signature="method#esperaCarregar#0;class#BaseTest#0" />
+            <element signature="method#ModalData_ScroollUpDia#0;class#BaseTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#preencherRodovia#0;class#BasePage#0" />
             <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
             <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
             <element signature="method#CapturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
             <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
           </folding>
         </state>
@@ -564,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsRotinaTest#0" />
