@@ -31,6 +31,16 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         enviar(3000);
     }
 
+    @Test
+    public void gerarFiscalizacao_ComRetorno(){
+        prepararCenario();
+        preencherDadosFiscalizacao();
+        salvar();
+        enviar(3000);
+
+        fecharSistemaSISF();
+    }
+
 
     private void prepararCenario(){
         loginPage.realizaLogin();

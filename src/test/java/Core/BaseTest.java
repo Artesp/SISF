@@ -35,15 +35,15 @@ public class BaseTest {
         getDriver().closeApp();
     }
 
-    /*
-    public void FecharSistemaSISF()
-    {
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").Click();
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").Click();
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_sair").Click();
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").Click();
+
+    public void fecharSistemaSISF() {
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_sair").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
     }
 
+/*
     public void CancelarFiscalizacao()
     {
         getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").Click();
