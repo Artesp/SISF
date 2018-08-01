@@ -1,5 +1,7 @@
 package Core;
 
+import org.openqa.selenium.By;
+
 import static Core.DriverFactoryWeb.*;
 
 public class BasePageWeb {
@@ -19,6 +21,10 @@ public class BasePageWeb {
 
     public void clicarOpcaoDataWeb(String mesCombo, String mesValor){
         getNav().findElementByXPath("//select[@class='"+mesCombo+ "']/option[contains(.,'"+mesValor+"')]").click();
+    }
+
+    public String obterTextoPorElemento(By by){
+        return  getNav().findElement(by).getText();
     }
 
 }
