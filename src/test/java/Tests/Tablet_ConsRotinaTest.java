@@ -1,5 +1,6 @@
 package Tests;
 
+import Assistant.InterfaceTabletWeb;
 import Core.BaseTest;
 import Pages.ConsRotinaPage;
 import Pages.LoginPage;
@@ -39,6 +40,12 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         enviar(3000);
 
         fecharSistemaSISF();
+        classCleanup();
+        esperaCarregar(3000);
+        new InterfaceTabletWeb().marcarRetorno();
+
+        testInitialize();
+
     }
 
 
@@ -64,6 +71,10 @@ public class Tablet_ConsRotinaTest extends BaseTest {
 
         menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_GALERIA.toString());
         page.capturarFotosGaleria_LOTE(4);
+
+    }
+
+    private void preencherDadosFiscalizacaoRetorno(){
 
     }
 }
