@@ -32,11 +32,22 @@ public class ConsRotinaPage extends BasePage {
     }
 
     public void preencherSecaoObservacao(){
-        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText").sendKeys(gerarTextoPraTeste());
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText").sendKeys(geraTexto());
     }
 
-    public String gerarTextoPraTeste(){
-        String textoTeste = "Lorem ipsum etiam inceptos habitasse mi phasellus ipsum dictumst dolor ut eu maecenas magna ullamcorper, donec adipiscing cubilia nunc curae commodo feugiat aenean quam in magna turpis elementum. libero lacus auctor cursus nulla sociosqu porta himenaeos libero tempor pretium hac, nullam habitasse dictum nec eget platea ad placerat at volutpat. malesuada feugiat primis sit dui sagittis, donec cursus aenean mi at, vestibulum aptent ante libero.";
-        return textoTeste;
+    public String geraTexto(){
+       return gerarTextoPraTeste();
+    }
+
+    public void clicarBotaoAddRetorno(){
+        botaoAddRetorno();
+    }
+
+    public void preencherRodoviaConservacao(){
+        preencherRodovia();
+    }
+
+    public void fotosEmLote(int qtdFotos){
+        capturarFotosGaleria_LOTE(qtdFotos);
     }
 }

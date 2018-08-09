@@ -32,7 +32,7 @@ public class DriverFactory {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
     }
 
     public static void killDriver(){

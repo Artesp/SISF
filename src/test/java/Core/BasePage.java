@@ -15,7 +15,7 @@ public class BasePage {
 
     private ObjetosParaFiscalizacao obj = new ObjetosParaFiscalizacao();
 
-    public void realizarLoginSISF(){
+    protected void realizarLoginSISF(){
         String textoUsuario = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/user").getText();
         String textoSenha = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/password").getText();
 
@@ -40,7 +40,7 @@ public class BasePage {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").click();
     }
 
-    public void preencherRodovia(){
+    protected void preencherRodovia(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/spnspl_spinner").click();
         getDriver().findElementByXPath("//android.widget.ListView[@index='0']/android.widget.CheckedTextView[@text='AUTOBAN']").click();
 
@@ -66,13 +66,13 @@ public class BasePage {
         }
     }
 
-    public void capturarFotosGaleria(){
+    protected void capturarFotosGaleria(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_camera").click();
         getDriver().findElementById("com.android.camera:id/shutter_button").click();
         getDriver().findElementByXPath("//android.widget.TextView[@text='DONE']").click();
     }
 
-    public void capturarFotosGaleria_LOTE(int qtdFotos){
+    protected void capturarFotosGaleria_LOTE(int qtdFotos){
         int contador = 0;
         do{
             getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_camera").click();
@@ -83,7 +83,7 @@ public class BasePage {
         } while (contador < qtdFotos);
     }
 
-    public void CapturarFotosGaleria_LOTE_Randomico()
+    protected void CapturarFotosGaleria_LOTE_Randomico()
     {
         int contador = 0;
         int numeroLoop = numeroDeFotosRandomico(0, 10);
@@ -96,7 +96,16 @@ public class BasePage {
         } while (contador < numeroLoop);
     }
 
-    private void scroolConcessionaria(){
+    protected String gerarTextoPraTeste(){
+        String textoTeste = "Lorem ipsum etiam inceptos habitasse mi phasellus ipsum dictumst dolor ut eu maecenas magna ullamcorper, donec adipiscing cubilia nunc curae commodo feugiat aenean quam in magna turpis elementum. libero lacus auctor cursus nulla sociosqu porta himenaeos libero tempor pretium hac, nullam habitasse dictum nec eget platea ad placerat at volutpat. malesuada feugiat primis sit dui sagittis, donec cursus aenean mi at, vestibulum aptent ante libero.";
+        return textoTeste;
+    }
+
+    protected void botaoAddRetorno(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_add_retorno").click();
+    }
+
+    protected void scroolConcessionaria(){
         /*Dimension size = getDriver().manage().window().getSize();
 
         int x = size.width/2;
@@ -132,7 +141,7 @@ public class BasePage {
 
     }
 
-    private int numeroDeFotosRandomico(int min, int max){
+    protected int numeroDeFotosRandomico(int min, int max){
         Random rdn = new Random();
         return rdn.nextInt(min-max);
     }
