@@ -4,7 +4,10 @@ import Assistant.ObjetosParaFiscalizacao;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import sun.plugin2.message.Message;
 
 import java.time.Duration;
 import java.util.Random;
@@ -60,7 +63,7 @@ public class BasePage {
         getDriver().findElementByXPath("//*[@text='N - Norte']").click();
 
         String localExiste = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/lczcfsclzc_local_text").getText();
-        if (!"".equalsIgnoreCase(localExiste))
+        if ("".equalsIgnoreCase(localExiste))
         {
             getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/lczcfsclzc_local_text").sendKeys("Local Teste");
         }
@@ -94,6 +97,16 @@ public class BasePage {
             new BaseTest().esperaCarregar(1000);
             contador++;
         } while (contador < numeroLoop);
+    }
+
+    protected boolean existeObjetoNaTela(By by){
+        try {
+            Object existeElemento = getDriver().findElement(by);
+            return true;
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return false;
+        }
     }
 
     protected String gerarTextoPraTeste(){

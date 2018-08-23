@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaRetornoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/DriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,43 +26,46 @@
     <session id="-176511474">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="131" />
+          <entry key="class" value="7" />
+          <entry key="java" value="148" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="131" />
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="148" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6250" />
-          <entry key="txt" value="252" />
+          <entry key="java" value="6847" />
+          <entry key="txt" value="301" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6250" />
-          <entry key="PLAIN_TEXT" value="252" />
+          <entry key="JAVA" value="6847" />
+          <entry key="PLAIN_TEXT" value="301" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -73,39 +76,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="91" column="42" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="42" />
+            <state relative-caret-position="646">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsRotinaTest#0" />
+                <element signature="method#gerarFiscalizacao_ComRetorno#0;class#Tablet_ConsRotinaTest#0" />
                 <element signature="method#prepararCenario#0;class#Tablet_ConsRotinaTest#0" />
                 <element signature="method#preparaCenarioRetorno#0;class#Tablet_ConsRotinaTest#0" />
-                <element signature="method#preencherDadosFiscalizacao#0;class#Tablet_ConsRotinaTest#0" />
+                <element signature="method#preencherDadosFiscalizacaoRetorno#0;class#Tablet_ConsRotinaTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaRetornoPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#197#198#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
@@ -113,10 +102,60 @@
                 <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
                 <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
                 <element signature="method#CapturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+                <element signature="method#existeObjetoNaTela#0;class#BasePage#0" />
                 <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
                 <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
                 <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
                 <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+              <folding>
+                <element signature="method#testInitialize#0;class#BaseTest#0" />
+                <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
+                <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#botaoAddFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#salvar#0;class#BaseTest#0" />
+                <element signature="method#enviar#0;class#BaseTest#0" />
+                <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
+                <element signature="method#ModalData_ScroollUpDia#0;class#BaseTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#675#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/ModulosPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/MenuConsRotinaPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/DriverFactoryWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" />
@@ -161,10 +199,11 @@
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaRetornoAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/MenuConsRotinaRetornoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaRetornoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
       </list>
     </option>
   </component>
@@ -187,8 +226,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-102" />
-    <option name="y" value="15" />
+    <option name="x" value="1824" />
+    <option name="y" value="88" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -201,6 +240,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +286,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,7 +308,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +329,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno">
+  <component name="RunManager" selected="JUnit.Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina">
     <configuration name="LoginWebTest.realizarLogin_SisfWeb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
@@ -299,6 +346,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Artesp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
+      <option name="METHOD_NAME" value="alterarFiscalizacao_ConservacaoDeRotina" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
@@ -310,22 +373,6 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
       <option name="METHOD_NAME" value="gerarFiscalizacao_ComRetorno" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Artesp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
-      <option name="METHOD_NAME" value="gerarFiscalizacao_ComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -363,19 +410,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" />
       <item itemvalue="JUnit.LoginWebTest.realizarLogin_SisfWeb" />
       <item itemvalue="JUnit.Web_FiscalizacoesEnviadasTest.marcarRetorno_ComSucesso" />
       <item itemvalue="JUnit.Web_FiscalizacoesEnviadasTest" />
       <item itemvalue="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" />
+      <item itemvalue="JUnit.Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" />
         <item itemvalue="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" />
         <item itemvalue="JUnit.Web_FiscalizacoesEnviadasTest" />
         <item itemvalue="JUnit.Web_FiscalizacoesEnviadasTest.marcarRetorno_ComSucesso" />
         <item itemvalue="JUnit.LoginWebTest.realizarLogin_SisfWeb" />
-        <item itemvalue="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" />
       </list>
     </recent_temporary>
   </component>
@@ -446,39 +493,46 @@
       <option name="project" value="LOCAL" />
       <updated>1533244596687</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="testes com retorno - conservação de Rotina.">
+      <created>1533846712544</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533846712544</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginWebTest_realizarLogin_SisfWeb - 2018.08.01 at 18h 33m 38s.xml">
-      <configuration name="LoginWebTest.realizarLogin_SisfWeb" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Web_FiscalizacoesEnviadasTest_marcarRetorno_ComSucesso - 2018.08.02 at 14h 46m 47s.xml">
-      <configuration name="Web_FiscalizacoesEnviadasTest.marcarRetorno_ComSucesso" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Web_FiscalizacoesEnviadasTest_marcarRetorno_ComSucesso - 2018.08.02 at 14h 49m 41s.xml">
-      <configuration name="Web_FiscalizacoesEnviadasTest.marcarRetorno_ComSucesso" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Web_FiscalizacoesEnviadasTest - 2018.08.02 at 14h 51m 56s.xml">
-      <configuration name="Web_FiscalizacoesEnviadasTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComRetorno - 2018.08.02 at 14h 58m 50s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComRetorno - 2018.08.02 at 15h 08m 24s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComRetorno - 2018.08.02 at 15h 13m 57s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComRetorno - 2018.08.09 at 16h 23m 38s.xml">
-      <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComRetorno - 2018.08.09 at 16h 31m 19s.xml">
       <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tablet_ConsRotinaTest_gerarFiscalizacao_ComRetorno - 2018.08.09 at 17h 30m 09s.xml">
       <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.10 at 17h 25m 05s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.10 at 17h 44m 56s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.10 at 17h 46m 07s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.10 at 17h 54m 59s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.10 at 18h 19m 06s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.14 at 11h 33m 58s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.14 at 15h 32m 11s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tablet_ConsRotinaTest_alterarFiscalizacao_ConservacaoDeRotina - 2018.08.14 at 15h 52m 44s.xml">
+      <configuration name="Tablet_ConsRotinaTest.alterarFiscalizacao_ConservacaoDeRotina" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -491,7 +545,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -500,7 +554,7 @@
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34236187" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3416407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28660437" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -508,14 +562,14 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.31600833" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.24593717" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.24506749" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Maven Projects" order="2" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="6" visible="true" weight="0.2947761" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="6" visible="true" weight="0.3075693" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -530,17 +584,12 @@
     <MESSAGE value="Estrutura automacao Web" />
     <MESSAGE value="Teste para Login no Sisf Web" />
     <MESSAGE value="Classe para retornos e acesso web" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classe para retornos e acesso web" />
+    <MESSAGE value="testes com retorno - conservação de Rotina." />
+    <option name="LAST_COMMIT_MESSAGE" value="testes com retorno - conservação de Rotina." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Core/BasePage.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java</url>
           <line>22</line>
@@ -552,6 +601,24 @@
           <line>18</line>
           <properties />
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Core/BasePage.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -635,13 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -732,32 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="method#navegarMenuPrincipal#0;class#MenuConsRotinaRetornoPage#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,23 +813,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaRetornoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#preencherSecaoSituacao#0;class#ConsRotinaRetornoPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/WebDriverException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#gerarFiscalizacao_ComRetorno#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#prepararCenario#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#preparaCenarioRetorno#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#preencherDadosFiscalizacaoRetorno#0;class#Tablet_ConsRotinaTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
-            <element signature="method#grupoSubgrupo#0;class#ConsRotinaPage#0" />
-            <element signature="method#preencherSecaoPrazo#0;class#ConsRotinaPage#0" />
-            <element signature="method#preencherSecaoTrecho#0;class#ConsRotinaPage#0" />
-            <element signature="method#preencherSecaoObservacao#0;class#ConsRotinaPage#0" />
+            <element signature="method#testInitialize#0;class#BaseTest#0" />
+            <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
+            <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#botaoAddFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#salvar#0;class#BaseTest#0" />
+            <element signature="method#enviar#0;class#BaseTest#0" />
+            <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
+            <element signature="method#ModalData_ScroollUpDia#0;class#BaseTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#675#676#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
@@ -802,37 +898,11 @@
             <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
             <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
             <element signature="method#CapturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+            <element signature="method#existeObjetoNaTela#0;class#BasePage#0" />
             <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
             <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
             <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
             <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="91" column="42" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#prepararCenario#0;class#Tablet_ConsRotinaTest#0" />
-            <element signature="method#preparaCenarioRetorno#0;class#Tablet_ConsRotinaTest#0" />
-            <element signature="method#preencherDadosFiscalizacao#0;class#Tablet_ConsRotinaTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaRetornoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
           </folding>
         </state>
       </provider>

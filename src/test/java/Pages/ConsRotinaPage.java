@@ -2,6 +2,7 @@ package Pages;
 
 import Core.BasePage;
 import Core.BaseTest;
+import org.openqa.selenium.By;
 
 import static Core.DriverFactory.getDriver;
 
@@ -12,19 +13,25 @@ public class ConsRotinaPage extends BasePage {
         getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='Conservação de Rotina']").click();
     }
 
-    public void preencherSecaoPrazo(){
+    public void preencherSecaoPrazo(String tipo, String grupo, String atividade){
         //Combo Tipo
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/atv_spn_tipo").click();
-        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='Pavimento']").click();
+        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='"+tipo+"']").click();
         //Combo Grupo
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/atv_spn_grupo").click();
-        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='Revestimento Primário']").click();
+        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='"+grupo+"']").click();
         //Combo Atividade
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/atv_spn_atividade").click();
-        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='Reconformação de vias secundárias']").click();
-        //Data para reparo
-        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/dt_button").click();
-        new BaseTest().ModalData_ScroollUpDia();
+        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='"+atividade+"']").click();
+
+        Boolean existeBotaoData = existeObjetoNaTela(By.id("br.gov.sp.artesp.sisf.mobile:comp/dt_button"));
+
+        if (existeBotaoData){
+            //Data para reparo
+            getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/dt_button").click();
+            new BaseTest().ModalData_ScroollUpDia();
+        }
+
     }
 
     public void preencherSecaoTrecho(){

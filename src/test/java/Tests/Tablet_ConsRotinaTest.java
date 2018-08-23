@@ -56,6 +56,29 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         enviar(3000);
     }
 
+    @Test
+    public void alterarFiscalizacao_ConservacaoDeRotina(){
+        prepararCenario();
+        preencherDadosFiscalizacao();
+        salvar();
+
+        botaoEditarFiscalizacao();
+        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_PRAZO.toString());
+
+        page.preencherSecaoPrazo("Estruturas","Estruturas","Pichações e vandalismo");
+
+        salvar();
+
+        enviar(3000);
+    }
+
+
+
+
+
+
+
+
     private void prepararCenario(){
         loginPage.realizaLogin();
         modulo.moduloConservacao();
@@ -74,7 +97,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         page.preencherRodoviaConservacao();
 
         menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_PRAZO.toString());
-        page.preencherSecaoPrazo();
+        page.preencherSecaoPrazo("Pavimento", "Revestimento Primário", "Reconformação de vias secundárias");
 
         menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_TRECHO.toString());
         page.preencherSecaoTrecho();

@@ -43,13 +43,12 @@ public class BaseTest {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
     }
 
-/*
-    public void CancelarFiscalizacao()
-    {
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").Click();
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").Click();
-    }
 
+    public void cancelarFiscalizacao() {
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
+    }
+/*
     public void Menu_ScrollUp()
     {
         Size menu = getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:comp/fsc_content").Size;
@@ -63,6 +62,11 @@ public class BaseTest {
 */
     public void botaoAddFiscalizacao(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add").click();
+    }
+
+    public void botaoEditarFiscalizacao(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/bkgnd").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_edit").click();
     }
 
     /*
@@ -83,13 +87,10 @@ public class BaseTest {
         new BaseTest().esperaCarregar(milisegundos);
     }
 
-    /*
-    public void AtualizarTelaConsultaSisf()
-    {
-        getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:id/btn_refresh").Click();
+    public void atualizarTelaConsultaSisf() {
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_refresh").click();
     }
 
-*/
 
     public void esperaCarregar(int milisegundos){
         try {
@@ -103,17 +104,9 @@ public class BaseTest {
         String texto = getDriver().findElement(by).getText();
         return texto;
     }
-/*
-    public bool ExisteObjetoNaTela(By by)
-    {
-        var existeElemento = getDriver().FindElement(by);
-        if (existeElemento == null)
-        {
-            return false;
-        }
-        return true;
-    }
-*/
+
+
+
     public void ModalData_ScroollUpDia(){
 
         Dimension size = getDriver().findElementById("android:id/pickers").getSize();
