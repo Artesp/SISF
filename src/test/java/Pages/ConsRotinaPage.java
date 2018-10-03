@@ -24,14 +24,22 @@ public class ConsRotinaPage extends BasePage {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/atv_spn_atividade").click();
         getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='"+atividade+"']").click();
 
-        Boolean existeBotaoData = existeObjetoNaTela(By.id("br.gov.sp.artesp.sisf.mobile:comp/dt_button"));
+        Boolean dataHabilitada = dataEstaHabilitada(By.id("br.gov.sp.artesp.sisf.mobile:comp/dt_data"));
 
-        if (existeBotaoData){
+        if (dataHabilitada){
             //Data para reparo
             getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/dt_button").click();
-            new BaseTest().ModalData_ScroollUpDia();
+            new BaseTest().modalData_ScroollUpDia();
         }
 
+    }
+
+    public boolean dataEstaHabilitada(By by){
+        boolean dataHabilitada = getDriver().findElement(by).isEnabled();
+        if(dataHabilitada){
+            return true;
+        }
+        return false;
     }
 
     public void preencherSecaoTrecho(){

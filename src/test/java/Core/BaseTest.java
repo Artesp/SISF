@@ -35,7 +35,6 @@ public class BaseTest {
         getDriver().closeApp();
     }
 
-
     public void fecharSistemaSISF() {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").click();
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
@@ -43,30 +42,39 @@ public class BaseTest {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
     }
 
-
     public void cancelarFiscalizacao() {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_cancel").click();
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
     }
-/*
-    public void Menu_ScrollUp()
-    {
-        Size menu = getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:comp/fsc_content").Size;
 
-        int startY = (int)(menu.Height * 0.90);
-        int endY = (int)(menu.Height * 0.20);
-        int startX = menu.Width / 2;
+    /*
+        public void Menu_ScrollUp()
+        {
+            Size menu = getDriver().FindElementById("br.gov.sp.artesp.sisf.mobile:comp/fsc_content").Size;
 
-        //getDriver().Swipe(startX, startY, startX, endY, 1000);
-    }
-*/
+            int startY = (int)(menu.Height * 0.90);
+            int endY = (int)(menu.Height * 0.20);
+            int startX = menu.Width / 2;
+
+            //getDriver().Swipe(startX, startY, startX, endY, 1000);
+        }
+    */
+
     public void botaoAddFiscalizacao(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add").click();
     }
 
     public void botaoEditarFiscalizacao(){
-        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/bkgnd").click();
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_edit").click();
+    }
+
+    public void selecionaFiscalizacao(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/bkgnd").click();
+    }
+
+    public void deletarFiscalizacao(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_delete").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
     }
 
     /*
@@ -82,6 +90,10 @@ public class BaseTest {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_save").click();
     }
 
+    public void gravar(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_save").click();
+    }
+
     public void enviar(int milisegundos){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_enviar").click();
         new BaseTest().esperaCarregar(milisegundos);
@@ -90,7 +102,6 @@ public class BaseTest {
     public void atualizarTelaConsultaSisf() {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_refresh").click();
     }
-
 
     public void esperaCarregar(int milisegundos){
         try {
@@ -105,9 +116,12 @@ public class BaseTest {
         return texto;
     }
 
+    public int listarFiscalizacoes(){
+        int listaFisc = getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView").size();
+        return listaFisc;
+    }
 
-
-    public void ModalData_ScroollUpDia(){
+    public void modalData_ScroollUpDia(){
 
         Dimension size = getDriver().findElementById("android:id/pickers").getSize();
 

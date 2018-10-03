@@ -60,8 +60,9 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     public void alterarFiscalizacao_ConservacaoDeRotina(){
         prepararCenario();
         preencherDadosFiscalizacao();
-        salvar();
+        gravar();
 
+        selecionaFiscalizacao();
         botaoEditarFiscalizacao();
         menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_PRAZO.toString());
 
@@ -72,7 +73,18 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         enviar(3000);
     }
 
-
+    @Test
+    public void excluirFiscalização_ConservacaoDeRotina(){
+        prepararCenario();
+        preencherDadosFiscalizacao();
+        salvar();
+        selecionaFiscalizacao();
+        deletarFiscalizacao();
+        atualizarTelaConsultaSisf();
+        esperaCarregar(1000);
+        int numFisc = listarFiscalizacoes();
+        //assertTrue(numFisc == 0);
+    }
 
 
 

@@ -99,16 +99,6 @@ public class BasePage {
         } while (contador < numeroLoop);
     }
 
-    protected boolean existeObjetoNaTela(By by){
-        try {
-            Object existeElemento = getDriver().findElement(by);
-            return true;
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-            return false;
-        }
-    }
-
     protected String gerarTextoPraTeste(){
         String textoTeste = "Lorem ipsum etiam inceptos habitasse mi phasellus ipsum dictumst dolor ut eu maecenas magna ullamcorper, donec adipiscing cubilia nunc curae commodo feugiat aenean quam in magna turpis elementum. libero lacus auctor cursus nulla sociosqu porta himenaeos libero tempor pretium hac, nullam habitasse dictum nec eget platea ad placerat at volutpat. malesuada feugiat primis sit dui sagittis, donec cursus aenean mi at, vestibulum aptent ante libero.";
         return textoTeste;

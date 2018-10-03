@@ -28,7 +28,7 @@ public class DriverFactory {
         capacidade.setCapability("newCommandTimeout", 300);
 
         try {
-            driver = new AndroidDriver(new URL("http://127.0.01:4723/wd/hub"), capacidade);
+            driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capacidade);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
