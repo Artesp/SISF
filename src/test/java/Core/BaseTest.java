@@ -77,6 +77,10 @@ public class BaseTest {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_ok").click();
     }
 
+    public void navegarMenuPrincipal(String index){
+        getDriver().findElementByXPath("//android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/fsc_content']/android.widget.Button[@index='" + index + "']").click();
+    }
+
     /*
 
     public void BotaoAddFiscalizacaoRetorno()

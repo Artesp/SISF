@@ -144,6 +144,25 @@ public class BasePage {
 
     }
 
+    protected void grupoSubGrupo_ScrollUp(){
+        Dimension menu = getDriver().findElementByXPath("//*[@class='android.widget.ListView']").getSize();
+
+        int startX = menu.width;
+        int startY = (menu.height);
+        int endX = startX - 2;
+        int endY = startY - 100;
+
+        PointOption point = new PointOption();
+        WaitOptions espera = new WaitOptions();
+
+        new TouchAction(getDriver()).press(point.withCoordinates(startX, startY))
+                .waitAction(espera.withDuration(Duration.ofMillis(500)))
+                .moveTo(point.withCoordinates(endX, endY))
+                .release()
+                .perform();
+    }
+
+
     protected int numeroDeFotosRandomico(int min, int max){
         Random rdn = new Random();
         return rdn.nextInt(min-max);

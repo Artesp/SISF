@@ -14,4 +14,8 @@ public class ModulosPage extends BasePage {
         getDriver().findElementByXPath("//android.widget.LinearLayout[@index='7']/android.widget.ImageView[@index='0']").click();
     }
 
+    public void moduloOperacao(){
+        getDriver().findElementByXPath("//android.widget.GridView[@resource-id='br.gov.sp.artesp.sisf.mobile:id/menu_grid_view']/android.widget.LinearLayout[@index='2']/android.widget.ImageView[@index='0']").click();
+    }
+
 }
