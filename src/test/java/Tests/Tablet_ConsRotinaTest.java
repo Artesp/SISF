@@ -74,7 +74,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     }
 
     @Test
-    public void excluirFiscalização_ConservacaoDeRotina(){
+    public void excluirFiscalizacao_ConservacaoDeRotina(){
         prepararCenario();
         preencherDadosFiscalizacao();
         salvar();

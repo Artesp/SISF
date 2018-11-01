@@ -162,7 +162,6 @@ public class BasePage {
                 .perform();
     }
 
-
     protected int numeroDeFotosRandomico(int min, int max){
         Random rdn = new Random();
         return rdn.nextInt(min-max);

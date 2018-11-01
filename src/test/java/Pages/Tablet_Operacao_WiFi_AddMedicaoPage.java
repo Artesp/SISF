@@ -34,6 +34,21 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         }while (contador < qtdMed);
     }
 
+    public void preencherWiFi(){
+        pageWiFi.clicarBotaoAddMedicao();
+        clicarBotaoIntensidadeSinal();
+        clicarBotaoCronometro();
+        clicarBotaoFinalizaCronometro();
+        preencheKmInicial("12");
+        preencheMetros("000");
+        selecionaSentido("N - Norte");
+        respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
+        respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
+        respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
+        respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
+        clicarBotaoOK();
+    }
+
     public void clicarBotaoIntensidadeSinal(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_intensidade_sinal").click();
         //getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_intensidade_sinal").click();

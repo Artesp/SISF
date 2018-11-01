@@ -20,8 +20,13 @@ public class Tablet_Operacao_WiFiPage extends BasePage {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/lstcbn_btn_add").click();
     }
 
-    public void gerarTextoParaTeste(){
-        gerarTextoPraTeste();
+    public void preencherSecaoObservacao(String geraTexto){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText").sendKeys(geraTexto);
+    }
+
+    public String gerarTextoParaTeste(){
+        String texto = gerarTextoPraTeste();
+        return texto;
     }
 
     public void capturarImagem(){
