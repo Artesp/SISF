@@ -4,6 +4,8 @@ import static Assistant.Questionario_Operacao_WiFiAssistant.*;
 
 import Assistant.Questionario_Operacao_WiFiAssistant;
 import Core.BasePage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotSelectableException;
 
 import static Core.DriverFactory.getDriver;
 
@@ -14,7 +16,7 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
     public void preencherWiFiEmLote(int qtdMed){
 
         int contador = 0;
-        int incrementaKM = 12;
+        int incrementaKM = 100;
 
         do {
             pageWiFi.clicarBotaoAddMedicao();
@@ -31,6 +33,7 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             clicarBotaoOK();
             contador++;
             incrementaKM += 3;
+            System.out.println(contador + " KM: " + incrementaKM + "000");
         }while (contador < qtdMed);
     }
 
@@ -82,9 +85,21 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
     }
 
     public void respondeQuestionario(String questao, String opcao){
-        String path = "\t/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[5]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[@index='"+questao+"']/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RadioGroup/android.widget.RadioButton[@text='"+opcao+"']";
+        opcao = tratarRespostaQuestionario(opcao);
+        String path = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[5]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout["+questao+"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RadioGroup/android.widget.RadioButton["+opcao+"]";
         getDriver().findElementByXPath(path).click();
         //getDriver().findElementByXPath(path).click();
+    }
+
+    private String tratarRespostaQuestionario(String opcao) {
+        if (opcao!=null) {
+            if (opcao.equalsIgnoreCase("Sim") || opcao.equalsIgnoreCase("Bom") || opcao.equalsIgnoreCase("Voluntariamente")) {
+                return opcao = "1";
+            } else {
+                return opcao = "2";
+            }
+        }
+        return opcao;
     }
 
 
