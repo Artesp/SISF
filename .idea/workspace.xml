@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,29 +48,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="15" />
-          <entry key="java" value="299" />
+          <entry key="class" value="21" />
+          <entry key="java" value="321" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="15" />
-          <entry key="JAVA" value="299" />
+          <entry key="CLASS" value="21" />
+          <entry key="JAVA" value="321" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11115" />
-          <entry key="txt" value="418" />
+          <entry key="java" value="12668" />
+          <entry key="txt" value="446" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11115" />
-          <entry key="PLAIN_TEXT" value="418" />
+          <entry key="JAVA" value="12668" />
+          <entry key="PLAIN_TEXT" value="446" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -81,56 +81,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="54" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#inserirMedicao_EmLote#0;class#Tablet_Operacao_WiFiTest#0" />
                 <element signature="method#gerarFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarMenuLateralFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarBotaoMedir_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarBotaoMedir_Operacao_WiFi#1;class#Tablet_Operacao_WiFiTest#0" />
                 <element signature="method#preparaCenario#0;class#Tablet_Operacao_WiFiTest#0" />
                 <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_WiFiTest#0" />
                 <element signature="method#preencherFiscalizacao_MedicaoEmLote#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#assertsBotoes_WiFi_Medicao#0;class#Tablet_Operacao_WiFiTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="406">
+              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
               <folding>
-                <element signature="method#preencherWiFi#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#clicarBotaoIntensidadeSinal#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#clicarBotaoCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#clicarBotaoFinalizaCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#preencheKmInicial#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#preencheMetros#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#selecionaSentido#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#respondeQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-                <element signature="method#tratarRespostaQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-              <folding>
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#testInitialize#0;class#BaseTest#0" />
+                <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
+                <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#botaoAddFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#botaoEditarFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#selecionaFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#deletarFiscalizacao#0;class#BaseTest#0" />
+                <element signature="method#navegarMenuPrincipal#0;class#BaseTest#0" />
+                <element signature="method#salvar#0;class#BaseTest#0" />
+                <element signature="method#enviar#0;class#BaseTest#0" />
+                <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
+                <element signature="method#esperaCarregar#0;class#BaseTest#0" />
+                <element signature="method#obterTextoElemento#0;class#BaseTest#0" />
+                <element signature="method#listarFiscalizacoes#0;class#BaseTest#0" />
+                <element signature="method#modalData_ScroollUpDia#0;class#BaseTest#0" />
+                <element signature="method#elementoExiste#0;class#BaseTest#0" />
               </folding>
             </state>
           </provider>
@@ -177,14 +171,14 @@
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ModulosPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_WiFiAssistant.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFiPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
       </list>
     </option>
   </component>
@@ -250,6 +244,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Assistant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -279,37 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tablet_Operacao_WiFiTest.inserirMedicao_EmLote">
-    <configuration name="Tablet_ConsRotinaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Artesp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tablet_ConsRotinaTest.excluirFiscalização_ConservacaoDeRotina" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Artesp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
-      <option name="METHOD_NAME" value="excluirFiscalização_ConservacaoDeRotina" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Tablet_Operacao_WiFiTest.verificarBotaoCronometro_Operacao_WiFi">
     <configuration name="Tablet_Operacao_WiFiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
@@ -340,7 +328,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests in Artesp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_Operacao_WiFiTest.verificarBotaoCronometro_Operacao_WiFi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -349,25 +337,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_WiFiTest" />
+      <option name="METHOD_NAME" value="verificarBotaoCronometro_Operacao_WiFi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tablet_Operacao_WiFiTest.verificarBotaoMedir_Operacao_WiFi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Artesp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_WiFiTest" />
+      <option name="METHOD_NAME" value="verificarBotaoMedir_Operacao_WiFi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Artesp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_WiFiTest" />
+      <option name="METHOD_NAME" value="verificarMenuLateralFiscalizacao_Operacao_WiFi" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Tablet_ConsRotinaTest.excluirFiscalização_ConservacaoDeRotina" />
-      <item itemvalue="JUnit.Tablet_ConsRotinaTest" />
-      <item itemvalue="JUnit.Tests in Artesp" />
       <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" />
       <item itemvalue="JUnit.Tablet_Operacao_WiFiTest" />
+      <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" />
+      <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.verificarBotaoMedir_Operacao_WiFi" />
+      <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.verificarBotaoCronometro_Operacao_WiFi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.verificarBotaoCronometro_Operacao_WiFi" />
+        <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.verificarBotaoMedir_Operacao_WiFi" />
+        <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" />
         <item itemvalue="JUnit.Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" />
         <item itemvalue="JUnit.Tablet_Operacao_WiFiTest" />
-        <item itemvalue="JUnit.Tests in Artesp" />
-        <item itemvalue="JUnit.Tablet_ConsRotinaTest.excluirFiscalização_ConservacaoDeRotina" />
-        <item itemvalue="JUnit.Tablet_ConsRotinaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -473,39 +495,53 @@
       <option name="project" value="LOCAL" />
       <updated>1541109323997</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Tablet-Operacao-WiFi - Medições em Lote - Console">
+      <created>1542124087516</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542124087516</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Tablet-Operacao-WiFi - Medições em Lote - Console2">
+      <created>1542124198407</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542124198407</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.12 at 16h 22m 35s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 16h 31m 04s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.12 at 16h 53m 44s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 16h 34m 16s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.12 at 18h 18m 56s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 16h 39m 01s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.12 at 18h 52m 28s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 16h 50m 00s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.12 at 19h 15m 43s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 16h 54m 52s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.13 at 12h 12m 31s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 17h 04m 08s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.13 at 13h 28m 00s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarMenuLateralFiscalizacao_Operacao_WiFi - 2018.11.13 at 17h 07m 59s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarMenuLateralFiscalizacao_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.13 at 13h 32m 37s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarBotaoMedir_Operacao_WiFi - 2018.11.13 at 18h 38m 02s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarBotaoMedir_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.13 at 13h 38m 24s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarBotaoCronometro_Operacao_WiFi - 2018.11.13 at 18h 44m 20s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarBotaoCronometro_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_WiFiTest_inserirMedicao_EmLote - 2018.11.13 at 13h 47m 12s.xml">
-      <configuration name="Tablet_Operacao_WiFiTest.inserirMedicao_EmLote" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_WiFiTest_verificarBotaoCronometro_Operacao_WiFi - 2018.11.13 at 18h 50m 50s.xml">
+      <configuration name="Tablet_Operacao_WiFiTest.verificarBotaoCronometro_Operacao_WiFi" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -525,17 +561,17 @@
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.24360341" />
       <window_info id="Structure" order="3" sideWeight="0.50163937" side_tool="true" weight="0.24360341" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49836066" visible="true" weight="0.25692964" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49836066" visible="true" weight="0.25692964" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3391116" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8001066" visible="true" weight="0.3391116" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8757996" weight="0.2979415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.31527627" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.124200426" side_tool="true" weight="0.28556594" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.19989339" side_tool="true" weight="0.3391116" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.24485373" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
@@ -587,7 +623,9 @@
     <MESSAGE value="Atualizando backup - 03/10/2018" />
     <MESSAGE value="Tablet-Operacao-WiFi - inserir medição em loge" />
     <MESSAGE value="Tablet-Operacao-WiFi - Gerar Fiscalização WiFi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tablet-Operacao-WiFi - Gerar Fiscalização WiFi" />
+    <MESSAGE value="Tablet-Operacao-WiFi - Medições em Lote - Console" />
+    <MESSAGE value="Tablet-Operacao-WiFi - Medições em Lote - Console2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tablet-Operacao-WiFi - Medições em Lote - Console2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,7 +656,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java</url>
-          <line>123</line>
+          <line>125</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
@@ -633,6 +671,24 @@
           <line>125</line>
           <properties />
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -702,13 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="268" selection-start-line="268" selection-end-line="268" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -866,45 +915,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/InterfaceTabletWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_WiFiAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -938,38 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testInitialize#0;class#BaseTest#0" />
-            <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
-            <element signature="method#selecionaFiscalizacao#0;class#BaseTest#0" />
-            <element signature="method#deletarFiscalizacao#0;class#BaseTest#0" />
-            <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
-            <element signature="method#esperaCarregar#0;class#BaseTest#0" />
-            <element signature="method#listarFiscalizacoes#0;class#BaseTest#0" />
-            <element signature="method#modalData_ScroollUpDia#0;class#BaseTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="101" column="21" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFiPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -987,13 +969,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Core/BasePageWeb.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Assistant/MenuConsRotinaAssistant.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Assistant/Menu_Operacao_WiFiAssistant.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="class#93:202" />
+            <element signature="class#227:322" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="class#327:443" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="class#469:493" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_WiFiAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="10" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+            <element signature="method#preencherRodovia#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
+            <element signature="method#CapturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
+            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
+            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
+            <element signature="method#grupoSubGrupo_ScrollUp#0;class#BasePage#0" />
+            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFiPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_WiFiPage#0" />
+            <element signature="method#preencherSecaoObservacao#0;class#Tablet_Operacao_WiFiPage#0" />
+            <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_WiFiPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#1439#1440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="233">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <element signature="method#preencherWiFi#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoIntensidadeSinal#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
             <element signature="method#clicarBotaoCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
             <element signature="method#clicarBotaoFinalizaCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
             <element signature="method#preencheKmInicial#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
@@ -1005,16 +1098,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        <state relative-caret-position="272">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="54" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#inserirMedicao_EmLote#0;class#Tablet_Operacao_WiFiTest#0" />
             <element signature="method#gerarFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarMenuLateralFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarBotaoMedir_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarBotaoMedir_Operacao_WiFi#1;class#Tablet_Operacao_WiFiTest#0" />
             <element signature="method#preparaCenario#0;class#Tablet_Operacao_WiFiTest#0" />
             <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_WiFiTest#0" />
             <element signature="method#preencherFiscalizacao_MedicaoEmLote#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#assertsBotoes_WiFi_Medicao#0;class#Tablet_Operacao_WiFiTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testInitialize#0;class#BaseTest#0" />
+            <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
+            <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#botaoAddFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#botaoEditarFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#selecionaFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#deletarFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#navegarMenuPrincipal#0;class#BaseTest#0" />
+            <element signature="method#salvar#0;class#BaseTest#0" />
+            <element signature="method#enviar#0;class#BaseTest#0" />
+            <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
+            <element signature="method#esperaCarregar#0;class#BaseTest#0" />
+            <element signature="method#obterTextoElemento#0;class#BaseTest#0" />
+            <element signature="method#listarFiscalizacoes#0;class#BaseTest#0" />
+            <element signature="method#modalData_ScroollUpDia#0;class#BaseTest#0" />
+            <element signature="method#elementoExiste#0;class#BaseTest#0" />
           </folding>
         </state>
       </provider>
