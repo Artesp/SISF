@@ -22,7 +22,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
     @Test
     @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
-    @Ignore
+    /*@Ignore*/
     public void inserirMedicao_EmLote(){
         preparaCenario();
         preencherFiscalizacao_MedicaoEmLote();
@@ -71,7 +71,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         page.preencherRodoviaWiFi();
 
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
-        medicaoPage.preencherWiFiEmLote(51);
+        medicaoPage.preencherWiFiEmLote(5);
 
         navegarMenuPrincipal((MENU_WIFI.MENUSISF_OBS_FISCALIZACAO.toString()));
         page.gerarTextoParaTeste();
