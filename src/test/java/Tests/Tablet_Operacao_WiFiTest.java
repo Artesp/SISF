@@ -2,11 +2,15 @@ package Tests;
 
 import static Assistant.Menu_Operacao_WiFiAssistant.*;
 import static Assistant.MensagensPadrao.*;
+
+import Assistant.PathsAssistant;
 import Core.BaseTest;
 import Pages.LoginPage;
 import Pages.ModulosPage;
 import Pages.Tablet_Operacao_WiFiPage;
 import Pages.Tablet_Operacao_WiFi_AddMedicaoPage;
+
+import static Assistant.PathsAssistant.*;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -95,6 +99,42 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         esperaCarregar(1000);
         medicaoPage.clicarBotaoFinalizaCronometro();
         assertEquals("00:00:01", obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/duracao_chamada")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarObrigatoriedade_IntensidadeDeSinal(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.clicarBotaoCronometro();
+        esperaCarregar(2000);
+        medicaoPage.clicarBotaoFinalizaCronometro();
+        medicaoPage.preencheKmInicial("100");
+        medicaoPage.preencheMetros("000");
+        medicaoPage.selecionaSentido("S - Sul");
+        medicaoPage.clicarBotaoOK();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarPreenchimentoManual_WiFi(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        String [] idCampos = new String[2];
+        idCampos[0] = PATHS_SISF_TABLET.WIFI_INTENSIDADE_DE_SINAL.toString();
+        idCampos[1] = PATHS_SISF_TABLET.WIFI_DURACAO_CHAMADA.toString();
+
+        for (int i = 0; i < idCampos.length; i++ ) {
+            boolean enableIsFalse = campoPreenchimentoBloqueado(By.id(idCampos[i]));
+            assertFalse("Enable igual a True - Campo não pode ser preenchido manualmente!", enableIsFalse);
+        }
     }
 
 

@@ -25,6 +25,10 @@ public class MensagensPadrao {
             public String toString(){
                 return "Galeria";
             }
+        },
+
+        MEDICAO_WIFI_ERRO_DE_VALIDACAO{
+            public String toString(){return "É obrigatório preenchimento dos campos para adicionar um novo item";}
         }
 
 

@@ -4,15 +4,12 @@ import Assistant.ObjetosParaFiscalizacao;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import sun.plugin2.message.Message;
 
 import java.time.Duration;
 import java.util.Random;
 
-import static Core.DriverFactory.*;
+import static Core.DriverFactory.getDriver;
 
 public class BasePage {
 
@@ -166,5 +163,6 @@ public class BasePage {
         Random rdn = new Random();
         return rdn.nextInt(min-max);
     }
+
 
 }
