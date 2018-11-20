@@ -52,6 +52,16 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         clicarBotaoOK();
     }
 
+    public void preencherWiFi_SemQuestionario(){
+        pageWiFi.clicarBotaoAddMedicao();
+        clicarBotaoIntensidadeSinal();
+        clicarBotaoCronometro();
+        clicarBotaoFinalizaCronometro();
+        preencheKmInicial("12");
+        preencheMetros("000");
+        selecionaSentido("N - Norte");
+    }
+
     public void clicarBotaoIntensidadeSinal(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_intensidade_sinal").click();
         //getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_intensidade_sinal").click();
@@ -88,7 +98,11 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         opcao = tratarRespostaQuestionario(opcao);
         String path = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[5]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout["+questao+"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RadioGroup/android.widget.RadioButton["+opcao+"]";
         getDriver().findElementByXPath(path).click();
-        //getDriver().findElementByXPath(path).click();
+    }
+
+    public void checaOpcaoQuestionario(String index){
+        String path = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/qstfrm_content']/android.widget.LinearLayout[@index='"+index+"']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:id/itmqstfrm_layout']/android.widget.CheckBox[@resource-id='br.gov.sp.artesp.sisf.mobile:id/item_checkBox']";
+        getDriver().findElementByXPath(path).click();
     }
 
     private String tratarRespostaQuestionario(String opcao) {

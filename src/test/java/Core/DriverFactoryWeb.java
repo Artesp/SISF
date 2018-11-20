@@ -18,7 +18,7 @@ public class DriverFactoryWeb {
 
     private static void createNav(){
 
-        System.setProperty("webdriver.chrome.driver", "D:/Drivers/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Drivers/chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("test-type");
