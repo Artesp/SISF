@@ -2,11 +2,16 @@ package Tests;
 
 import static Assistant.Menu_Operacao_WiFiAssistant.*;
 import static Assistant.MensagensPadrao.*;
+
+import Assistant.Questionario_Operacao_WiFiAssistant;
 import Core.BaseTest;
 import Pages.LoginPage;
 import Pages.ModulosPage;
 import Pages.Tablet_Operacao_WiFiPage;
 import Pages.Tablet_Operacao_WiFi_AddMedicaoPage;
+
+import static Assistant.PathsAssistant.*;
+import static Assistant.Questionario_Operacao_WiFiAssistant.*;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -108,6 +113,139 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
     }
 
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarObrigatoriedade_IntensidadeDeSinal(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.clicarBotaoCronometro();
+        esperaCarregar(2000);
+        medicaoPage.clicarBotaoFinalizaCronometro();
+        medicaoPage.preencheKmInicial("100");
+        medicaoPage.preencheMetros("000");
+        medicaoPage.selecionaSentido("S - Sul");
+        medicaoPage.clicarBotaoOK();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarObrigatoriedade_Km(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.clicarBotaoIntensidadeSinal();
+        medicaoPage.clicarBotaoCronometro();
+        esperaCarregar(2000);
+        medicaoPage.clicarBotaoFinalizaCronometro();
+        medicaoPage.preencheMetros("000");
+        medicaoPage.selecionaSentido("S - Sul");
+        medicaoPage.clicarBotaoOK();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarObrigatoriedade_Metros(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.clicarBotaoIntensidadeSinal();
+        medicaoPage.clicarBotaoCronometro();
+        esperaCarregar(2000);
+        medicaoPage.clicarBotaoFinalizaCronometro();
+        medicaoPage.preencheKmInicial("12");
+        medicaoPage.selecionaSentido("S - Sul");
+        medicaoPage.clicarBotaoOK();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarObrigatoriedade_Sentido(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.clicarBotaoIntensidadeSinal();
+        medicaoPage.clicarBotaoCronometro();
+        esperaCarregar(2000);
+        medicaoPage.clicarBotaoFinalizaCronometro();
+        medicaoPage.preencheKmInicial("12");
+        medicaoPage.preencheMetros("000");
+        medicaoPage.clicarBotaoOK();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    public void verificarPreenchimentoManual_WiFi(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        String [] idCampos = new String[2];
+        idCampos[0] = PATHS_SISF_TABLET.WIFI_INTENSIDADE_DE_SINAL.toString();
+        idCampos[1] = PATHS_SISF_TABLET.WIFI_DURACAO_CHAMADA.toString();
+
+        for (int i = 0; i < idCampos.length; i++ ) {
+            boolean enableIsFalse = campoPreenchimentoBloqueado(By.id(idCampos[i]));
+            assertFalse("Enable igual a True - Campo não pode ser preenchido manualmente!", enableIsFalse);
+        }
+    }
+
+
+    @Test
+    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    public void verificarQuestionario_HouveConexao_OpcaoNao(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Não");
+
+        String []expected = new String [2];
+        expected[0] = EXPECTEDS.QUESTIONARIO_HOUVE_CONEXAO_AUSENCIA_DE_SINAL.toString();
+        expected[1] = EXPECTEDS.QUESTIONARIO_HOUVE_CONEXAO_SINAL_INTERMITENTE.toString();
+
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
+        }
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    public void verificarQuestionario_HouveConexao_AusenciaDeSinal(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Não");
+
+        medicaoPage.checaOpcaoQuestionario("1");
+
+        String []expected = new String [2];
+        expected[0] = EXPECTEDS.QUESTIONARIO_HOUVE_CONEXAO_AUSENCIA_DE_SINAL.toString();
+        expected[1] = EXPECTEDS.QUESTIONARIO_HOUVE_CONEXAO_SINAL_INTERMITENTE.toString();
+
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
+        }
+
+    }
 
     private void preparaCenario() {
         loginPage.realizaLogin();

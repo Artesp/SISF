@@ -156,5 +156,9 @@ public class BaseTest {
         return false;
     }
 
+    public boolean campoPreenchimentoBloqueado(By by) {
+        boolean enableIsFalse = getDriver().findElement(by).isEnabled();
+        return enableIsFalse;
+    }
 
 }

@@ -32,4 +32,5 @@ public class Tablet_Operacao_WiFiPage extends BasePage {
     public void capturarImagem(){
         capturarFotosGaleria();
     }
+
 }
