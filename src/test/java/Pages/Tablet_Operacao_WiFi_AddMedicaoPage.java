@@ -6,6 +6,7 @@ import Assistant.Questionario_Operacao_WiFiAssistant;
 import Core.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotSelectableException;
+import org.openqa.selenium.WebElement;
 
 import static Core.DriverFactory.getDriver;
 
@@ -31,10 +32,10 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
             respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
             clicarBotaoOK();
+            System.out.println(contador + " KM: " + incrementaKM + "000");
             contador++;
             incrementaKM += 3;
-            System.out.println(contador + " KM: " + incrementaKM + "000");
-        }while (contador < qtdMed);
+        }while (contador <= qtdMed);
     }
 
     public void preencherWiFi(){
@@ -80,6 +81,10 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         getDriver().findElementById("android:id/button1").click();
     }
 
+    public void clicarCheckBoxQuestionario(WebElement elemento){
+        elemento.click();
+    }
+
     public void preencheKmInicial(String valor){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/kmInicial").sendKeys(valor);
     }
@@ -100,9 +105,10 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         getDriver().findElementByXPath(path).click();
     }
 
-    public void checaOpcaoQuestionario(String index){
+    public WebElement obterCheckBoxQuestionario(String index){
         String path = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/qstfrm_content']/android.widget.LinearLayout[@index='"+index+"']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:id/itmqstfrm_layout']/android.widget.CheckBox[@resource-id='br.gov.sp.artesp.sisf.mobile:id/item_checkBox']";
-        getDriver().findElementByXPath(path).click();
+        WebElement elemento = getDriver().findElementByXPath(path);
+        return elemento;
     }
 
     private String tratarRespostaQuestionario(String opcao) {

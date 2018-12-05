@@ -122,6 +122,11 @@ public class BaseTest {
         return texto;
     }
 
+    public WebElement obterElementoPorPath(By by){
+        WebElement elemento = getDriver().findElement(by);
+        return elemento;
+    }
+
     public int listarFiscalizacoes(){
         int listaFisc = getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView").size();
         return listaFisc;

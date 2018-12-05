@@ -13,11 +13,14 @@ import Pages.Tablet_Operacao_WiFi_AddMedicaoPage;
 import static Assistant.PathsAssistant.*;
 import static Assistant.Questionario_Operacao_WiFiAssistant.*;
 import static org.junit.Assert.*;
+
+import io.appium.java_client.android.AndroidElement;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.omg.CORBA.Object;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class Tablet_Operacao_WiFiTest extends BaseTest {
 
@@ -29,13 +32,26 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     @Test
     @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
     @Ignore
-    public void inserirMedicao_EmLote(){
+    public void inserirMedicao_EmLote_MenorQueLimite(){
         preparaCenario();
-        preencherFiscalizacao_MedicaoEmLote();
+        preencherFiscalizacao_MedicaoEmLote(49);
         salvar();
 
         String expected = EXPECTEDS.WIFI.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
+    @Ignore
+    public void inserirMedicao_EmLote_MaiorQueLimite(){
+        preparaCenario();
+        preencherFiscalizacao_MedicaoEmLote(49);
+
+        page.clicarBotaoAddMedicao();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
     }
 
     @Test
@@ -234,17 +250,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         medicaoPage.preencherWiFi_SemQuestionario();
 
         medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Não");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario("1");
 
-        medicaoPage.checaOpcaoQuestionario("1");
-
-        String []expected = new String [2];
-        expected[0] = EXPECTEDS.QUESTIONARIO_HOUVE_CONEXAO_AUSENCIA_DE_SINAL.toString();
-        expected[1] = EXPECTEDS.QUESTIONARIO_HOUVE_CONEXAO_SINAL_INTERMITENTE.toString();
-
-        for (int i = 0; i < expected.length; i++) {
-            assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
-        }
-
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+        //assertTrue(elemento.selected());
     }
 
     private void preparaCenario() {
@@ -268,12 +277,12 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         page.capturarImagem();
     }
 
-    private void preencherFiscalizacao_MedicaoEmLote(){
+    private void preencherFiscalizacao_MedicaoEmLote(int qtdMed){
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_RODOVIA.toString());
         page.preencherRodoviaWiFi();
 
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
-        medicaoPage.preencherWiFiEmLote(5);
+        medicaoPage.preencherWiFiEmLote(qtdMed);
 
         navegarMenuPrincipal((MENU_WIFI.MENUSISF_OBS_FISCALIZACAO.toString()));
         page.gerarTextoParaTeste();

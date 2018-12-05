@@ -31,6 +31,12 @@ public class MensagensPadrao {
             public String toString(){return "É obrigatório preenchimento dos campos para adicionar um novo item";}
         },
 
+        MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO{
+            public String toString(){
+                return "Não pode exceder número máximo de medições: 50";
+            }
+        },
+
         QUESTIONARIO_HOUVE_CONEXAO_AUSENCIA_DE_SINAL{
           public String toString(){return " Ausência de Sinal";}
         },
