@@ -4,6 +4,7 @@ import static Assistant.Questionario_Operacao_WiFiAssistant.*;
 
 import Assistant.Questionario_Operacao_WiFiAssistant;
 import Core.BasePage;
+import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotSelectableException;
 import org.openqa.selenium.WebElement;
@@ -109,6 +110,14 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         String path = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/qstfrm_content']/android.widget.LinearLayout[@index='"+index+"']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:id/itmqstfrm_layout']/android.widget.CheckBox[@resource-id='br.gov.sp.artesp.sisf.mobile:id/item_checkBox']";
         WebElement elemento = getDriver().findElementByXPath(path);
         return elemento;
+    }
+
+    public boolean verificaRespostaCheckBox(WebElement elemento){
+        String checked = elemento.getAttribute("checked");
+        if (checked.equalsIgnoreCase("true")){
+            return true;
+        }
+        return false;
     }
 
     private String tratarRespostaQuestionario(String opcao) {

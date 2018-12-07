@@ -20,6 +20,7 @@ import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.omg.CORBA.Object;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
 public class Tablet_Operacao_WiFiTest extends BaseTest {
@@ -244,7 +245,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
     @Test
     @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
-    public void verificarQuestionario_HouveConexao_AusenciaDeSinal(){
+    public void verificarQuestionario_HouveConexao_AusenciaDeSinal_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
         medicaoPage.preencherWiFi_SemQuestionario();
@@ -253,8 +254,15 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         WebElement elemento = medicaoPage.obterCheckBoxQuestionario("1");
 
         medicaoPage.clicarCheckBoxQuestionario(elemento);
-        //assertTrue(elemento.selected());
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+
+        medicaoPage.clicarBotaoOK();
+
+        Dimension contagem = page.listaMedicoes();
+
     }
+
 
     private void preparaCenario() {
         loginPage.realizaLogin();

@@ -1,6 +1,9 @@
 package Pages;
 
 import Core.BasePage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebElement;
 
 import static Core.DriverFactory.getDriver;
 
@@ -31,6 +34,11 @@ public class Tablet_Operacao_WiFiPage extends BasePage {
 
     public void capturarImagem(){
         capturarFotosGaleria();
+    }
+
+    public Dimension listaMedicoes(){
+        Dimension lista = getDriver().findElement(By.id("br.gov.sp.artesp.sisf.mobile:id/listaWifi")).getSize();
+        return lista;
     }
 
 }
