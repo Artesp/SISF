@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 import static Core.DriverFactory.getDriver;
 
 public class Tablet_Operacao_WiFiPage extends BasePage {
@@ -36,8 +38,8 @@ public class Tablet_Operacao_WiFiPage extends BasePage {
         capturarFotosGaleria();
     }
 
-    public Dimension listaMedicoes(){
-        Dimension lista = getDriver().findElement(By.id("br.gov.sp.artesp.sisf.mobile:id/listaWifi")).getSize();
+    public List<WebElement> listaMedicoes(){
+        List<WebElement> lista = getDriver().findElement(By.id("br.gov.sp.artesp.sisf.mobile:id/listaWifi")).findElements(By.className("android.widget.LinearLayout"));
         return lista;
     }
 

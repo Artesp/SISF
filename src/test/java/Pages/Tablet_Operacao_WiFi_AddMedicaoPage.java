@@ -122,9 +122,15 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
 
     private String tratarRespostaQuestionario(String opcao) {
         if (opcao!=null) {
-            if (opcao.equalsIgnoreCase("Sim") || opcao.equalsIgnoreCase("Bom") || opcao.equalsIgnoreCase("Voluntariamente")) {
+            if (opcao.equalsIgnoreCase("Sim")
+                    || opcao.equalsIgnoreCase("Bom")
+                    || opcao.equalsIgnoreCase("Regular")
+                    || opcao.equalsIgnoreCase("Ruim")
+                    || opcao.equalsIgnoreCase("Voluntariamente")) {
                 return opcao = "1";
-            } else {
+            } else if(opcao.equalsIgnoreCase("Péssima")){
+                return opcao = "4";
+            }else{
                 return opcao = "2";
             }
         }

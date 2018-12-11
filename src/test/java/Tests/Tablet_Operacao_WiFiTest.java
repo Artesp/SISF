@@ -23,6 +23,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class Tablet_Operacao_WiFiTest extends BaseTest {
 
     private ModulosPage modulo = new ModulosPage();
@@ -30,70 +32,6 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     private Tablet_Operacao_WiFiPage page = new Tablet_Operacao_WiFiPage();
     private Tablet_Operacao_WiFi_AddMedicaoPage medicaoPage = new Tablet_Operacao_WiFi_AddMedicaoPage();
 
-    @Test
-    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
-    @Ignore
-    public void inserirMedicao_EmLote_MenorQueLimite(){
-        preparaCenario();
-        preencherFiscalizacao_MedicaoEmLote(49);
-        salvar();
-
-        String expected = EXPECTEDS.WIFI.toString();
-        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
-    }
-
-    @Test
-    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
-    @Ignore
-    public void inserirMedicao_EmLote_MaiorQueLimite(){
-        preparaCenario();
-        preencherFiscalizacao_MedicaoEmLote(49);
-
-        page.clicarBotaoAddMedicao();
-
-        String expected = EXPECTEDS.MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO.toString();
-        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
-    }
-
-    @Test
-    @DisplayName("MTM_ID 4563: X - Criar fiscalização de Operação - WiFi")
-    public void gerarFiscalizacao_Operacao_WiFi(){
-        preparaCenario();
-        preencherFiscalizacao();
-        salvar();
-
-        String expected = EXPECTEDS.WIFI.toString();
-        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
-
-        enviar(3000);
-    }
-
-    @Test
-    @DisplayName("MTM_ID 4596: FP2 - Verificar tela principal da fiscalização de Wi-Fi")
-    public void verificarMenuLateralFiscalizacao_Operacao_WiFi(){
-        preparaCenario();
-
-        String expecteds[] = new String [4];
-        expecteds[0] = EXPECTEDS.RODOVIA.toString();
-        expecteds[1] = EXPECTEDS.WIFI.toString();
-        expecteds[2] = EXPECTEDS.OBS_FISCALIZACAO.toString();
-        expecteds[3] = EXPECTEDS.GALERIA.toString();
-
-        String indexMenu [] = new String [4];
-        indexMenu[0] = MENU_WIFI.MENUSISF_RODOVIA.toString();
-        indexMenu[1] = MENU_WIFI.MENUSISF_WIFI.toString();
-        indexMenu[2] = MENU_WIFI.MENUSISF_OBS_FISCALIZACAO.toString();
-        indexMenu[3] = MENU_WIFI.MENUSISF_GALERIA.toString();
-
-        for(int i = 0; i < expecteds.length; i++){
-            String index = indexMenu[i];
-            String elemento = expecteds[i];
-            String path = "//android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/fsc_content']/android.widget.Button[@index='" + index + "']";
-            String nomeMenu = obterTextoElemento(By.xpath(path));
-            assertEquals(elemento, nomeMenu);
-        }
-
-    }
 
     @Test
     @DisplayName("MTM_ID 4497: FP3/FP6 - Verificar seção Wi-Fi - Botão Medir")
@@ -223,7 +161,6 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         }
     }
 
-
     @Test
     @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
     public void verificarQuestionario_HouveConexao_OpcaoNao(){
@@ -248,20 +185,400 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     public void verificarQuestionario_HouveConexao_AusenciaDeSinal_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
         medicaoPage.preencherWiFi_SemQuestionario();
 
         medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Não");
-        WebElement elemento = medicaoPage.obterCheckBoxQuestionario("1");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO_AUSENCIA_SINAL.toString());
 
         medicaoPage.clicarCheckBoxQuestionario(elemento);
 
         assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
-
         medicaoPage.clicarBotaoOK();
 
-        Dimension contagem = page.listaMedicoes();
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size()!= 0);
 
     }
+
+    @Test
+    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    public void verificarQuestionario_HouveConexao_SinalIntermitente_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Não");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO_SINAL_INTERMITENTE.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size()!= 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    public void verificarQuestionario_HouveConexao_DuasOpcoes_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Não");
+        WebElement elemento1 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO_AUSENCIA_SINAL.toString());
+        WebElement elemento2 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO_SINAL_INTERMITENTE.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento1);
+        medicaoPage.clicarCheckBoxQuestionario(elemento2);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento1));
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento2));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size()!= 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    public void verificarQuestionario_HouveAtendimento_OpcaoNao(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Não");
+
+        String []expected = new String [2];
+        expected[0] = EXPECTEDS.QUESTIONARIO_HOUVE_ATENDIMENTO_NAO_REALIZA_CHAMADA.toString();
+        expected[1] = EXPECTEDS.QUESTIONARIO_HOUVE_ATENDIMENTO_SEM_ATENDIMENTO_CCO.toString();
+
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
+        }
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    public void verificarQuestionario_HouveAtendimento_NaoRealizaChamada_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Não");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO_NAO_REALIZA_CHAMADA.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    public void verificarQuestionario_HouveAtendimento_SemAtendimentoCCO_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Não");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO_SEM_ATEMDIMENTO_CCO.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    public void verificarQuestionario_HouveAtendimento_DuasOpcoes_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Não");
+        WebElement elemento1 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO_NAO_REALIZA_CHAMADA.toString());
+        WebElement elemento2 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO_SEM_ATEMDIMENTO_CCO.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento1);
+        medicaoPage.clicarCheckBoxQuestionario(elemento2);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento1));
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento2));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    public void verificarQuestionario_QualidadeComunicacao_OpcaoPessima(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+        page.clicarBotaoAddMedicao();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Péssima");
+
+        String []expected = new String [4];
+        expected[0] = EXPECTEDS.QUESTIONARIO_QUALIDADE_COMUNICACAO_AUDIO_BAIXO.toString();
+        expected[1] = EXPECTEDS.QUESTIONARIO_QUALIDADE_COMUNICACAO_AUDIO_INTERMITENTE.toString();
+        expected[2] = EXPECTEDS.QUESTIONARIO_QUALIDADE_COMUNICACAO_RUIDO_INTERFERENCIA.toString();
+        expected[3] = EXPECTEDS.QUESTIONARIO_QUALIDADE_COMUNICACAO_ATENDENTE_NAO_ESCUTA.toString();
+
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
+        }
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    public void verificarQuestionario_QualidadeComunicacao_AudioBaixo_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Péssima");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_AUDIO_BAIXO.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    public void verificarQuestionario_QualidadeComunicacao_AudioIntermitente_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Péssima");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_AUDIO_INTERMITENTE.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    public void verificarQuestionario_QualidadeComunicacao_RuidoInterferencia_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Péssima");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_RUIDO_INTERFERENCIA.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+
+    @Test
+    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    public void verificarQuestionario_QualidadeComunicacao_AtendenteNaoEscuta_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Péssima");
+        WebElement elemento = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_ATENDENTE_NAO_ESCUTA.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    public void verificarQuestionario_QualidadeComunicacao_TodasAsOpcoes_Checked(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Péssima");
+        WebElement elemento1 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_AUDIO_BAIXO.toString());
+        WebElement elemento2 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_AUDIO_INTERMITENTE.toString());
+        WebElement elemento3 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_RUIDO_INTERFERENCIA.toString());
+        WebElement elemento4 = medicaoPage.obterCheckBoxQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO_ATENDENTE_NAO_ESCUTA.toString());
+
+        medicaoPage.clicarCheckBoxQuestionario(elemento1);
+        medicaoPage.clicarCheckBoxQuestionario(elemento2);
+        medicaoPage.clicarCheckBoxQuestionario(elemento3);
+        medicaoPage.clicarCheckBoxQuestionario(elemento4);
+
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento1));
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento2));
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento3));
+        assertTrue(medicaoPage.verificaRespostaCheckBox(elemento4));
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4503: FP12/Tabela 2 - Questionário - Encerramento da Chamada")
+    public void verificarQuestionario_EncerramentoChamada_OpcaoVoluntariamente(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4503: FP12/Tabela 2 - Questionário - Encerramento da Chamada")
+    public void verificarQuestionario_EncerramentoChamada_OpcaoInterrupcaoInesperada(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+
+        medicaoPage.respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Interrupção inesperada");
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4504: FP12/Tabela 2 - Questionário - Itens em branco")
+    public void verificarQuestionario_QuestionarioEmBranco(){
+        preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
+
+        medicaoPage.preencherWiFi_SemQuestionario();
+        medicaoPage.clicarBotaoOK();
+
+        List<WebElement> contagem = page.listaMedicoes();
+        assertTrue(contagem .size() > 0);
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
+    @Ignore
+    public void inserirMedicao_EmLote_MenorQueLimite(){
+        preparaCenario();
+        preencherFiscalizacao_MedicaoEmLote(49);
+        salvar();
+
+        String expected = EXPECTEDS.WIFI.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
+    @Ignore
+    public void inserirMedicao_EmLote_MaiorQueLimite(){
+        preparaCenario();
+        preencherFiscalizacao_MedicaoEmLote(49);
+
+        page.clicarBotaoAddMedicao();
+
+        String expected = EXPECTEDS.MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4563: X - Criar fiscalização de Operação - WiFi")
+    public void gerarFiscalizacao_Operacao_WiFi(){
+        preparaCenario();
+        preencherFiscalizacao();
+        salvar();
+
+        String expected = EXPECTEDS.WIFI.toString();
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+
+        enviar(3000);
+    }
+
+    @Test
+    @DisplayName("MTM_ID 4596: FP2 - Verificar tela principal da fiscalização de Wi-Fi")
+    public void verificarMenuLateralFiscalizacao_Operacao_WiFi(){
+        preparaCenario();
+
+        String expecteds[] = new String [4];
+        expecteds[0] = EXPECTEDS.RODOVIA.toString();
+        expecteds[1] = EXPECTEDS.WIFI.toString();
+        expecteds[2] = EXPECTEDS.OBS_FISCALIZACAO.toString();
+        expecteds[3] = EXPECTEDS.GALERIA.toString();
+
+        String indexMenu [] = new String [4];
+        indexMenu[0] = MENU_WIFI.MENUSISF_RODOVIA.toString();
+        indexMenu[1] = MENU_WIFI.MENUSISF_WIFI.toString();
+        indexMenu[2] = MENU_WIFI.MENUSISF_OBS_FISCALIZACAO.toString();
+        indexMenu[3] = MENU_WIFI.MENUSISF_GALERIA.toString();
+
+        for(int i = 0; i < expecteds.length; i++){
+            String index = indexMenu[i];
+            String elemento = expecteds[i];
+            String path = "//android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/fsc_content']/android.widget.Button[@index='" + index + "']";
+            String nomeMenu = obterTextoElemento(By.xpath(path));
+            assertEquals(elemento, nomeMenu);
+        }
+
+    }
+
+
+
 
 
     private void preparaCenario() {
