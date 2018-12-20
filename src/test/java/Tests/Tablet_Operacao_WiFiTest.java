@@ -3,6 +3,7 @@ package Tests;
 import static Assistant.Menu_Operacao_WiFiAssistant.*;
 import static Assistant.MensagensPadrao.*;
 
+import Assistant.LogUtil;
 import Assistant.Questionario_Operacao_WiFiAssistant;
 import Core.BaseTest;
 import Pages.LoginPage;
@@ -14,14 +15,11 @@ import static Assistant.PathsAssistant.*;
 import static Assistant.Questionario_Operacao_WiFiAssistant.*;
 import static org.junit.Assert.*;
 
-import io.appium.java_client.android.AndroidElement;
 import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
-import org.omg.CORBA.Object;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -33,8 +31,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     private Tablet_Operacao_WiFi_AddMedicaoPage medicaoPage = new Tablet_Operacao_WiFi_AddMedicaoPage();
 
 
-    @Test
-    @DisplayName("MTM_ID 4497: FP3/FP6 - Verificar seção Wi-Fi - Botão Medir")
+    @Test(description = "MTM_ID 4497: FP3/FP6 - Verificar seção Wi-Fi - Botão Medir")
     public void verificarBotaoMedir_Operacao_WiFi(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -42,10 +39,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         medicaoPage.clicarBotaoIntensidadeSinal();
         assertEquals("-127", obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/intensidade_sinal")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4498: FP7/FP10 - Verificar seção Wi-Fi - Botão Relógio")
+    @Test(priority = 0, description = "MTM_ID 4498: FP7/FP10 - Verificar seção Wi-Fi - Botão Relógio")
     public void verificarBotaoCronometro_Operacao_WiFi(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -54,22 +51,20 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         medicaoPage.clicarBotaoCronometro();
         esperaCarregar(1000);
         medicaoPage.clicarBotaoFinalizaCronometro();
+        LogUtil.log("O sistema dispara um cronômetro para medir a duração da chamada");
         String time = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/duracao_chamada"));
         assertTrue(time != "00:00:00");
+        LogUtil.log("O sistema adiciona o tempo do cronômetro no campo 'Duração da Chamada'");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
     public void verificaQuestionario_HouveConexao_Sim_Nao(){
         preparaCenario();
         preencherFiscalizacao();
-
-
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    @Test(description = "MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
     public void verificarObrigatoriedade_IntensidadeDeSinal(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -85,10 +80,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    @Test(description = "MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
     public void verificarObrigatoriedade_Km(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -104,10 +99,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    @Test(description = "MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
     public void verificarObrigatoriedade_Metros(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -123,10 +118,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    @Test(description = "MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
     public void verificarObrigatoriedade_Sentido(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -142,10 +137,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
+    @Test(description = "MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos.")
     public void verificarPreenchimentoManual_WiFi(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -159,10 +154,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
             boolean enableIsFalse = campoPreenchimentoBloqueado(By.id(idCampos[i]));
             assertFalse("Enable igual a True - Campo não pode ser preenchido manualmente!", enableIsFalse);
         }
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
     public void verificarQuestionario_HouveConexao_OpcaoNao(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -177,11 +172,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         for (int i = 0; i < expected.length; i++) {
             assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
         }
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
     public void verificarQuestionario_HouveConexao_AusenciaDeSinal_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -198,11 +192,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size()!= 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
     public void verificarQuestionario_HouveConexao_SinalIntermitente_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -219,11 +212,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size()!= 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4500: FP12/Tabela 2 - Questionário - Houve Conexão (Opção Sim e Não)")
     public void verificarQuestionario_HouveConexao_DuasOpcoes_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -243,11 +235,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size()!= 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
     public void verificarQuestionario_HouveAtendimento_OpcaoNao(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -262,11 +253,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         for (int i = 0; i < expected.length; i++) {
             assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
         }
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
     public void verificarQuestionario_HouveAtendimento_NaoRealizaChamada_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -283,11 +273,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
     public void verificarQuestionario_HouveAtendimento_SemAtendimentoCCO_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -304,11 +293,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
+    @Test(description = "MTM_ID 4501: FP12/Tabela 2 - Questionário - Houve Atendimento (Opção Sim e Não)")
     public void verificarQuestionario_HouveAtendimento_DuasOpcoes_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -328,11 +316,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    @Test(description = "MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
     public void verificarQuestionario_QualidadeComunicacao_OpcaoPessima(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -349,11 +336,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         for (int i = 0; i < expected.length; i++) {
             assertEquals(expected[i], obterTextoElemento(By.xpath("//*[@text='"+expected[i]+"']")));
         }
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    @Test(description = "MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
     public void verificarQuestionario_QualidadeComunicacao_AudioBaixo_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -370,11 +356,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    @Test(description = "MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
     public void verificarQuestionario_QualidadeComunicacao_AudioIntermitente_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -391,11 +376,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    @Test(description = "MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
     public void verificarQuestionario_QualidadeComunicacao_RuidoInterferencia_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -412,12 +396,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-
-    @Test
-    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    @Test(description = "MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
     public void verificarQuestionario_QualidadeComunicacao_AtendenteNaoEscuta_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -434,11 +416,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
+    @Test(description = "MTM_ID 4502: FP12/Tabela 2 - Questionário - Qualidade da Comunicação.")
     public void verificarQuestionario_QualidadeComunicacao_TodasAsOpcoes_Checked(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -464,11 +445,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4503: FP12/Tabela 2 - Questionário - Encerramento da Chamada")
+    @Test(description = "MTM_ID 4503: FP12/Tabela 2 - Questionário - Encerramento da Chamada")
     public void verificarQuestionario_EncerramentoChamada_OpcaoVoluntariamente(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -480,11 +460,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4503: FP12/Tabela 2 - Questionário - Encerramento da Chamada")
+    @Test(description = "MTM_ID 4503: FP12/Tabela 2 - Questionário - Encerramento da Chamada")
     public void verificarQuestionario_EncerramentoChamada_OpcaoInterrupcaoInesperada(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -496,11 +475,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
-
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4504: FP12/Tabela 2 - Questionário - Itens em branco")
+    @Test(description = "MTM_ID 4504: FP12/Tabela 2 - Questionário - Itens em branco")
     public void verificarQuestionario_QuestionarioEmBranco(){
         preparaCenario();
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
@@ -510,10 +488,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         List<WebElement> contagem = page.listaMedicoes();
         assertTrue(contagem .size() > 0);
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
+    @Test(description = "MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
     @Ignore
     public void inserirMedicao_EmLote_MenorQueLimite(){
         preparaCenario();
@@ -522,10 +500,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.WIFI.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
+    @Test(description = "MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi.")
     @Ignore
     public void inserirMedicao_EmLote_MaiorQueLimite(){
         preparaCenario();
@@ -535,10 +513,10 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
+        LogUtil.log("");
     }
 
-    @Test
-    @DisplayName("MTM_ID 4563: X - Criar fiscalização de Operação - WiFi")
+    @Test(description = "MTM_ID 4563: X - Criar fiscalização de Operação - WiFi")
     public void gerarFiscalizacao_Operacao_WiFi(){
         preparaCenario();
         preencherFiscalizacao();
@@ -546,12 +524,11 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
 
         String expected = EXPECTEDS.WIFI.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
-
+        LogUtil.log("");
         enviar(3000);
     }
 
-    @Test
-    @DisplayName("MTM_ID 4596: FP2 - Verificar tela principal da fiscalização de Wi-Fi")
+    @Test(description = "MTM_ID 4596: FP2 - Verificar tela principal da fiscalização de Wi-Fi")
     public void verificarMenuLateralFiscalizacao_Operacao_WiFi(){
         preparaCenario();
 
@@ -574,10 +551,9 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
             String nomeMenu = obterTextoElemento(By.xpath(path));
             assertEquals(elemento, nomeMenu);
         }
+        LogUtil.log("");
 
     }
-
-
 
 
 
