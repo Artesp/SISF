@@ -2,7 +2,7 @@ package Tests;
 
 import Core.BaseTest;
 import Pages.LoginPage;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
