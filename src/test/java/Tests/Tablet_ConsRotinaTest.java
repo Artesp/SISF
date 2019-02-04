@@ -4,8 +4,8 @@ import Assistant.InterfaceTabletWeb;
 import Assistant.MenuConsRotinaRetornoAssistant;
 import Core.BaseTest;
 import Pages.*;
+import org.junit.Test;
 import org.openqa.selenium.By;
-import org.testng.annotations.Test;
 
 import static Assistant.MenuConsRotinaAssistant.*;
 import static Assistant.MenuConsRotinaRetornoAssistant.*;

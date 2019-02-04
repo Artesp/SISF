@@ -22,9 +22,15 @@ public class Questionario_Operacao_WiFiAssistant {
             }
         },
 
-        HOUVE_ATENDIMENTO {
+        CONFIRMACAO_LOCAL_FISCAL{
             public String toString() {
                 return "2";
+            }
+        },
+
+        HOUVE_ATENDIMENTO {
+            public String toString() {
+                return "3";
             }
         },
 
@@ -42,31 +48,31 @@ public class Questionario_Operacao_WiFiAssistant {
 
         QUALIDADE_DA_COMUNICACAO {
             public String toString() {
-                return "3";
+                return "4";
             }
         },
 
         QUALIDADE_DA_COMUNICACAO_AUDIO_BAIXO {
             public String toString() {
-                return "3";
+                return "4";
             }
         },
 
         QUALIDADE_DA_COMUNICACAO_AUDIO_INTERMITENTE {
             public String toString() {
-                return "4";
+                return "5";
             }
         },
 
         QUALIDADE_DA_COMUNICACAO_RUIDO_INTERFERENCIA {
             public String toString() {
-                return "5";
+                return "6";
             }
         },
 
         QUALIDADE_DA_COMUNICACAO_ATENDENTE_NAO_ESCUTA{
             public String toString() {
-                return "6";
+                return "7";
             }
         },
 

@@ -27,13 +27,13 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             clicarBotaoFinalizaCronometro();
             preencheKmInicial(String.valueOf(incrementaKM));
             preencheMetros("000");
-            selecionaSentido("N - Norte");
+            //selecionaSentido("N - Norte");
             respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
             respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
             respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
             respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
             clicarBotaoOK();
-            System.out.println(contador + " KM: " + incrementaKM + "000");
+            System.out.println(contador + " KM: " + incrementaKM + " 000");
             contador++;
             incrementaKM += 3;
         }while (contador <= qtdMed);
@@ -44,9 +44,9 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         clicarBotaoIntensidadeSinal();
         clicarBotaoCronometro();
         clicarBotaoFinalizaCronometro();
-        preencheKmInicial("12");
-        preencheMetros("000");
-        selecionaSentido("N - Norte");
+        preencheKmInicial("13");
+        preencheMetros("500");
+        //selecionaSentido("N - Norte");
         respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
         respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
         respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
@@ -59,9 +59,9 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         clicarBotaoIntensidadeSinal();
         clicarBotaoCronometro();
         clicarBotaoFinalizaCronometro();
-        preencheKmInicial("12");
-        preencheMetros("000");
-        selecionaSentido("N - Norte");
+        preencheKmInicial("13");
+        preencheMetros("500");
+        //selecionaSentido("N - Norte");
     }
 
     public void clicarBotaoIntensidadeSinal(){

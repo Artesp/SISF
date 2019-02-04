@@ -4,7 +4,7 @@ import Assistant.ObjetosParaFiscalizacao;
 import Core.BaseTestWeb;
 import Pages.LoginWebPage;
 import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 

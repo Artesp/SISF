@@ -4,12 +4,12 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
@@ -17,7 +17,7 @@ import static Core.DriverFactory.*;
 
 public class BaseTest {
 
-    @BeforeTest
+    @Before
     public void testInitialize(){
         if (getDriver() == null) {
             getDriver();
@@ -32,7 +32,7 @@ public class BaseTest {
         killDriver();
     }
 
-    @AfterTest
+    @After
     public void tearDown(){
         getDriver().closeApp();
     }
