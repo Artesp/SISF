@@ -84,6 +84,9 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     @Test //"MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos."
     public void verificarObrigatoriedade_Km(){
         preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_RODOVIA.toString());
+        page.preencherRodoviaWiFi();
+
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
         page.clicarBotaoAddMedicao();
 
@@ -92,7 +95,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         esperaCarregar(2000);
         medicaoPage.clicarBotaoFinalizaCronometro();
         medicaoPage.preencheMetros("000");
-        medicaoPage.selecionaSentido("S - Sul");
+        //medicaoPage.selecionaSentido("S - Sul");
         medicaoPage.clicarBotaoOK();
 
         String expected = EXPECTEDS.MEDICAO_WIFI_ERRO_DE_VALIDACAO.toString();
@@ -102,6 +105,9 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     @Test  //"MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos."
     public void verificarObrigatoriedade_Metros(){
         preparaCenario();
+        navegarMenuPrincipal(MENU_WIFI.MENUSISF_RODOVIA.toString());
+        page.preencherRodoviaWiFi();
+
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_WIFI.toString());
         page.clicarBotaoAddMedicao();
 
@@ -512,11 +518,12 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     @Test //"MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi."
     public void inserirMedicao_EmLote_MenorQueLimite(){
         preparaCenario();
-        preencherFiscalizacao_MedicaoEmLote(3);
+        preencherFiscalizacao_MedicaoEmLote(5);
         salvar();
 
         String expected = EXPECTEDS.WIFI.toString();
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+        enviar(3000);
     }
 
     @Test //"MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi."
@@ -568,7 +575,6 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
     }
 
 
-
     private void preparaCenario() {
         loginPage.realizaLogin();
         modulo.moduloOperacao();
@@ -598,7 +604,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         medicaoPage.preencherWiFiEmLote(qtdMed);
 
         navegarMenuPrincipal((MENU_WIFI.MENUSISF_OBS_FISCALIZACAO.toString()));
-        page.gerarTextoParaTeste();
+        page.preencherSecaoObservacao(page.gerarTextoParaTeste());
 
         navegarMenuPrincipal(MENU_WIFI.MENUSISF_GALERIA.toString());
         page.capturarImagem();

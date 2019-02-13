@@ -28,7 +28,7 @@ public class MensagensPadrao {
         },
 
         MEDICAO_WIFI_ERRO_DE_VALIDACAO{
-            public String toString(){return "É obrigatório preenchimento dos campos para adicionar um novo item";}
+            public String toString(){return "Dados da rodovia inválidos ('km' e 'm' fora do limite da rodovia).";}
         },
 
         MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO{

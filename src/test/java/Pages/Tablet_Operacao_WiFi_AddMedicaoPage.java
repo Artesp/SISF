@@ -29,6 +29,7 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             preencheMetros("000");
             //selecionaSentido("N - Norte");
             respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
+            respondeQuestionario(QUESTINARIO_WIFI.CONFIRMACAO_LOCAL_FISCAL.toString(), "Sim");
             respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
             respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
             respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
@@ -36,7 +37,7 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             System.out.println(contador + " KM: " + incrementaKM + " 000");
             contador++;
             incrementaKM += 3;
-        }while (contador <= qtdMed);
+        }while (contador < qtdMed);
     }
 
     public void preencherWiFi(){
@@ -48,6 +49,7 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         preencheMetros("500");
         //selecionaSentido("N - Norte");
         respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
+        respondeQuestionario(QUESTINARIO_WIFI.CONFIRMACAO_LOCAL_FISCAL.toString(), "Sim");
         respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
         respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
         respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");

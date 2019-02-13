@@ -36,13 +36,13 @@ public class Questionario_Operacao_WiFiAssistant {
 
         HOUVE_ATENDIMENTO_NAO_REALIZA_CHAMADA {
             public String toString() {
-                return "2";
+                return "3";
             }
         },
 
         HOUVE_ATENDIMENTO_SEM_ATEMDIMENTO_CCO {
             public String toString() {
-                return "3";
+                return "4";
             }
         },
 
@@ -54,7 +54,7 @@ public class Questionario_Operacao_WiFiAssistant {
 
         QUALIDADE_DA_COMUNICACAO_AUDIO_BAIXO {
             public String toString() {
-                return "4";
+                return "5";
             }
         },
 
