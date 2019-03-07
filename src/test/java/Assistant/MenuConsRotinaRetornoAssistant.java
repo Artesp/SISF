@@ -2,30 +2,9 @@ package Assistant;
 
 public class MenuConsRotinaRetornoAssistant {
 
-    public enum MENU_CONSROTINARETORNO {
-        MENUSISFRET_SITUACAO {
-            public String toString() {
-                return "1";
-            }
-        },
-
-        MENUSISFRET_PARECERCONCESSIONARIA {
-            public String toString() {
-                return "2";
-            }
-        },
-
-        MENUSISFRET_OBSERVACAO {
-            public String toString() {
-                return "3";
-            }
-        },
-
-        MENUSISFRET_GALERIA {
-            public String toString() {
-                return "4";
-            }
-        }
-    }
+    public static final String MENUSISFRET_SITUACAO = "1";
+    public static final String MENUSISFRET_PARECERCONCESSIONARIA = "2";
+    public static final String MENUSISFRET_OBSERVACAO = "3";
+    public static final String MENUSISFRET_GALERIA = "4";
 
 }

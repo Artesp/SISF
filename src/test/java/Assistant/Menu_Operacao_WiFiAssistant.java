@@ -2,30 +2,8 @@ package Assistant;
 
 public class Menu_Operacao_WiFiAssistant {
 
-    public enum MENU_WIFI {
-        MENUSISF_RODOVIA {
-            public String toString() {
-                return "0";
-            }
-        },
-
-        MENUSISF_WIFI {
-            public String toString() {
-                return "1";
-            }
-        },
-
-        MENUSISF_OBS_FISCALIZACAO {
-            public String toString() {
-                return "2";
-            }
-        },
-
-        MENUSISF_GALERIA {
-            public String toString() {
-                return "3";
-            }
-        },
-    }
-
+    public static final String MENUSISF_RODOVIA = "0";
+    public static final String MENUSISF_WIFI = "1";
+    public static final String MENUSISF_OBS_FISCALIZACAO = "2";
+    public static final String MENUSISF_GALERIA = "3";
 }

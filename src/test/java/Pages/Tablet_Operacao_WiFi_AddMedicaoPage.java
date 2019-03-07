@@ -2,6 +2,7 @@ package Pages;
 
 import static Assistant.Questionario_Operacao_WiFiAssistant.*;
 
+import Assistant.ObjetosParaFiscalizacao;
 import Assistant.Questionario_Operacao_WiFiAssistant;
 import Core.BasePage;
 import io.appium.java_client.android.AndroidElement;
@@ -28,13 +29,13 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             preencheKmInicial(String.valueOf(incrementaKM));
             preencheMetros("000");
             //selecionaSentido("N - Norte");
-            respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
-            respondeQuestionario(QUESTINARIO_WIFI.CONFIRMACAO_LOCAL_FISCAL.toString(), "Sim");
-            respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
-            respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
-            respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
+            respondeQuestionario(Questionario_Operacao_WiFiAssistant.HOUVE_CONEXAO, "Sim");
+            respondeQuestionario(Questionario_Operacao_WiFiAssistant.CONFIRMACAO_LOCAL_FISCAL, "Sim");
+            respondeQuestionario(Questionario_Operacao_WiFiAssistant.HOUVE_ATENDIMENTO, "Sim");
+            respondeQuestionario(Questionario_Operacao_WiFiAssistant.QUALIDADE_DA_COMUNICACAO, "Bom");
+            respondeQuestionario(Questionario_Operacao_WiFiAssistant.ENCERRAMENTO_DE_CHAMADA, "Voluntariamente");
             clicarBotaoOK();
-            System.out.println(contador + " KM: " + incrementaKM + " 000");
+            System.out.println(contador + " KM: " + incrementaKM + " 000 - Hora: " + retornaHora());
             contador++;
             incrementaKM += 3;
         }while (contador < qtdMed);
@@ -48,11 +49,11 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
         preencheKmInicial("13");
         preencheMetros("500");
         //selecionaSentido("N - Norte");
-        respondeQuestionario(QUESTINARIO_WIFI.HOUVE_CONEXAO.toString(), "Sim");
-        respondeQuestionario(QUESTINARIO_WIFI.CONFIRMACAO_LOCAL_FISCAL.toString(), "Sim");
-        respondeQuestionario(QUESTINARIO_WIFI.HOUVE_ATENDIMENTO.toString(), "Sim");
-        respondeQuestionario(QUESTINARIO_WIFI.QUALIDADE_DA_COMUNICACAO.toString(), "Bom");
-        respondeQuestionario(QUESTINARIO_WIFI.ENCERRAMENTO_DE_CHAMADA.toString(), "Voluntariamente");
+        respondeQuestionario(Questionario_Operacao_WiFiAssistant.HOUVE_CONEXAO, "Sim");
+        respondeQuestionario(Questionario_Operacao_WiFiAssistant.CONFIRMACAO_LOCAL_FISCAL, "Sim");
+        respondeQuestionario(Questionario_Operacao_WiFiAssistant.HOUVE_ATENDIMENTO, "Sim");
+        respondeQuestionario(Questionario_Operacao_WiFiAssistant.QUALIDADE_DA_COMUNICACAO, "Bom");
+        respondeQuestionario(Questionario_Operacao_WiFiAssistant.ENCERRAMENTO_DE_CHAMADA, "Voluntariamente");
         clicarBotaoOK();
     }
 

@@ -2,41 +2,11 @@ package Assistant;
 
 public class MenuConsRotinaAssistant {
 
-    public enum MENU_CONSROTINA {
-        MENUSISF_RODOVIA {
-            public String toString() {
-                return "0";
-            }
-        },
+    public static final String MENUSISF_RODOVIA = "0";
+    public static final String MENUSISF_PRAZO = "1";
+    public static final String MENUSISF_TRECHO = "2";
+    public static final String MENUSISF_UNIDADE = "3";
+    public static final String MENUSISF_OBS_FISCALIZACAO = "4";
+    public static final String MENUSISF_GALERIA = "5";
 
-        MENUSISF_PRAZO {
-            public String toString() {
-                return "1";
-            }
-        },
-
-        MENUSISF_TRECHO {
-            public String toString() {
-                return "2";
-            }
-        },
-
-        MENUSISF_UNIDADE {
-            public String toString() {
-                return "3";
-            }
-        },
-
-        MENUSISF_OBS_FISCALIZACAO {
-            public String toString() {
-                return "4";
-            }
-        },
-
-        MENUSISF_GALERIA {
-            public String toString() {
-                return "5";
-            }
-        },
-    }
 }

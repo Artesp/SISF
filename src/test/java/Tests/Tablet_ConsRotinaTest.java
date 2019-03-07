@@ -1,11 +1,17 @@
 package Tests;
 
 import Assistant.InterfaceTabletWeb;
+import Assistant.MenuConsRotinaAssistant;
 import Assistant.MenuConsRotinaRetornoAssistant;
+import Assistant.PathsAssistant;
 import Core.BaseTest;
 import Pages.*;
 import org.junit.Test;
 import org.openqa.selenium.By;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import static Assistant.MenuConsRotinaAssistant.*;
 import static Assistant.MenuConsRotinaRetornoAssistant.*;
@@ -31,6 +37,47 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         assertEquals("Conservação de Rotina", fisc);
 
         enviar(3000);
+    }
+
+    @Test
+    public void gerarFiscalizacao_ComSucesso_EmLote(){
+
+        int contador = 0;
+        int numeroFiscalizacoes = 3;
+        loginPage.realizaLogin();
+        modulo.moduloConservacao();
+
+        do {
+            botaoAddFiscalizacao();
+            page.grupoSubgrupo();
+
+            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_RODOVIA);
+            page.preencherRodoviaConservacao();
+
+            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
+            page.preencherSecaoPrazo("Pavimento", "Revestimento Primário", "Reconformação de vias secundárias");
+
+            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_TRECHO);
+            page.preencherSecaoTrecho();
+
+            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_OBS_FISCALIZACAO);
+            page.preencherSecaoObservacao();
+
+            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
+            page.capturaDeFotosRandomico(5);
+
+            salvar();
+            String fisc = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo"));
+            assertEquals("Conservação de Rotina", fisc);
+            String horaS = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
+            enviar(3000);
+            System.out.println("Fiscalização Enviada: Nº " + contador + " " + page.retornaHora() );
+
+            contador++;
+
+
+        }while (contador <= numeroFiscalizacoes);
+
     }
 
     @Test
@@ -64,7 +111,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
 
         selecionaFiscalizacao();
         botaoEditarFiscalizacao();
-        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_PRAZO.toString());
+        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
 
         page.preencherSecaoPrazo("Estruturas","Estruturas","Pichações e vandalismo");
 
@@ -101,34 +148,34 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     }
 
     private void preencherDadosFiscalizacao(){
-        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_RODOVIA.toString());
+        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_RODOVIA);
         page.preencherRodoviaConservacao();
 
-        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_PRAZO.toString());
+        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
         page.preencherSecaoPrazo("Pavimento", "Revestimento Primário", "Reconformação de vias secundárias");
 
-        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_TRECHO.toString());
+        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_TRECHO);
         page.preencherSecaoTrecho();
 
-        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_OBS_FISCALIZACAO.toString());
+        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_OBS_FISCALIZACAO);
         page.preencherSecaoObservacao();
 
-        menuPage.navegarMenuPrincipal(MENU_CONSROTINA.MENUSISF_GALERIA.toString());
+        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
         page.fotosEmLote(4);
 
     }
 
     private void preencherDadosFiscalizacaoRetorno(){
-        menuPageRetorno.navegarMenuPrincipal(MENU_CONSROTINARETORNO.MENUSISFRET_SITUACAO.toString());
+        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_SITUACAO);
         pageRetorno.preencherSecaoSituacao();
 
-        menuPageRetorno.navegarMenuPrincipal(MENU_CONSROTINARETORNO.MENUSISFRET_PARECERCONCESSIONARIA.toString());
+        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_PARECERCONCESSIONARIA);
         pageRetorno.preencherSecaoParecerConcessionaria();
 
-        menuPageRetorno.navegarMenuPrincipal(MENU_CONSROTINARETORNO.MENUSISFRET_OBSERVACAO.toString());
+        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_OBSERVACAO);
         pageRetorno.preencherSecaoObservacao();
 
-        menuPageRetorno.navegarMenuPrincipal(MENU_CONSROTINARETORNO.MENUSISFRET_GALERIA.toString());
+        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_GALERIA);
         pageRetorno.preencherSecaoGaleria(2);
     }
 }

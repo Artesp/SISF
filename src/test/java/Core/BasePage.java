@@ -15,6 +15,10 @@ public class BasePage {
 
     private ObjetosParaFiscalizacao obj = new ObjetosParaFiscalizacao();
 
+    protected String retornaHora(){
+        return obj.HORA;
+    }
+
     protected void realizarLoginSISF(){
         String textoUsuario = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/user").getText();
         String textoSenha = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/password").getText();
@@ -36,7 +40,7 @@ public class BasePage {
 
         String actual = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").getText();
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").click();
-        new BaseTest().esperaCarregar(20000);
+        new BaseTest().esperaCarregar(3000);
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_prox").click();
     }
 
@@ -83,10 +87,11 @@ public class BasePage {
         } while (contador < qtdFotos);
     }
 
-    protected void CapturarFotosGaleria_LOTE_Randomico()
+    protected void capturarFotosGaleria_LOTE_Randomico(int numeroMaxFotos)
     {
         int contador = 0;
-        int numeroLoop = numeroDeFotosRandomico(0, 10);
+        int numeroLoop = numeroDeFotosRandomico(1, numeroMaxFotos);
+        System.out.println("Total de Fotos: " + numeroLoop);
         do{
             getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_camera").click();
             getDriver().findElementById("com.android.camera:id/shutter_button").click();
@@ -161,8 +166,7 @@ public class BasePage {
 
     protected int numeroDeFotosRandomico(int min, int max){
         Random rdn = new Random();
-        return rdn.nextInt(min-max);
+        return rdn.nextInt((max + 1 - min) + min);
     }
-
 
 }

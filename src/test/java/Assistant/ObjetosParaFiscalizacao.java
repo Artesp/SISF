@@ -1,6 +1,13 @@
 package Assistant;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class ObjetosParaFiscalizacao {
+
+    //Hora atual
+    public String HORA = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
 
     //Autenticação
     public String usuario = "automacao_sisf"; /*artesp/*automacao_sisf*//*testeconservacao*/

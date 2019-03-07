@@ -1,5 +1,6 @@
 package Pages;
 
+import Assistant.PathsAssistant;
 import Core.BasePage;
 import Core.BaseTest;
 import org.openqa.selenium.By;
@@ -9,8 +10,8 @@ import static Core.DriverFactory.getDriver;
 public class ConsRotinaPage extends BasePage {
 
     public void grupoSubgrupo(){
-        getDriver().findElementByXPath("//android.widget.LinearLayout[@index='2']/android.widget.LinearLayout[@index='0']/android.widget.Spinner[@index='1']").click();
-        getDriver().findElementByXPath("//android.widget.CheckedTextView[@text='Conservação de Rotina']").click();
+        getDriver().findElementByXPath(PathsAssistant.XPATH_SELECIONA_GRUPO_CLICK).click();
+        getDriver().findElementByXPath(PathsAssistant.XPATH_GRUPO_CONSERVACAO_EMERGENCIAL).click();
     }
 
     public void preencherSecaoPrazo(String tipo, String grupo, String atividade){
@@ -51,7 +52,7 @@ public class ConsRotinaPage extends BasePage {
     }
 
     public String geraTexto(){
-       return gerarTextoPraTeste();
+        return gerarTextoPraTeste();
     }
 
     public void clicarBotaoAddRetorno(){
@@ -64,5 +65,13 @@ public class ConsRotinaPage extends BasePage {
 
     public void fotosEmLote(int qtdFotos){
         capturarFotosGaleria_LOTE(qtdFotos);
+    }
+
+    public void capturaDeFotosRandomico(int numeroMaxFotos){
+        capturarFotosGaleria_LOTE_Randomico(numeroMaxFotos);
+    }
+
+    public String retornaHora(){
+        return retornaHora();
     }
 }
