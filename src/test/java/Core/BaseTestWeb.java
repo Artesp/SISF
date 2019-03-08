@@ -11,7 +11,7 @@ import static Core.DriverFactoryWeb.*;
 public class BaseTestWeb {
 
 
-    private String endereco = "http://extranet.hom.artesp.sp.gov.br:8080/sisf-web/visao/login/loginpage.html";
+    private String endereco = "http://extranet.hom.artesp.sp.gov.br:8080/sisf-web/visao/login/loginpage.html?0";
 
     @Before
     public void testInitialize(){

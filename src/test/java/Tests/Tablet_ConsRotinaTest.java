@@ -3,9 +3,11 @@ package Tests;
 import Assistant.InterfaceTabletWeb;
 import Assistant.MenuConsRotinaAssistant;
 import Assistant.MenuConsRotinaRetornoAssistant;
-import Assistant.PathsAssistant;
 import Core.BaseTest;
-import Pages.*;
+import Pages.ConsRotinaPage;
+import Pages.ConsRotinaRetornoPage;
+import Pages.LoginPage;
+import Pages.ModulosPage;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -13,9 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static Assistant.MenuConsRotinaAssistant.*;
-import static Assistant.MenuConsRotinaRetornoAssistant.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class Tablet_ConsRotinaTest extends BaseTest {
 
@@ -23,8 +23,6 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     private LoginPage loginPage = new LoginPage();
     private ConsRotinaPage page = new ConsRotinaPage();
     private ConsRotinaRetornoPage pageRetorno = new ConsRotinaRetornoPage();
-    private MenuConsRotinaPage menuPage = new MenuConsRotinaPage();
-    private MenuConsRotinaRetornoPage menuPageRetorno = new MenuConsRotinaRetornoPage();
 
 
     @Test
@@ -51,19 +49,19 @@ public class Tablet_ConsRotinaTest extends BaseTest {
             botaoAddFiscalizacao();
             page.grupoSubgrupo();
 
-            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_RODOVIA);
+            navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_RODOVIA);
             page.preencherRodoviaConservacao();
 
-            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
+            navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
             page.preencherSecaoPrazo("Pavimento", "Revestimento Primário", "Reconformação de vias secundárias");
 
-            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_TRECHO);
+            navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_TRECHO);
             page.preencherSecaoTrecho();
 
-            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_OBS_FISCALIZACAO);
+            navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_OBS_FISCALIZACAO);
             page.preencherSecaoObservacao();
 
-            menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
+            navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
             page.capturaDeFotosRandomico(5);
 
             salvar();
@@ -111,7 +109,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
 
         selecionaFiscalizacao();
         botaoEditarFiscalizacao();
-        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
+        navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
 
         page.preencherSecaoPrazo("Estruturas","Estruturas","Pichações e vandalismo");
 
@@ -148,34 +146,34 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     }
 
     private void preencherDadosFiscalizacao(){
-        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_RODOVIA);
+        navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_RODOVIA);
         page.preencherRodoviaConservacao();
 
-        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
+        navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
         page.preencherSecaoPrazo("Pavimento", "Revestimento Primário", "Reconformação de vias secundárias");
 
-        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_TRECHO);
+        navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_TRECHO);
         page.preencherSecaoTrecho();
 
-        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_OBS_FISCALIZACAO);
+        navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_OBS_FISCALIZACAO);
         page.preencherSecaoObservacao();
 
-        menuPage.navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
+        navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
         page.fotosEmLote(4);
 
     }
 
     private void preencherDadosFiscalizacaoRetorno(){
-        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_SITUACAO);
+        navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_SITUACAO);
         pageRetorno.preencherSecaoSituacao();
 
-        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_PARECERCONCESSIONARIA);
+        navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_PARECERCONCESSIONARIA);
         pageRetorno.preencherSecaoParecerConcessionaria();
 
-        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_OBSERVACAO);
+        navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_OBSERVACAO);
         pageRetorno.preencherSecaoObservacao();
 
-        menuPageRetorno.navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_GALERIA);
+        navegarMenuPrincipal(MenuConsRotinaRetornoAssistant.MENUSISFRET_GALERIA);
         pageRetorno.preencherSecaoGaleria(2);
     }
 }

@@ -11,7 +11,7 @@ public class ConsRotinaPage extends BasePage {
 
     public void grupoSubgrupo(){
         getDriver().findElementByXPath(PathsAssistant.XPATH_SELECIONA_GRUPO_CLICK).click();
-        getDriver().findElementByXPath(PathsAssistant.XPATH_GRUPO_CONSERVACAO_EMERGENCIAL).click();
+        getDriver().findElementByXPath(PathsAssistant.XPATH_GRUPO_CONSERVACAO_ROTINA).click();
     }
 
     public void preencherSecaoPrazo(String tipo, String grupo, String atividade){
