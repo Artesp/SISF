@@ -71,7 +71,7 @@ public class ConsRotinaPage extends BasePage {
         capturarFotosGaleria_LOTE_Randomico(numeroMaxFotos);
     }
 
-    public String retornaHora(){
+    public String horaAtual(){
         return retornaHora();
     }
 }

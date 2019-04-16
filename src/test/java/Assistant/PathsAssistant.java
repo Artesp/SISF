@@ -12,7 +12,7 @@ public class PathsAssistant {
     public static final String XPATH_DATA_PREVISTA_TERMINO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/vnt_data_termino']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/*[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/dt_button']";
     public static final String XPATH_DATA_EFETIVA_INICIO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/vnt_data_efetiva']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/*[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/dt_button']";
 
-    public static final String ID_CAMPO_ENVENTO = "br.gov.sp.artesp.sisf.mobile:comp/txt_editText";
+    public static final String ID_CAMPO_EVENTO = "br.gov.sp.artesp.sisf.mobile:comp/txt_editText";
     public static final String ID_BOTAO_REC_MOBILIZADOS = "br.gov.sp.artesp.sisf.mobile:comp/tgl_button";
     public static final String ID_CAMPO_REC_MOBILIZADOS = "br.gov.sp.artesp.sisf.mobile:comp/txtspl_editText";
     public static final String ID_BOTAO_SINALIZACAO_LOCAL = "br.gov.sp.artesp.sisf.mobile:comp/tgl_button";
@@ -20,7 +20,8 @@ public class PathsAssistant {
     public static final String ID_CAMPO_ANALISE_PRELIMINAR = "br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText";
     public static final String ID_CAMPO_PREV_MED_CORRETIVAS= "br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText";
 
-
+    //Mensagem de sucesso: 'Fiscalizacao ID: 1 (<Código Web>) Enviado com sucesso!'
+    public static final String XPATH_MSG_ENVIO_COM_SUCESSO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']/android.widget.TextView[@index='0']";
 
     //Conservação de Rotina
     public static final String XPATH_GRUPO_CONSERVACAO_ROTINA = "//android.widget.CheckedTextView[@text='Conservação de Rotina']";

@@ -107,7 +107,7 @@ public class BasePage {
     }
 
     protected void botaoAddRetorno(){
-        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_add_retorno").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add_retorno").click();
     }
 
     protected void scroolConcessionaria(){

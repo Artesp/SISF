@@ -25,6 +25,8 @@ public class DriverFactory {
         capacidade.setCapability("noReset", "true");
         capacidade.setCapability("appPackage", "br.gov.sp.artesp.sisf.mobile");
         capacidade.setCapability("appActivity", "br.gov.sp.artesp.sisf.mobile.LoginActivity");
+        capacidade.setCapability("unicodeKeyboard", true);
+        capacidade.setCapability("resetKeyboard", true);
         capacidade.setCapability("newCommandTimeout", 300);
 
         try {
@@ -32,7 +34,9 @@ public class DriverFactory {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+        driver.hideKeyboard();
         driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+
     }
 
     public static void killDriver(){

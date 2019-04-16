@@ -18,7 +18,7 @@ public class Tablet_ConsEmergencialPage extends BasePage {
     }
 
     public void preencherSecaoEvento(){
-        getDriver().findElementById(PathsAssistant.ID_CAMPO_ENVENTO).sendKeys(gerarTextoPraTeste());
+        getDriver().findElementById(PathsAssistant.ID_CAMPO_EVENTO).sendKeys(gerarTextoPraTeste());
         getDriver().findElementByXPath(PathsAssistant.XPATH_DATA_PREVISTA_INICIO).click();
         new BaseTest().modalData_ScroollUpDia();
         getDriver().findElementByXPath(PathsAssistant.XPATH_DATA_PREVISTA_TERMINO).click();
@@ -47,5 +47,14 @@ public class Tablet_ConsEmergencialPage extends BasePage {
 
     public void capturarFoto(){
         capturarFotosGaleria();
+    }
+
+    public void clicarBotaoAddRetorno(){
+        botaoAddRetorno();
+    }
+
+    public void alterarCampos(String campo, String valor){
+        getDriver().findElementById(campo).clear();
+        getDriver().findElementById(campo).sendKeys(valor);
     }
 }

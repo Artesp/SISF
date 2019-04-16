@@ -67,7 +67,7 @@ public class BaseTest {
     }
 
     public void botaoEditarFiscalizacao(){
-        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_edit").click();
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao").click();
     }
 
     public void selecionaFiscalizacao(){
@@ -164,6 +164,11 @@ public class BaseTest {
     public boolean campoPreenchimentoBloqueado(By by) {
         boolean enableIsFalse = getDriver().findElement(by).isEnabled();
         return enableIsFalse;
+    }
+
+    public String recuperarIDFiscalizacao(String msgSucesso){
+        String[] words = msgSucesso.split(" ");
+        return words[3];
     }
 
 }

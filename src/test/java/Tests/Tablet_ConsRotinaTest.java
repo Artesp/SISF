@@ -41,7 +41,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     public void gerarFiscalizacao_ComSucesso_EmLote(){
 
         int contador = 0;
-        int numeroFiscalizacoes = 3;
+        int numeroFiscalizacoes = 10;
         loginPage.realizaLogin();
         modulo.moduloConservacao();
 
@@ -65,11 +65,11 @@ public class Tablet_ConsRotinaTest extends BaseTest {
             page.capturaDeFotosRandomico(5);
 
             salvar();
-            String fisc = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo"));
-            assertEquals("Conservação de Rotina", fisc);
+//            String fisc = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo"));
+//            assertEquals("Conservação de Rotina", fisc);
             String horaS = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
-            enviar(3000);
-            System.out.println("Fiscalização Enviada: Nº " + contador + " " + page.retornaHora() );
+            //enviar(3000);
+            System.out.println("Fiscalização Enviada: Nº " + contador + " " + horaS);
 
             contador++;
 
