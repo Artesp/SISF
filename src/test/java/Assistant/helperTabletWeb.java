@@ -5,7 +5,7 @@ import Pages.FiscalizacoesEnviadasPage;
 import Pages.LoginWebPage;
 import Pages.ModulosWebPage;
 
-public class InterfaceTabletWeb extends BaseTestWeb {
+public class helperTabletWeb extends BaseTestWeb {
 
     ObjetosParaFiscalizacao obj = new ObjetosParaFiscalizacao();
     LoginWebPage pageLoginWeb = new LoginWebPage();

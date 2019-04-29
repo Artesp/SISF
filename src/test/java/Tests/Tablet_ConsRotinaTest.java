@@ -1,8 +1,9 @@
 package Tests;
 
-import Assistant.InterfaceTabletWeb;
+import Assistant.helperTabletWeb;
 import Assistant.MenuConsRotinaAssistant;
 import Assistant.MenuConsRotinaRetornoAssistant;
+import Assistant.PathsAssistant;
 import Core.BaseTest;
 import Pages.ConsRotinaPage;
 import Pages.ConsRotinaRetornoPage;
@@ -31,7 +32,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         preencherDadosFiscalizacao();
         salvar();
 
-        String fisc = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo"));
+        String fisc = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals("Conservação de Rotina", fisc);
 
         enviar(3000);
@@ -41,7 +42,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     public void gerarFiscalizacao_ComSucesso_EmLote(){
 
         int contador = 0;
-        int numeroFiscalizacoes = 10;
+        int numeroFiscalizacoes = 3;
         loginPage.realizaLogin();
         modulo.moduloConservacao();
 
@@ -88,14 +89,14 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         fecharSistemaSISF();
         classCleanup();
         esperaCarregar(3000);
-        new InterfaceTabletWeb().marcarRetorno();
+        new helperTabletWeb().marcarRetorno();
 
         testInitialize();
         preparaCenarioRetorno();
         preencherDadosFiscalizacaoRetorno();
         salvar();
 
-        String fiscRetorno = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_retorno_lbl"));
+        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals("(RETORNO)", fiscRetorno);
 
         enviar(3000);

@@ -1,5 +1,6 @@
 package Core;
 
+import Assistant.PathsAssistant;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.WaitOptions;
@@ -13,6 +14,7 @@ import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
 
+import static Assistant.PathsAssistant.*;
 import static Core.DriverFactory.*;
 
 public class BaseTest {
@@ -71,7 +73,7 @@ public class BaseTest {
     }
 
     public void selecionaFiscalizacao(){
-        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/bkgnd").click();
+        getDriver().findElementById(ID_GRUPO_FISCALIZACAO).click();
     }
 
     public void deletarFiscalizacao(){
@@ -102,6 +104,8 @@ public class BaseTest {
 
     public void enviar(int milisegundos){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_enviar").click();
+        boolean fiscalizacaoEnviada = elementoExiste(By.id("br.gov.sp.artesp.sisf.mobile:id/error_msg_list"));
+        if (!fiscalizacaoEnviada)
         new BaseTest().esperaCarregar(milisegundos);
     }
 

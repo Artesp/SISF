@@ -1,6 +1,6 @@
 package Tests;
 
-import Assistant.InterfaceTabletWeb;
+import Assistant.helperTabletWeb;
 import Assistant.MenuConsEmergencialAssistant;
 import Assistant.MenuConsEmergencialRetornoAssistant;
 import Assistant.PathsAssistant;
@@ -26,7 +26,7 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         prepararCenario();
         preencherFiscalizacao();
         salvar();
-        String fisc = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao"));
+        String fisc = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals("Conservação Emergencial", fisc);
         enviar(2000);
     }
@@ -43,14 +43,14 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         fecharSistemaSISF();
         classCleanup();
         esperaCarregar(1000);
-        new InterfaceTabletWeb().marcarRetorno();
+        new helperTabletWeb().marcarRetorno();
 
         testInitialize();
         prepararCenarioRetorno();
         preencherFiscalizacaoRetorno();
         salvar();
 
-        String fiscRetorno = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvCodControle"));
+        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals(codigoWeb, fiscRetorno);
 
         enviar(3000);
@@ -62,7 +62,7 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         preencherFiscalizacao();
         gravar();
 
-        String fisc = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvCodControle"));
+        String fisc = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals("Conservação Emergencial", fisc);
 
         selecionaFiscalizacao();
@@ -71,7 +71,7 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         alterarFiscalizacao();
         salvar();
 
-        String fiscAlterada = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvCodControle"));
+        String fiscAlterada = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals("Conservação Emergencial", fiscAlterada);
 
         enviar(1000);

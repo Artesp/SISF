@@ -20,9 +20,6 @@ public class PathsAssistant {
     public static final String ID_CAMPO_ANALISE_PRELIMINAR = "br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText";
     public static final String ID_CAMPO_PREV_MED_CORRETIVAS= "br.gov.sp.artesp.sisf.mobile:comp/txtarea_editText";
 
-    //Mensagem de sucesso: 'Fiscalizacao ID: 1 (<Código Web>) Enviado com sucesso!'
-    public static final String XPATH_MSG_ENVIO_COM_SUCESSO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']/android.widget.TextView[@index='0']";
-
     //Conservação de Rotina
     public static final String XPATH_GRUPO_CONSERVACAO_ROTINA = "//android.widget.CheckedTextView[@text='Conservação de Rotina']";
 
@@ -30,8 +27,20 @@ public class PathsAssistant {
     public static final String ID_WIFI_INTENSIDADE_DE_SINAL = "br.gov.sp.artesp.sisf.mobile:id/intensidade_sinal";
     public static final String ID_WIFI_DURACAO_CHAMADA = "br.gov.sp.artesp.sisf.mobile:id/duracao_chamada";
 
+    //Operação - Call Box
+    public static final String XPATH_GRUPO_CALLBOX = "//*[@text='Call Box']";
+    public static final String ID_CALLBOX_BOTAO_ADD_CALLBOX = "br.gov.sp.artesp.sisf.mobile:id/lstcbn_btn_add";
+    public static final String ID_CALLBOX_BOTAO_LUPA_RA = "br.gov.sp.artesp.sisf.mobile:id/lstcbn_btn_search";
+    public static final String ID_CALLBOX_LISTA_EQUIPAMENTOS = "br.gov.sp.artesp.sisf.mobile:id/listaEqtos";
+    public static final String ID_CALLBOX_CHECKBOX_RA = "br.gov.sp.artesp.sisf.mobile:id/selecionado";
+    public static final String ID_CALLBOX_TELA_EQUIPAMENTOS_BOTAO_OK = "android:id/button1";
+    public static final String ID_CALLBOX_TELA_ADICIONA_CALLBOX_BOTAO_OK = "android:id/button1";
 
+    //Mensagem de sucesso: 'Fiscalizacao ID: 1 (<Código Web>) Enviado com sucesso!'
+    public static final String XPATH_MSG_ENVIO_COM_SUCESSO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']/android.widget.TextView[@index='0']";
 
+    //Grupo da fiscalização na grid depois de salvar.
+    public static final String ID_GRUPO_FISCALIZACAO = "br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao";
 
 
 }

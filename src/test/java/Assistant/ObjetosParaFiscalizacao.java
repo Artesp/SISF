@@ -1,5 +1,8 @@
 package Assistant;
 
+import Core.BasePage;
+import Core.BaseTest;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -12,6 +15,9 @@ public class ObjetosParaFiscalizacao {
     //Autenticação
     public String usuario = "automacao_sisf"; /*artesp/*automacao_sisf*//*testeconservacao*/
     public String senha = "12345678";
+
+    //RA para testes: CAllBox
+    public static String RA = "010008002531";
 
     // Seção Rodovia
     public String Concessionaria = "VIAOESTE";
@@ -30,6 +36,6 @@ public class ObjetosParaFiscalizacao {
     public String dInstalacao = "Adequado";
 
     //Seção Observação da Fiscalização
-    public String obsFiscalizacao = "Teste";
+    public String obsFiscalizacao = "";
 
 }
