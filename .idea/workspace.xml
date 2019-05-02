@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_CallBoxAssistant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/InterfaceTabletWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/helperTabletWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,24 +23,86 @@
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="SISF" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="316" column="5" selection-start-line="316" selection-start-column="5" selection-end-line="316" selection-end-column="5" />
+              <folding>
+                <element signature="method#acessar_fiscalizacao_callbox#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#gerarFiscalizacao_Operacao_CallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarPreechimentoDoItem#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#adicionarCallBox_MaisDeUmEquipamento#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarQuestionario_ItensAdicionados#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarOrdenacaoPorLocalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#adicionarCallBox_ComMesmoRA#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarKMInicialFinalRodovia_NaoDeveSerIgualKMCallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarObrigatoriedade_Dados_de_Transmissao#1;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarRespostasQuestionario_Dados_De_Transmissao#1;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarObrigatoriedade_Dados_de_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="e#13496#13561#0" />
+                <element signature="e#13933#13961#0" />
+                <element signature="e#14224#14282#0" />
+                <element signature="method#verificarRespostasQuestionario_Dados_De_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="e#15820#15886#0" />
+                <element signature="e#17734#17996#1" />
+                <element signature="method#preprararCenario#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#preencherCheckBox_Dados_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
+                <element signature="method#preencherCheckBox_Dados_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+                <element signature="method#preencherRodovia#0;class#BasePage#0" />
+                <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
+                <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
+                <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+                <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
+                <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
+                <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
+                <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="408">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
+                <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_CallBoxPage#0" />
                 <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
+                <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_CallBoxPage#0" />
+                <element signature="method#clicarBotaoAddCallBox#0;class#Tablet_Operacao_CallBoxPage#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -57,82 +110,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="357">
+              <caret line="29" column="101" selection-start-line="27" selection-start-column="8" selection-end-line="29" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#147#148#0" expanded="true" />
-                <element signature="e#167#168#0" expanded="true" />
+                <element signature="method#clickOK_AdicionaCallBox#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+                <element signature="method#selecionaEquipamentoRA#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+                <element signature="method#respondeQuestionario#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+                <element signature="method#respondeQuestionarioInadequado#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+                <element signature="method#gerarPathParaRespostaQuestionario#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#testInitialize#0;class#BaseTest#0" />
-                <element signature="e#644#680#1" />
-                <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
-                <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
-                <element signature="method#deletarFiscalizacao#0;class#BaseTest#0" />
-                <element signature="method#salvar#0;class#BaseTest#0" />
-                <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
-                <element signature="method#esperaCarregar#0;class#BaseTest#0" />
-                <element signature="method#obterElementoPorPath#0;class#BaseTest#0" />
-                <element signature="method#listarFiscalizacoes#0;class#BaseTest#0" />
-                <element signature="method#modalData_ScroollUpDia#0;class#BaseTest#0" />
-                <element signature="method#elementoExiste#0;class#BaseTest#0" />
-                <element signature="method#campoPreenchimentoBloqueado#0;class#BaseTest#0" />
-                <element signature="method#recuperarIDFiscalizacao#0;class#BaseTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="36" column="96" selection-start-line="36" selection-start-column="96" selection-end-line="36" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="140" column="84" lean-forward="true" selection-start-line="140" selection-start-column="84" selection-end-line="140" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#acessar_fiscalizacao_callbox#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="method#gerarFiscalizacao_Operacao_CallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="e#3756#3761#0" />
-                <element signature="method#verificarPreechimentoDoItem#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="method#adicionarCallBox_MaisDeUmEquipamento#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="e#4151#4275#0" />
-                <element signature="e#5232#5237#0" />
-                <element signature="method#verificarQuestionario_ItensAdicionados#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="e#5464#5469#0" />
-                <element signature="method#verificarOrdenacaoPorLocalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="e#7106#7107#0" expanded="true" />
-                <element signature="method#preprararCenario#0;class#Tablet_Operacao_CallBoxTest#0" />
-                <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -185,17 +172,18 @@
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_CallBoxAssistant.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/InterfaceTabletWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/helperTabletWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" />
+        <option value="$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" />
       </list>
     </option>
@@ -270,7 +258,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556579472998" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556837281558" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -300,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tablet_Operacao_CallBoxTest.adicionarCallBox_ComMesmoRA">
+  <component name="RunManager" selected="JUnit.Tablet_Operacao_CallBoxTest">
     <configuration name="All_Tests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -314,7 +302,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tablet_ConsRotinaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_Operacao_CallBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -323,13 +311,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_CallBoxTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tablet_Operacao_CallBoxTest.acessar_fiscalizacao_callbox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Conservacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -339,13 +327,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="acessar_fiscalizacao_callbox" />
+      <option name="METHOD_NAME" value="verificarObrigatoriedade_Dados_de_Conservacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_ComMesmoRA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Transmissao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -355,13 +343,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="adicionarCallBox_ComMesmoRA" />
+      <option name="METHOD_NAME" value="verificarObrigatoriedade_Dados_de_Transmissao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Conservacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -371,13 +359,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="adicionarCallBox_MaisDeUmEquipamento" />
+      <option name="METHOD_NAME" value="verificarRespostasQuestionario_Dados_De_Conservacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tablet_Operacao_CallBoxTest.gerarFiscalizacao_Operacao_CallBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Transmissao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -387,7 +375,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="gerarFiscalizacao_Operacao_CallBox" />
+      <option name="METHOD_NAME" value="verificarRespostasQuestionario_Dados_De_Transmissao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -395,19 +383,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All_Tests" />
-      <item itemvalue="JUnit.Tablet_ConsRotinaTest" />
-      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.acessar_fiscalizacao_callbox" />
-      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.gerarFiscalizacao_Operacao_CallBox" />
-      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" />
-      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.adicionarCallBox_ComMesmoRA" />
+      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Transmissao" />
+      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest" />
+      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Conservacao" />
+      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Conservacao" />
+      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Transmissao" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.adicionarCallBox_ComMesmoRA" />
-        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" />
-        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.gerarFiscalizacao_Operacao_CallBox" />
-        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.acessar_fiscalizacao_callbox" />
-        <item itemvalue="JUnit.Tablet_ConsRotinaTest" />
+        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest" />
+        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Transmissao" />
+        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Transmissao" />
+        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Conservacao" />
+        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Conservacao" />
       </list>
     </recent_temporary>
   </component>
@@ -585,39 +573,46 @@
       <option name="project" value="LOCAL" />
       <updated>1555528721104</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Automatizando Tablet - CallBox - 29/04/2019">
+      <created>1556579538984</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1556579538984</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tablet_Operacao_CallBoxTest_acessar_fiscalizacao_callbox - 2019.04.29 at 14h 23m 12s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.acessar_fiscalizacao_callbox" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest - 2019.05.02 at 15h 48m 21s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_acessar_fiscalizacao_callbox - 2019.04.29 at 14h 25m 58s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.acessar_fiscalizacao_callbox" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarRespostasQuestionario_Dados_De_Conservacao - 2019.05.02 at 19h 05m 19s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Conservacao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_gerarFiscalizacao_Operacao_CallBox - 2019.04.29 at 16h 36m 50s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.gerarFiscalizacao_Operacao_CallBox" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarRespostasQuestionario_Dados_De_Conservacao - 2019.05.02 at 19h 11m 12s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Conservacao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_gerarFiscalizacao_Operacao_CallBox - 2019.04.29 at 16h 41m 04s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.gerarFiscalizacao_Operacao_CallBox" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarObrigatoriedade_Dados_de_Conservacao - 2019.05.02 at 19h 18m 48s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Conservacao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_adicionarCallBox_MaisDeUmEquipamento - 2019.04.29 at 18h 42m 39s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarRespostasQuestionario_Dados_De_Conservacao - 2019.05.02 at 19h 21m 45s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Conservacao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_adicionarCallBox_MaisDeUmEquipamento - 2019.04.29 at 18h 46m 28s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarRespostasQuestionario_Dados_De_Transmissao - 2019.05.02 at 19h 24m 01s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Transmissao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_adicionarCallBox_MaisDeUmEquipamento - 2019.04.29 at 18h 55m 01s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarObrigatoriedade_Dados_de_Transmissao - 2019.05.02 at 19h 24m 05s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Transmissao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_adicionarCallBox_MaisDeUmEquipamento - 2019.04.29 at 18h 59m 00s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarRespostasQuestionario_Dados_De_Transmissao - 2019.05.02 at 19h 26m 53s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Transmissao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_adicionarCallBox_MaisDeUmEquipamento - 2019.04.29 at 19h 02m 26s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest_verificarObrigatoriedade_Dados_de_Transmissao - 2019.05.02 at 19h 29m 28s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest.verificarObrigatoriedade_Dados_de_Transmissao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tablet_Operacao_CallBoxTest_adicionarCallBox_MaisDeUmEquipamento - 2019.04.29 at 20h 07m 26s.xml">
-      <configuration name="Tablet_Operacao_CallBoxTest.adicionarCallBox_MaisDeUmEquipamento" configurationId="JUnit" />
+    <history-entry file="Tablet_Operacao_CallBoxTest - 2019.05.02 at 19h 44m 18s.xml">
+      <configuration name="Tablet_Operacao_CallBoxTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -634,19 +629,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.24360341" />
       <window_info id="Structure" order="3" sideWeight="0.5021882" side_tool="true" weight="0.2620064" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49781182" visible="true" weight="0.26414087" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49781182" visible="true" weight="0.27481323" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7990405" weight="0.43873087" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7761194" visible="true" weight="0.3085339" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7990405" visible="true" weight="0.37417942" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7761194" weight="0.3085339" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49626866" weight="0.32827735" />
@@ -768,7 +762,8 @@
     <MESSAGE value="Implementando Testes para Conservação Emergencial - 08/03/2018" />
     <MESSAGE value="16/04/2019" />
     <MESSAGE value="17/04/2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="17/04/2019" />
+    <MESSAGE value="Automatizando Tablet - CallBox - 29/04/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatizando Tablet - CallBox - 29/04/2019" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,7 +812,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Core/BasePage.java</url>
-          <line>172</line>
+          <line>192</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
@@ -865,9 +860,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java</url>
-          <line>139</line>
+          <line>166</line>
           <properties />
-          <option name="timeStamp" value="121" />
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -886,26 +881,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/LoginWebTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -934,13 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1072,13 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -1117,16 +1078,6 @@
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#112#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1194,34 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
-            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
-            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
-            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
-            <element signature="method#grupoSubGrupo_ScrollUp#0;class#BasePage#0" />
-            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#675#676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/helperTabletWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1253,27 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="51" column="78" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#preencherWiFiEmLote#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="e#695#1711#1" />
-            <element signature="method#preencherWiFi_SemQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoIntensidadeSinal#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoFinalizaCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#preencheKmInicial#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#preencheMetros#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#selecionaSentido#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#obterCheckBoxQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#verificaRespostaCheckBox#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1300,40 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="36" column="96" selection-start-line="36" selection-start-column="96" selection-end-line="36" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -1374,17 +1242,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
+        <state relative-caret-position="156">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="51" column="78" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#preencherWiFiEmLote#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="e#695#1711#1" />
+            <element signature="method#preencherWiFi_SemQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#clicarBotaoIntensidadeSinal#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#clicarBotaoCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#clicarBotaoFinalizaCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#preencheKmInicial#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#preencheMetros#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#selecionaSentido#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#obterCheckBoxQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#verificaRespostaCheckBox#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="141" lean-forward="true" selection-start-line="11" selection-start-column="141" selection-end-line="11" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="96" selection-start-line="36" selection-start-column="96" selection-end-line="36" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/allure-results/c85abbe3-df59-4e40-aa25-6922a9eb87f5-testsuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="588" column="6" lean-forward="true" selection-start-line="588" selection-start-column="6" selection-end-line="588" selection-end-column="6" />
+          <folding>
+            <element signature="e#43042#43047#0" expanded="true" />
+            <element signature="e#43099#43104#0" expanded="true" />
+            <element signature="e#43257#43262#0" expanded="true" />
+            <element signature="e#43435#43440#0" expanded="true" />
+            <element signature="e#43479#43484#0" expanded="true" />
+            <element signature="e#50241#50246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="101" selection-start-line="27" selection-start-column="8" selection-end-line="29" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#clickOK_AdicionaCallBox#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+            <element signature="method#selecionaEquipamentoRA#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+            <element signature="method#respondeQuestionario#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+            <element signature="method#respondeQuestionarioInadequado#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+            <element signature="method#gerarPathParaRespostaQuestionario#0;class#Tablet_Operacao_CallBox_AddCallBoxPage#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="-290">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testInitialize#0;class#BaseTest#0" />
@@ -1405,32 +1362,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
+        <state relative-caret-position="207">
+          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#clicarBotaoAddCallBox#0;class#Tablet_Operacao_CallBoxPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+            <element signature="method#preencherRodovia#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
+            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
+            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
+            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="140" column="84" lean-forward="true" selection-start-line="140" selection-start-column="84" selection-end-line="140" selection-end-column="84" />
+        <state relative-caret-position="283">
+          <caret line="316" column="5" selection-start-line="316" selection-start-column="5" selection-end-line="316" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#acessar_fiscalizacao_callbox#0;class#Tablet_Operacao_CallBoxTest#0" />
             <element signature="method#gerarFiscalizacao_Operacao_CallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#3756#3761#0" />
             <element signature="method#verificarPreechimentoDoItem#0;class#Tablet_Operacao_CallBoxTest#0" />
             <element signature="method#adicionarCallBox_MaisDeUmEquipamento#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#4151#4275#0" />
-            <element signature="e#5232#5237#0" />
             <element signature="method#verificarQuestionario_ItensAdicionados#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#5464#5469#0" />
             <element signature="method#verificarOrdenacaoPorLocalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#7106#7107#0" expanded="true" />
+            <element signature="method#adicionarCallBox_ComMesmoRA#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarKMInicialFinalRodovia_NaoDeveSerIgualKMCallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarObrigatoriedade_Dados_de_Transmissao#1;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarRespostasQuestionario_Dados_De_Transmissao#1;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarObrigatoriedade_Dados_de_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="e#13496#13561#0" />
+            <element signature="e#13933#13961#0" />
+            <element signature="e#14224#14282#0" />
+            <element signature="method#verificarRespostasQuestionario_Dados_De_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="e#15820#15886#0" />
+            <element signature="e#17734#17996#1" />
             <element signature="method#preprararCenario#0;class#Tablet_Operacao_CallBoxTest#0" />
             <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preencherCheckBox_Dados_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preencherCheckBox_Dados_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
           </folding>
         </state>
       </provider>

@@ -9,6 +9,7 @@ public class MensagensPadrao {
     public static final String MEDICAO_WIFI_ERRO_DE_VALIDACAO = "Dados da rodovia inválidos ('km' e 'm' fora do limite da rodovia).";
     public static final String MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO = "Não pode exceder número máximo de medições: 50";
     public static final String ADICIONAR_CALLBOX_RA_DUPLICADO = "Já existe item com Registro Artesp";
+    public static final String QUESTIONARIO_CALLBOX_CAMPO_OBRIGATORIO = "É obrigatório preenchimento dos campos para adicionar um novo item";
     public static final String QUESTIONARIO_HOUVE_CONEXAO_AUSENCIA_DE_SINAL = " Ausência de Sinal";
     public static final String QUESTIONARIO_HOUVE_CONEXAO_SINAL_INTERMITENTE = " Sinal intermitente";
     public static final String QUESTIONARIO_HOUVE_ATENDIMENTO_NAO_REALIZA_CHAMADA = " Não Realiza Chamada";

@@ -2,6 +2,7 @@ package Pages;
 
 import Assistant.PathsAssistant;
 import Core.BasePage;
+import org.openqa.selenium.By;
 
 import static Core.DriverFactory.getDriver;
 
@@ -31,6 +32,10 @@ public class Tablet_Operacao_CallBoxPage extends BasePage {
 
     public void clicarBotaoAddCallBox(){
         getDriver().findElementById(PathsAssistant.ID_CALLBOX_BOTAO_ADD_CALLBOX).click();
+    }
+
+    public void rolarTelaQuestionario_Up(){
+        scroolUp_Tela(By.id("br.gov.sp.artesp.sisf.mobile:id/item_questionario2"));
     }
 
 }

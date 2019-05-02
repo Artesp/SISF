@@ -4,6 +4,7 @@ import Assistant.ObjetosParaFiscalizacao;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 
 import java.time.Duration;
@@ -168,6 +169,25 @@ public class BasePage {
                 .release()
                 .perform();
     }
+
+    protected void scroolUp_Tela(By by){
+        Dimension tela = getDriver().findElement(by).getSize();
+
+        int startX = tela.width;
+        int startY = tela.height;
+        int endX = startX - 2;
+        int endY = startY - 100;
+
+        PointOption point = new PointOption();
+        WaitOptions espera = new WaitOptions();
+
+        new TouchAction(getDriver()).press(point.withCoordinates(startX, startY))
+                .waitAction(espera.withDuration(Duration.ofMillis(500)))
+                .moveTo(point.withCoordinates(endX, endY))
+                .release()
+                .perform();
+    }
+
 
     protected int numeroDeFotosRandomico(int min, int max){
         Random rdn = new Random();

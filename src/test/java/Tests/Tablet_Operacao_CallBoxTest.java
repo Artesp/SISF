@@ -1,22 +1,18 @@
 package Tests;
 
-import Assistant.MensagensPadrao;
-import Assistant.Menu_Operacao_CallBoxAssistant;
-import Assistant.ObjetosParaFiscalizacao;
-import Assistant.PathsAssistant;
+import Assistant.*;
 import Core.BaseTest;
 import Pages.LoginPage;
 import Pages.ModulosPage;
 import Pages.Tablet_Operacao_CallBoxPage;
 import Pages.Tablet_Operacao_CallBox_AddCallBoxPage;
-import com.sun.org.apache.xpath.internal.operations.Equals;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.springframework.util.Assert;
 
 import static org.junit.Assert.assertEquals;
-import static org.springframework.util.Assert.*;
+import static org.junit.Assert.assertNotEquals;
+import static org.springframework.util.Assert.isTrue;
 
 public class Tablet_Operacao_CallBoxTest extends BaseTest {
 
@@ -137,11 +133,188 @@ public class Tablet_Operacao_CallBoxTest extends BaseTest {
             preencherQuestionarioCallBox();
             pageAddCallbox.clickOK_AdicionaCallBox();
         }
-            isTrue(elementoExiste(By.xpath("//*[@text='"+MensagensPadrao.ADICIONAR_CALLBOX_RA_DUPLICADO+" "+RA_Equipamentos[0]+"']")),
-                    "Número de RA deve ser exibido na lista de callbox incluidos.");
+        isTrue(elementoExiste(By.xpath("//*[@text='"+MensagensPadrao.ADICIONAR_CALLBOX_RA_DUPLICADO+" "+RA_Equipamentos[0]+"']")),
+                "Número de RA deve ser exibido na lista de callbox incluidos.");
 
     }
 
+    @Test //"MTM_ID 3692: RVN3 - Verificar preenchimento automatico de campos da seção Rodovia"
+    public void verificarKMInicialFinalRodovia_NaoDeveSerIgualKMCallBox(){
+        //1 - Gerar uma fiscalização de call box com dados válidos, e selecionar um item de equipamento e preenchelo com um RA.
+        // Retornar a seção Rodovia e verificar os campos Inical, +Mts, Final, +Mts e Sentido.
+        //Esperado: O sistema não deve sobreescrever com os dados de localização do equipamento, os dados preenchidos manualmente da seção Rodovia.
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        page.clicarBotaoAddCallBox();
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+
+        String KMInicialFinalCallBox = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/kmInicial"));
+        String sentidoCallBox = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/sentido"));
+        preencherQuestionarioCallBox();
+        pageAddCallbox.clickOK_AdicionaCallBox();
+
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_RODOVIA);
+        String KMInicialRodovia = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lczcfsclzc_inicial_text"));
+        String MTSInicialRodovia = obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lczcfsclzc_mtsini_text"));
+        String mesclaStringsRodovia = KMInicialRodovia + "+" + MTSInicialRodovia;
+        String sentidoRodovia = obterTextoElemento(By.xpath("//android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/rod_sentido_spnspl']" +
+                "/android.widget.LinearLayout[@index='0']" +
+                "/android.widget.Spinner[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/spnspl_spinner']" +
+                "/android.widget.TextView[@index='0']"));
+
+        assertNotEquals(mesclaStringsRodovia, KMInicialFinalCallBox);
+        assertNotEquals(sentidoRodovia, sentidoCallBox);
+
+
+
+
+
+
+    }
+
+    @Test //"MTM_ID 3696: Tabela 2 - Call Box - Verificar campos - Dados de Transmissão"
+    public void verificarObrigatoriedade_Dados_de_Transmissao(){
+        //1 - Gerar fiscalização de Call Box, e acessar a seção Call Box.
+        //Esperado: O sistema exibe o botão para adicionar  um item de call box
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        isTrue(elementoExiste(By.id(PathsAssistant.ID_CALLBOX_BOTAO_ADD_CALLBOX)), "Tela deve conter o botão '+' para adicionar um call box");
+        //2 - Selecionar o botão "+"
+        //Esperado: O sistema exibe o campo alvo dos testes.
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO)),"Deve ser exibido o questionário Dados de Transmissão");
+        //3 - Verificar obrigatoriedade do campo alvo Radio Button
+        //Esperado: O campo Radio button é obrigatório
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+
+        isTrue(elementoExiste(By.xpath("//*[@text='"+MensagensPadrao.QUESTIONARIO_CALLBOX_CAMPO_OBRIGATORIO+"']")),
+                "Perguntas do questonário devem ser de preenchimento obrigatório.");
+
+    }
+
+    @Test //"MTM_ID 3696: Tabela 2 - Call Box - Verificar campos - Dados de Transmissão"
+    public void verificarRespostasQuestionario_Dados_De_Transmissao(){
+        //1 - Verificar opções do campo Radio Button
+        //Esperado: O sistema deve exibir as opções Adequado, Inadequado, Inexistente
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO)),"Deve ser exibido o questionário Dados de Transmissão");
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        //2 - Selecionar para o campo alvo Radio Button a opção Inadequado
+        //Esperado: O sistema exibe as opções com checkbox Sem Sinal, Não Conecta, CCO Não Ouve, Ruído , Áudio Baixo.
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,"Inadequado");
+        String [] respostaQuestao = new String[5];
+        respostaQuestao[0] = Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_SEM_SINAL;
+        respostaQuestao[1] = Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_NAO_CONECTA;
+        respostaQuestao[2] = Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_CCO_NAO_OUVE;
+        respostaQuestao[3] = Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_RUIDO;
+        respostaQuestao[4] = Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_AUDIO_BAIXO;
+        for(int i = 0;i < respostaQuestao.length;i++) {
+            isTrue(elementoExiste(By.xpath(pageAddCallbox.gerarPathParaRespostaQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,
+                    respostaQuestao[i]))), "O sistema deve exibir as respostas do questionário");
+        }
+        //3 - Selecionar várias opções exibidas
+        //Esperado: O usuário pode selecionar múltiplas opções, as opções não são obrigatórias
+        preencherCheckBox_Dados_Transmissao();
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+        isTrue(elementoExiste(By.xpath("//*[@text='"+ObjetosParaFiscalizacao.RA+"']")), "Número de RA deve ser exibido na lista de callbox incluidos.");
+        salvar();
+        enviar(3000);
+    }
+
+    @Test //"MTM_ID 3794: Tabela 2 - Call Box - Verificar campos - Dados de Conservação"
+    public void verificarObrigatoriedade_Dados_de_Conservacao(){
+        //1 - Gerar fiscalização de Call Box, e acessar a seção Call Box.
+        //Esperado: O sistema exibe o botão para adicionar  um item de call box
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        isTrue(elementoExiste(By.id(PathsAssistant.ID_CALLBOX_BOTAO_ADD_CALLBOX)), "Tela deve conter o botão '+' para adicionar um call box");
+        //2 - Selecionar o botão "+"
+        //Esperado: O sistema exibe o campo alvo dos testes.
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO)),"Deve ser exibido o questionário Dados de Conservação");
+        //3 - Verificar obrigatoriedade do campo alvo Radio Button
+        //Esperado: O campo Radio button é obrigatório
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+
+        isTrue(elementoExiste(By.xpath("//*[@text='"+MensagensPadrao.QUESTIONARIO_CALLBOX_CAMPO_OBRIGATORIO+"']")),
+                "Perguntas do questonário devem ser de preenchimento obrigatório.");
+    }
+
+    @Test //"MTM_ID 3794: Tabela 2 - Call Box - Verificar campos - Dados de Conservação"
+    public void verificarRespostasQuestionario_Dados_De_Conservacao(){
+        //1 - Verificar opções do campo Radio Button
+        //Esperado: O sistema deve exibir as opções Adequado, Inadequado, Inexistente
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO)),"Deve ser exibido o questionário Dados de Transmissão");
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        //2 - Selecionar para o campo alvo Radio Button a opção Inadequado
+        //Esperado: O sistema exibe as opções com checkbox
+        // Ausência de Gabinete
+        //Totem Sujo
+        //Botão de Chamada
+        //Elementos de Fixação
+        //Telas e Tampas Danificadas ou Quebradas
+        //Pontos de Ferrugem
+        //Falta de Aparelho
+        //Pichados
+        //Falta de Drenagem no Local
+        //Entorno Sujo
+        //Mal Conservado
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,"Inadequado");
+        page.rolarTelaQuestionario_Up();
+        String [] respostaQuestao = new String[11];
+        respostaQuestao[0] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_AUSENCIA_DE_GABINETE;
+        respostaQuestao[1] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_TOTEM_SUJO;
+        respostaQuestao[2] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_BOTAO_DE_CHAMADA;
+        respostaQuestao[3] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_ELEMENTOS_DE_FIXACAO;
+        respostaQuestao[4] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_TELAS_E_TAMPAS_DANIFICADAS_QUEBRADAS;
+        respostaQuestao[5] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_PONTOS_DE_FERRUGEM;
+        respostaQuestao[6] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_FALTA_DE_APARELHO;
+        respostaQuestao[7] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_PICHADOS;
+        respostaQuestao[8] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_FALTA_DE_DRENAGEM_NO_LOCAL;
+        respostaQuestao[9] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_ENTORNO_SUJO;
+        respostaQuestao[10] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_MAL_CONSERVADO;
+
+        for(int i = 0;i < respostaQuestao.length;i++) {
+            isTrue(elementoExiste(By.xpath(pageAddCallbox.gerarPathParaRespostaQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                    respostaQuestao[i]))), "O sistema deve exibir as respostas do questionário");
+        }
+        //3 - Selecionar várias opções exibidas
+        //Esperado: O usuário pode selecionar múltiplas opções, as opções não são obrigatórias
+        preencherCheckBox_Dados_Conservacao();
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+        isTrue(elementoExiste(By.xpath("//*[@text='"+ObjetosParaFiscalizacao.RA+"']")), "Número de RA deve ser exibido na lista de callbox incluidos.");
+        salvar();
+        enviar(3000);
+    }
 
 
     private void preencherQuestionarioCallBox() {
@@ -162,6 +335,44 @@ public class Tablet_Operacao_CallBoxTest extends BaseTest {
         page.preencherObservacao(page.gerarTextoParaTeste());
         navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_GALERIA);
         page.preencherGaleria();
+    }
+
+    private void preencherCheckBox_Dados_Transmissao(){
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_SEM_SINAL);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_NAO_CONECTA);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_CCO_NAO_OUVE);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_RUIDO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_TRANSMISSAO_AUDIO_BAIXO);
+    }
+
+    private void preencherCheckBox_Dados_Conservacao(){
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_AUSENCIA_DE_GABINETE);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_TOTEM_SUJO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_BOTAO_DE_CHAMADA);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_ELEMENTOS_DE_FIXACAO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_TELAS_E_TAMPAS_DANIFICADAS_QUEBRADAS);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_PONTOS_DE_FERRUGEM);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_FALTA_DE_APARELHO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_PICHADOS);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_FALTA_DE_DRENAGEM_NO_LOCAL);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_ENTORNO_SUJO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_MAL_CONSERVADO);
     }
 
 }

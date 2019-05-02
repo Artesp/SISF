@@ -3,6 +3,7 @@ package Pages;
 import Assistant.PathsAssistant;
 import Assistant.Questionario_Operacao_CallBoxAssistant;
 import Core.BasePage;
+import org.openqa.selenium.By;
 
 import static Core.DriverFactory.getDriver;
 
@@ -37,6 +38,20 @@ public class Tablet_Operacao_CallBox_AddCallBoxPage extends BasePage {
                 "/android.widget.RadioGroup[@index='2']" +
                 "/*[@text='"+opcao+"']";
         getDriver().findElementByXPath(path).click();
+    }
+
+    public void respondeQuestionarioInadequado(String questao, String respostaCheckBox){
+        String path = gerarPathParaRespostaQuestionario(questao, respostaCheckBox);
+        getDriver().findElement(By.xpath(path)).click();
+    }
+
+    public String gerarPathParaRespostaQuestionario(String questao, String respostaCheckBox){
+        String path = "//*[@resource-id='"+questao+"']" +
+                "/android.widget.LinearLayout[@index='0']" +
+                "/android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:id/checkboxgroup']" +
+                "/android.widget.LinearLayout[@index='0']" +
+                "/android.widget.CheckBox[@text='"+respostaCheckBox+"']";
+        return path;
     }
 
 }
