@@ -13,8 +13,8 @@ public class ObjetosParaFiscalizacao {
     public String HORA = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
 
     //Autenticação
-    public String usuario = "automacao_sisf"; /*artesp/*automacao_sisf*//*testeconservacao*/
-    public String senha = "12345678";
+    public static String usuario = "automacao_sisf"; /*artesp/*automacao_sisf*//*testeconservacao*/
+    public static String senha = "12345678";
 
     //RA para testes: CAllBox
     public static String RA = "010008002531";

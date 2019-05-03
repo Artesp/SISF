@@ -20,13 +20,13 @@ public class BaseTestWeb {
 
     @After
     public void tearDown(){
-        getNav().close();
+        fecharNavegador();
     }
 
-    @AfterClass
+   /* @AfterClass
     public static void classCleanup(){
         killNav();
-    }
+    }*/
 
     public void abrirNavegador(){
 
@@ -35,7 +35,7 @@ public class BaseTestWeb {
     }
 
     public void fecharNavegador(){
-        getNav().close();
+        killNav();
     }
 
     public void esperaJanelaCarregar(int milisegundos){

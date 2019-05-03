@@ -316,6 +316,136 @@ public class Tablet_Operacao_CallBoxTest extends BaseTest {
         enviar(3000);
     }
 
+    @Test //"MTM_ID 3795: Tabela 2 - Call Box - Verificar campos - Dados de Segurança"
+    public void verificarObrigatoriedade_Dados_de_Seguranca(){
+        //1 - Gerar fiscalização de Call Box, e acessar a seção Call Box.
+        //Esperado: O sistema exibe o botão para adicionar  um item de call box
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        isTrue(elementoExiste(By.id(PathsAssistant.ID_CALLBOX_BOTAO_ADD_CALLBOX)), "Tela deve conter o botão '+' para adicionar um call box");
+        //2 - Selecionar o botão "+"
+        //Esperado: O sistema exibe o campo alvo dos testes.
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA)),"Deve ser exibido o questionário Dados de Segurança");
+        //3 - Verificar obrigatoriedade do campo alvo Radio Button
+        //Esperado: O campo Radio button é obrigatório
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+
+        isTrue(elementoExiste(By.xpath("//*[@text='"+MensagensPadrao.QUESTIONARIO_CALLBOX_CAMPO_OBRIGATORIO+"']")),
+                "Perguntas do questonário devem ser de preenchimento obrigatório.");
+    }
+
+    @Test //"MTM_ID 3795: Tabela 2 - Call Box - Verificar campos - Dados de Segurança"
+    public void verificarRespostasQuestionario_Dados_De_Seguranca(){
+        //1 - Verificar opções do campo Radio Button
+        //Esperado: O sistema deve exibir as opções Adequado, Inadequado, Inexistente
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA)),"Deve ser exibido o questionário Dados de Segurança");
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        //2 - Selecionar para o campo alvo Radio Button a opção Inadequado
+        //Esperado: O sistema exibe as opções com checkbox
+        //Barreira e Guarda Corpos de Proteção Ausentes
+        //Mau Estado de Conservação
+        //Danificados
+        //Ausência de Sinalização de Segurança
+        //Ausência de Defensa Metálica ou Barreira
+        //Ausência de Muro de Arrimo
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,"Inadequado");
+        String [] respostaQuestao = new String[6];
+        respostaQuestao[0] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_BARREIRA_E_GUARDA_COPOS;
+        respostaQuestao[1] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_MAU_ESTADO_DE_CONSERVACAO;
+        respostaQuestao[2] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_DANIFICADOS;
+        respostaQuestao[3] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_AUSENCIA_DE_SINALIZACAO_SEGURANCA;
+        respostaQuestao[4] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_AUSENCIA_DE_DENFENSA_METALICA;
+        respostaQuestao[5] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_AUSENCIA_DE_MURO_DE_ARRIMO;
+        for(int i = 0;i < respostaQuestao.length;i++) {
+            isTrue(elementoExiste(By.xpath(pageAddCallbox.gerarPathParaRespostaQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                    respostaQuestao[i]))), "O sistema deve exibir as respostas do questionário");
+        }
+        //3 - Selecionar várias opções exibidas
+        //Esperado: O usuário pode selecionar múltiplas opções, as opções não são obrigatórias
+        preencherCheckBox_Dados_Seguranca();
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+        isTrue(elementoExiste(By.xpath("//*[@text='"+ObjetosParaFiscalizacao.RA+"']")), "Número de RA deve ser exibido na lista de callbox incluidos.");
+        salvar();
+        enviar(3000);
+    }
+
+    @Test //"MTM_ID 3796: Tabela 2 - Call Box - Verificar campos - Dados de Instalação"
+    public void verificarObrigatoriedade_Dados_de_Instalacao(){
+        //1 - Gerar fiscalização de Call Box, e acessar a seção Call Box.
+        //Esperado: O sistema exibe o botão para adicionar  um item de call box
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        isTrue(elementoExiste(By.id(PathsAssistant.ID_CALLBOX_BOTAO_ADD_CALLBOX)), "Tela deve conter o botão '+' para adicionar um call box");
+        //2 - Selecionar o botão "+"
+        //Esperado: O sistema exibe o campo alvo dos testes.
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO)),"Deve ser exibido o questionário Dados de Instalação");
+        //3 - Verificar obrigatoriedade do campo alvo Radio Button
+        //Esperado: O campo Radio button é obrigatório
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+
+        isTrue(elementoExiste(By.xpath("//*[@text='"+MensagensPadrao.QUESTIONARIO_CALLBOX_CAMPO_OBRIGATORIO+"']")),
+                "Perguntas do questonário devem ser de preenchimento obrigatório.");
+    }
+
+    @Test //"MTM_ID 3796: Tabela 2 - Call Box - Verificar campos - Dados de Instalação"
+    public void verificarRespostasQuestionario_Dados_De_Instalacao(){
+        //1 - Verificar opções do campo Radio Button
+        //Esperado: O sistema deve exibir as opções Adequado, Inadequado, Inexistente
+        preprararCenario();
+        preencherFiscalizacao();
+        navegarMenuPrincipal(Menu_Operacao_CallBoxAssistant.MENUSISF_CALLBOX);
+        page.clicarBotaoAddCallBox();
+        isTrue(elementoExiste(By.id(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA)),"Deve ser exibido o questionário Dados de Segurança");
+        pageAddCallbox.clickBotaoLupa();
+        pageAddCallbox.selecionaEquipamentoRA(ObjetosParaFiscalizacao.RA);
+        //2 - Selecionar para o campo alvo Radio Button a opção Inadequado
+        //Inativo
+        //Desativado
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO,"Inadequado");
+        String [] respostaQuestao = new String[2];
+        respostaQuestao[0] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO_INATIVO;
+        respostaQuestao[1] = Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO_DESATIVADO;
+        for(int i = 0;i < respostaQuestao.length;i++) {
+            isTrue(elementoExiste(By.xpath(pageAddCallbox.gerarPathParaRespostaQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO,
+                    respostaQuestao[i]))), "O sistema deve exibir as respostas do questionário");
+        }
+        //3 - Selecionar várias opções exibidas
+        //Esperado: O usuário pode selecionar múltiplas opções, as opções não são obrigatórias
+        preencherCheckBox_Dados_Instalacao();
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DA_TRANSMISSAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO, "Adequado");
+        pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
+        pageAddCallbox.clickOK_AdicionaCallBox();
+        isTrue(elementoExiste(By.xpath("//*[@text='"+ObjetosParaFiscalizacao.RA+"']")), "Número de RA deve ser exibido na lista de callbox incluidos.");
+        salvar();
+        enviar(3000);
+    }
+
+
+
+
 
     private void preencherQuestionarioCallBox() {
         pageAddCallbox.preencherSecaoCallBox();
@@ -373,6 +503,29 @@ public class Tablet_Operacao_CallBoxTest extends BaseTest {
                 Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_ENTORNO_SUJO);
         pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO,
                 Questionario_Operacao_CallBoxAssistant.DADOS_DE_CONSERVACAO_MAL_CONSERVADO);
+    }
+
+    private void preencherCheckBox_Dados_Seguranca(){
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_BARREIRA_E_GUARDA_COPOS);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_MAU_ESTADO_DE_CONSERVACAO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_DANIFICADOS);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_AUSENCIA_DE_SINALIZACAO_SEGURANCA);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_AUSENCIA_DE_DENFENSA_METALICA);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA_AUSENCIA_DE_MURO_DE_ARRIMO);
+    }
+
+    private void preencherCheckBox_Dados_Instalacao(){
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO_INATIVO);
+        pageAddCallbox.respondeQuestionarioInadequado(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO,
+                Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO_DESATIVADO);
+
     }
 
 }

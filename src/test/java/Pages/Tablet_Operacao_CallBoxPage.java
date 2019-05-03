@@ -35,7 +35,7 @@ public class Tablet_Operacao_CallBoxPage extends BasePage {
     }
 
     public void rolarTelaQuestionario_Up(){
-        scroolUp_Tela(By.id("br.gov.sp.artesp.sisf.mobile:id/item_questionario2"));
+        scroolUp_Tela(By.id("br.gov.sp.artesp.sisf.mobile:id/scrollView1"));
     }
 
 }

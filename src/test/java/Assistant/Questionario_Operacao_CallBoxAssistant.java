@@ -22,8 +22,15 @@ public class Questionario_Operacao_CallBoxAssistant {
     public static final String DADOS_DE_CONSERVACAO_ENTORNO_SUJO= "Entorno Sujo";
     public static final String DADOS_DE_CONSERVACAO_MAL_CONSERVADO= "Mal Conservado";
 
-
-
     public static final String DADOS_DE_SEGURANCA = "br.gov.sp.artesp.sisf.mobile:id/item_questionario3";
+    public static final String DADOS_DE_SEGURANCA_BARREIRA_E_GUARDA_COPOS="Barreira e Guarda Corpos de Proteção Ausentes";
+    public static final String DADOS_DE_SEGURANCA_MAU_ESTADO_DE_CONSERVACAO="Mau Estado de Conservação";
+    public static final String DADOS_DE_SEGURANCA_DANIFICADOS="Danificados";
+    public static final String DADOS_DE_SEGURANCA_AUSENCIA_DE_SINALIZACAO_SEGURANCA="Ausência de Sinalização de Segurança";
+    public static final String DADOS_DE_SEGURANCA_AUSENCIA_DE_DENFENSA_METALICA="Ausência de Defensa Metálica ou Barreira ";
+    public static final String DADOS_DE_SEGURANCA_AUSENCIA_DE_MURO_DE_ARRIMO="Ausência de Muro de Arrimo";
+
     public static final String DADOS_DE_INSTALACAO = "br.gov.sp.artesp.sisf.mobile:id/item_questionario4";
+    public static final String DADOS_DE_INSTALACAO_INATIVO = "Inativo";
+    public static final String DADOS_DE_INSTALACAO_DESATIVADO = "Desativado";
 }
