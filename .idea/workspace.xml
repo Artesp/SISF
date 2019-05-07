@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="Automatizando Tablet - CallBox - 02/05/2019">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" afterDir="false" />
+    <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
@@ -36,72 +31,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="918">
+              <caret line="468" column="71" selection-start-line="468" selection-start-column="71" selection-end-line="468" selection-end-column="71" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#558#606#0" />
-                <element signature="e#981#1070#0" />
-                <element signature="e#1286#1349#0" />
-                <element signature="e#1642#1703#0" />
-                <element signature="e#2032#2095#0" />
-                <element signature="e#2528#2608#0" />
+                <element signature="method#consultaFiscalizacao_CallBox#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarAlteracao_CamposPadrões#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="method#verificarAlteracao_CamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#3638#3740#0" />
+                <element signature="e#4715#7074#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Transmissao#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#7276#7407#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#9345#9424#0" />
+                <element signature="e#10566#10750#1" />
+                <element signature="e#10759#10817#0" />
+                <element signature="e#11060#11123#0" />
+                <element signature="e#11755#12426#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Transmissao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#12873#12990#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Conservacao#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#14292#14424#0" />
+                <element signature="e#15768#15833#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Conservacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#16309#16389#0" />
+                <element signature="e#18596#18780#1" />
+                <element signature="e#18796#18855#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Conservacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#20406#20524#0" />
+                <element signature="e#22350#22599#1" />
+                <element signature="method#verificarQuestionario_Dados_De_Seguranca#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#19127#19258#0" />
+                <element signature="e#19729#19794#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#21158#21237#0" />
+                <element signature="e#22207#22265#0" />
+                <element signature="e#22508#22572#0" />
+                <element signature="e#23134#23221#1" />
+                <element signature="method#verificarQuestionario_Dados_De_Seguranca_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#23652#23769#0" />
+                <element signature="e#24281#24530#1" />
+                <element signature="method#verificarQuestionario_Dados_De_Instalacao#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#24701#24832#0" />
+                <element signature="e#25941#26006#0" />
+                <element signature="method#verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#26738#26817#0" />
+                <element signature="e#27369#27553#1" />
+                <element signature="e#27562#27620#0" />
+                <element signature="e#27863#27926#0" />
+                <element signature="e#28486#28573#1" />
+                <element signature="method#verificarQuestionario_Dados_De_Instalacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="e#29645#29894#1" />
+                <element signature="method#camposNaoEditaveisQuestionario#0;class#Web_Operacao_CallBoxTest#0" />
                 <element signature="method#geraListaCamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="method#naoConformidades_DadosDeConservacao#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="method#naoConformidades_DadosDeTransmissao#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="method#naoConformidades_DadosDeSeguranca#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="method#naoConformidades_DadosDeInstalacao#0;class#Web_Operacao_CallBoxTest#0" />
                 <element signature="method#preparaCenario#0;class#Web_Operacao_CallBoxTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#471#551#0" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
+                <element signature="method#preparaFiscalizacaoParaTeste#0;class#Web_Operacao_CallBoxTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactoryWeb.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="153">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+              <folding>
+                <element signature="method#clicarBotaoFiscalizacaoEnviadas#0;class#ModulosWebPage#0" />
+                <element signature="method#clicarBotaoRelatoriosDeFiscalizacao#0;class#ModulosWebPage#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#logarWeb#0;class#Web_Operacao_CallBoxPage#0" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="90" column="235" selection-start-line="90" selection-start-column="235" selection-end-line="90" selection-end-column="235" />
             </state>
           </provider>
         </entry>
@@ -154,21 +167,21 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/InterfaceTabletWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/helperTabletWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" />
         <option value="$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" />
       </list>
     </option>
   </component>
@@ -210,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,22 +254,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Assistant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,6 +268,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -312,36 +309,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Instalacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Artesp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="verificarRespostasQuestionario_Dados_De_Instalacao" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests in Artesp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Artesp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Web_Operacao_CallBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
@@ -357,7 +324,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest.consultaFiscalizacao_CallBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -367,13 +334,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="consultaFiscalizacao_CallBox" />
+      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Instalacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest.verificarAlteracao_CamposPadrões" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -383,7 +350,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="verificarAlteracao_CamposPadrões" />
+      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Instalacao_Inexistente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Artesp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
+      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Artesp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
+      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -391,19 +390,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All_Tests" />
-      <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Instalacao" />
-      <item itemvalue="JUnit.Tests in Artesp" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.consultaFiscalizacao_CallBox" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarAlteracao_CamposPadrões" />
       <item itemvalue="JUnit.Web_Operacao_CallBoxTest" />
+      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" />
+      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" />
+      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" />
+      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Web_Operacao_CallBoxTest" />
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarAlteracao_CamposPadrões" />
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.consultaFiscalizacao_CallBox" />
-        <item itemvalue="JUnit.Tests in Artesp" />
-        <item itemvalue="JUnit.Tablet_Operacao_CallBoxTest.verificarRespostasQuestionario_Dados_De_Instalacao" />
+        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" />
+        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" />
+        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" />
+        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" />
       </list>
     </recent_temporary>
   </component>
@@ -595,38 +594,45 @@
       <option name="project" value="LOCAL" />
       <updated>1556837352769</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Automatizando Tablet - CallBox - Concluído - 03/05/2019 - iniciando Web  - CallBox">
+      <created>1556921320103</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1556921320104</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Web_Operacao_CallBoxTest_verificarAlteracao_CamposPadrões - 2019.05.03 at 18h 44m 05s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarAlteracao_CamposPadrões" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades - 2019.05.07 at 17h 12m 54s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarAlteracao_CamposPadrões - 2019.05.03 at 18h 44m 58s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarAlteracao_CamposPadrões" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades - 2019.05.07 at 17h 14m 16s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 18h 47m 38s.xml">
+    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.07 at 17h 27m 44s.xml">
       <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarAlteracao_CamposPadrões - 2019.05.03 at 18h 48m 08s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarAlteracao_CamposPadrões" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao - 2019.05.07 at 18h 47m 45s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 18h 49m 16s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades - 2019.05.07 at 18h 50m 39s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 18h 52m 05s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades - 2019.05.07 at 18h 51m 49s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 18h 55m 06s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades - 2019.05.07 at 18h 56m 17s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 18h 55m 43s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Inexistente - 2019.05.07 at 18h 58m 13s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 18h 59m 45s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades - 2019.05.07 at 19h 20m 31s.xml">
+      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.03 at 19h 01m 25s.xml">
+    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.07 at 19h 32m 04s.xml">
       <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -644,26 +650,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.24360341" />
       <window_info id="Structure" order="3" sideWeight="0.5021882" side_tool="true" weight="0.2620064" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49781182" visible="true" weight="0.28091684" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49781182" visible="true" weight="0.22654584" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7990405" weight="0.26791278" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7761194" visible="true" weight="0.29283488" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7990405" visible="true" weight="0.36967808" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7761194" weight="0.29283488" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49626866" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49520257" weight="0.31310943" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32719395" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.2238806" side_tool="true" weight="0.30877572" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.7137527" weight="0.2428884" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.7137527" weight="0.24195223" />
       <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -754,7 +759,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Passando para o Fox" />
     <MESSAGE value="estruturando Pages, Tests e Core&#10;criando Assistant" />
     <MESSAGE value="Primeiro Teste de conservação de Rotina OK" />
     <MESSAGE value="Manutenção de tempo de espera" />
@@ -779,14 +783,15 @@
     <MESSAGE value="17/04/2019" />
     <MESSAGE value="Automatizando Tablet - CallBox - 29/04/2019" />
     <MESSAGE value="Automatizando Tablet - CallBox - 02/05/2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automatizando Tablet - CallBox - 02/05/2019" />
+    <MESSAGE value="Automatizando Tablet - CallBox - Concluído - 03/05/2019 - iniciando Web  - CallBox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatizando Tablet - CallBox - Concluído - 03/05/2019 - iniciando Web  - CallBox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java</url>
-          <line>22</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -882,27 +887,57 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Core/DriverFactoryWeb.java</url>
-          <line>13</line>
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>80</line>
           <properties />
-          <option name="timeStamp" value="148" />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>182</line>
+          <properties />
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>239</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>269</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>286</line>
+          <properties />
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java</url>
+          <line>441</line>
+          <properties />
+          <option name="timeStamp" value="178" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -931,7 +966,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MenuConsRotinaPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MenuConsRotinaRetornoPage.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar!/org/aspectj/weaver/loadtime/ClassPreProcessorAgentAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1157,13 +1191,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="281" column="31" selection-start-line="281" selection-start-column="31" selection-end-line="281" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1184,46 +1212,6 @@
             <element signature="method#obterCheckBoxQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
             <element signature="method#verificaRespostaCheckBox#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
             <element signature="method#tratarRespostaQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
-            <element signature="method#preencherRodovia#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
-            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
-            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
-            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
-            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="method#clicarBotaoAddCallBox#0;class#Tablet_Operacao_CallBoxPage#0" />
           </folding>
         </state>
       </provider>
@@ -1324,9 +1312,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test Results - Tests_in_Artesp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test Results - Tests_in_Artesp.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1339,13 +1325,6 @@
             <element signature="method#prepararCenarioRetorno#0;class#Tablet_ConsEmergencialTest#0" />
             <element signature="method#alterarFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1391,13 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Web_FiscalizacoesEnviadasTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1418,9 +1390,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactoryWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+            <element signature="method#preencherRodovia#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
+            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
+            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
+            <element signature="method#grupoSubGrupo_ScrollUp#0;class#BasePage#0" />
+            <element signature="method#scroolUp_Tela#0;class#BasePage#0" />
+            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#471#551#0" />
+            <element signature="method#abrirNavegador#0;class#BaseTestWeb#0" />
+            <element signature="method#esperaJanelaCarregar#0;class#BaseTestWeb#0" />
+            <element signature="e#813#864#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#clicarBotaoAddCallBox#0;class#Tablet_Operacao_CallBoxPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="17">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#1191#1192#0" expanded="true" />
@@ -1428,17 +1482,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+        <state relative-caret-position="468">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#clicarOpcaoListaWeb#0;class#BasePageWeb#0" />
-            <element signature="method#clicarOpcaoMesWeb#0;class#BasePageWeb#0" />
-            <element signature="method#clicarOpcaoDataWeb#0;class#BasePageWeb#0" />
-            <element signature="method#clicarBotaoMarcarRetorno#0;class#BasePageWeb#0" />
-            <element signature="method#clicarBotaoSimConfirmacao#0;class#BasePageWeb#0" />
+            <element signature="method#logarWeb#0;class#Web_Operacao_CallBoxPage#0" />
+            <element signature="method#obterTextoElemento#0;class#Web_Operacao_CallBoxPage#0" />
+            <element signature="method#verificaCamposNaoEditaveis#0;class#Web_Operacao_CallBoxPage#0" />
           </folding>
         </state>
       </provider>
@@ -1450,74 +1502,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="90" column="235" selection-start-line="90" selection-start-column="235" selection-end-line="90" selection-end-column="235" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#logarWeb#0;class#Web_Operacao_CallBoxPage#0" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactoryWeb.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#clicarOpcaoListaWeb#0;class#BasePageWeb#0" />
+            <element signature="method#clicarOpcaoMesWeb#0;class#BasePageWeb#0" />
+            <element signature="method#clicarOpcaoDataWeb#0;class#BasePageWeb#0" />
+            <element signature="method#clicarBotaoMarcarRetorno#0;class#BasePageWeb#0" />
+            <element signature="method#clicarBotaoSimConfirmacao#0;class#BasePageWeb#0" />
+            <element signature="method#camposNaoEditaveis#0;class#BasePageWeb#0" />
+            <element signature="method#rolarTelaAteElementoSerEncontrado#0;class#BasePageWeb#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding>
+            <element signature="method#clicarBotaoFiscalizacaoEnviadas#0;class#ModulosWebPage#0" />
+            <element signature="method#clicarBotaoRelatoriosDeFiscalizacao#0;class#ModulosWebPage#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="918">
+          <caret line="468" column="71" selection-start-line="468" selection-start-column="71" selection-end-line="468" selection-end-column="71" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#558#606#0" />
-            <element signature="e#981#1070#0" />
-            <element signature="e#1286#1349#0" />
-            <element signature="e#1642#1703#0" />
-            <element signature="e#2032#2095#0" />
-            <element signature="e#2528#2608#0" />
+            <element signature="method#consultaFiscalizacao_CallBox#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarAlteracao_CamposPadrões#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarAlteracao_CamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#3638#3740#0" />
+            <element signature="e#4715#7074#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Transmissao#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#7276#7407#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#9345#9424#0" />
+            <element signature="e#10566#10750#1" />
+            <element signature="e#10759#10817#0" />
+            <element signature="e#11060#11123#0" />
+            <element signature="e#11755#12426#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Transmissao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#12873#12990#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Conservacao#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#14292#14424#0" />
+            <element signature="e#15768#15833#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Conservacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#16309#16389#0" />
+            <element signature="e#18596#18780#1" />
+            <element signature="e#18796#18855#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Conservacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#20406#20524#0" />
+            <element signature="e#22350#22599#1" />
+            <element signature="method#verificarQuestionario_Dados_De_Seguranca#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#19127#19258#0" />
+            <element signature="e#19729#19794#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#21158#21237#0" />
+            <element signature="e#22207#22265#0" />
+            <element signature="e#22508#22572#0" />
+            <element signature="e#23134#23221#1" />
+            <element signature="method#verificarQuestionario_Dados_De_Seguranca_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#23652#23769#0" />
+            <element signature="e#24281#24530#1" />
+            <element signature="method#verificarQuestionario_Dados_De_Instalacao#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#24701#24832#0" />
+            <element signature="e#25941#26006#0" />
+            <element signature="method#verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#26738#26817#0" />
+            <element signature="e#27369#27553#1" />
+            <element signature="e#27562#27620#0" />
+            <element signature="e#27863#27926#0" />
+            <element signature="e#28486#28573#1" />
+            <element signature="method#verificarQuestionario_Dados_De_Instalacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="e#29645#29894#1" />
+            <element signature="method#camposNaoEditaveisQuestionario#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#geraListaCamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="method#naoConformidades_DadosDeConservacao#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="method#naoConformidades_DadosDeTransmissao#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="method#naoConformidades_DadosDeSeguranca#0;class#Web_Operacao_CallBoxTest#0" />
+            <element signature="method#naoConformidades_DadosDeInstalacao#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#preparaCenario#0;class#Web_Operacao_CallBoxTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#471#551#0" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
+            <element signature="method#preparaFiscalizacaoParaTeste#0;class#Web_Operacao_CallBoxTest#0" />
           </folding>
         </state>
       </provider>

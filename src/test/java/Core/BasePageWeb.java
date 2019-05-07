@@ -1,6 +1,10 @@
 package Core;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static Core.DriverFactoryWeb.*;
 
@@ -43,6 +47,14 @@ public class BasePageWeb {
         getNav().findElementByXPath("//button[contains(@id,'voltar')]").click();
     }
 
+    protected void clicarBotaoSalvar(){
+        getNav().findElementByXPath("//button[@alt='Salvar']").click();
+    }
+
+    protected void clicarEmElementoWeb(By by){
+        getNav().findElement(by).click();
+    }
+
     protected void clicarBotaoSimConfirmacao(){
         getNav().findElementByXPath("//input[contains(@id, 'yesButton')]").click();
     }
@@ -54,6 +66,25 @@ public class BasePageWeb {
     protected boolean camposNaoEditaveis(By by){
         boolean bloqueado = getNav().findElement(by).isEnabled();
         return bloqueado;
+    }
+
+    protected boolean campoExiste(By by){
+        try {
+            WebElement elementoExiste = getNav().findElement(by);
+            return true;
+        }catch (NoSuchElementException e){
+            return false;
+        }
+    }
+
+    protected void rolarTelaAteElementoSerEncontrado(By by){
+        WebElement element = getNav().findElement(by);
+        JavascriptExecutor javascriptExecutor = getNav();
+        javascriptExecutor.executeScript("arguments[0].scrollIntoView();", element);
+    }
+
+    protected void selecionaRadioButtonWeb(By by){
+        getNav().findElement(by).click();
     }
 
 }

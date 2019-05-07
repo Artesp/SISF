@@ -42,8 +42,20 @@ public class Web_Operacao_CallBoxPage extends BasePageWeb {
         clicarBotaoVoltar();
     }
 
+    public void botaoSalvar(){
+        clicarBotaoSalvar();
+    }
+
+    public void selecionarRadioButton(By by){
+        selecionaRadioButtonWeb(by);
+    }
+
     public void botaoSimConfirmacao(){
         clicarBotaoSimConfirmacao();
+    }
+
+    public void selecionarNaoConformidades(By by){
+        clicarEmElementoWeb(by);
     }
 
     public boolean verificaCamposNaoEditaveis(String[] paths){
@@ -54,6 +66,15 @@ public class Web_Operacao_CallBoxPage extends BasePageWeb {
             }
         }
         return false;
+    }
+
+    public boolean verificaElementoExiste(By by){
+        boolean elemento = campoExiste(by);
+        return elemento;
+    }
+
+    public void rolarTelaAteElemento(By by){
+        rolarTelaAteElementoSerEncontrado(by);
     }
 
 }
