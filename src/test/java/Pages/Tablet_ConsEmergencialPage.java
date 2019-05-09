@@ -53,6 +53,10 @@ public class Tablet_ConsEmergencialPage extends BasePage {
         botaoAddRetorno();
     }
 
+    public void clicarBotaoAtualizar(){
+        botaoAtualizar();
+    }
+
     public void alterarCampos(String campo, String valor){
         getDriver().findElementById(campo).clear();
         getDriver().findElementById(campo).sendKeys(valor);

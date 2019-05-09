@@ -55,6 +55,10 @@ public class ConsRotinaPage extends BasePage {
         return gerarTextoPraTeste();
     }
 
+    public void clicarBotaoAtualizar(){
+        botaoAtualizar();
+    }
+
     public void clicarBotaoAddRetorno(){
         botaoAddRetorno();
     }

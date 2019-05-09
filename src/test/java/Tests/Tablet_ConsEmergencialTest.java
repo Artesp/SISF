@@ -50,7 +50,7 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         preencherFiscalizacaoRetorno();
         salvar();
 
-        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
+        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_CODIGO_WEB));
         assertEquals(codigoWeb, fiscRetorno);
 
         enviar(3000);
@@ -65,8 +65,7 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         String fisc = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
         assertEquals("Conservação Emergencial", fisc);
 
-        selecionaFiscalizacao();
-        botaoEditarFiscalizacao();
+        editarFiscalizacao();
 
         alterarFiscalizacao();
         salvar();
@@ -126,6 +125,7 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
     private void prepararCenarioRetorno(){
         loginPage.realizaLogin();
         modulo.moduloConservacao();
+        page.clicarBotaoAtualizar();
         page.clicarBotaoAddRetorno();
     }
 

@@ -13,7 +13,7 @@ public class MensagensPadrao {
     public static final String QUESTIONARIO_HOUVE_CONEXAO_AUSENCIA_DE_SINAL = " Ausência de Sinal";
     public static final String QUESTIONARIO_HOUVE_CONEXAO_SINAL_INTERMITENTE = " Sinal intermitente";
     public static final String QUESTIONARIO_HOUVE_ATENDIMENTO_NAO_REALIZA_CHAMADA = " Não Realiza Chamada";
-    public static final String QUESTIONARIO_HOUVE_ATENDIMENTO_SEM_ATENDIMENTO_CCO = " Sem Atendimento pelo CC";
+    public static final String QUESTIONARIO_HOUVE_ATENDIMENTO_SEM_ATENDIMENTO_CCO = " Sem Atendimento pelo CCO";
     public static final String QUESTIONARIO_QUALIDADE_COMUNICACAO_AUDIO_BAIXO = " Áudio Baixo";
     public static final String QUESTIONARIO_QUALIDADE_COMUNICACAO_AUDIO_INTERMITENTE = " Áudio Intermitente";
     public static final String QUESTIONARIO_QUALIDADE_COMUNICACAO_RUIDO_INTERFERENCIA = " Ruído/Interferência";

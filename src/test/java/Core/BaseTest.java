@@ -1,8 +1,6 @@
 package Core;
 
-import Assistant.PathsAssistant;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.junit.After;
@@ -13,6 +11,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
+import java.util.List;
 
 import static Assistant.PathsAssistant.*;
 import static Core.DriverFactory.*;
@@ -68,12 +67,8 @@ public class BaseTest {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add").click();
     }
 
-    public void botaoEditarFiscalizacao(){
+    public void editarFiscalizacao(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao").click();
-    }
-
-    public void selecionaFiscalizacao(){
-        getDriver().findElementById(ID_GRUPO_FISCALIZACAO).click();
     }
 
     public void deletarFiscalizacao(){
@@ -93,6 +88,7 @@ public class BaseTest {
     }
 
 */
+
     public void salvar(){
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:comp/fschdr_starred").click();
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_save").click();
@@ -132,8 +128,9 @@ public class BaseTest {
     }
 
     public int listarFiscalizacoes(){
-        int listaFisc = getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView").size();
-        return listaFisc;
+        WebElement listaFisc = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/listaFiscalizacao");
+        List<WebElement> listaFiscElements = listaFisc.findElements(By.className("android.widget.LinearLayout"));
+        return listaFiscElements.size();
     }
 
     public void modalData_ScroollUpDia(){

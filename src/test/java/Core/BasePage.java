@@ -116,6 +116,10 @@ public class BasePage {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_add_retorno").click();
     }
 
+    protected void botaoAtualizar(){
+        getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_refresh").click();
+    }
+
     protected void scroolConcessionaria(){
         /*Dimension size = getDriver().manage().window().getSize();
 

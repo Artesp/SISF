@@ -121,6 +121,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
     }
 
+    /* Teste não Elegível para automação
     @Test //"MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos."
     @Ignore
     public void verificarObrigatoriedade_Sentido(){
@@ -139,6 +140,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         String expected = MensagensPadrao.MEDICAO_WIFI_ERRO_DE_VALIDACAO;
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
     }
+     */
 
     @Test //"MTM_ID 4499: FP11/Tabela 1 - Verificar obrigatoriedade, formato e regras dos campos."
     public void verificarPreenchimentoManual_WiFi(){
@@ -520,10 +522,11 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         salvar();
 
         String expected = MensagensPadrao.WIFI;
-        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao")));
         enviar(3000);
     }
 
+    /* Teste não Elegível para automação
     @Test //"MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi."
     @Ignore
     public void inserirMedicao_EmLote_MaiorQueLimite(){
@@ -535,6 +538,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         String expected = MensagensPadrao.MEDICAO_WIFI_LIMITE_MAXIMO_PERMITIDO;
         assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/text_view")));
     }
+    */
 
     @Test //"MTM_ID 4563: X - Criar fiscalização de Operação - WiFi")
     public void gerarFiscalizacao_Operacao_WiFi(){
@@ -543,7 +547,7 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         salvar();
 
         String expected = MensagensPadrao.WIFI;
-        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:comp/lstfsc_grupo")));
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao")));
         enviar(1000);
     }
 

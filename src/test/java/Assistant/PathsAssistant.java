@@ -43,6 +43,8 @@ public class PathsAssistant {
 
     //Grupo da fiscalização na grid depois de salvar.
     public static final String ID_GRUPO_FISCALIZACAO = "br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao";
+    public static final String ID_RETORNO_PREENCHIDO = "br.gov.sp.artesp.sisf.mobile:id/tvRegistro";
+    public static final String ID_CODIGO_WEB = "br.gov.sp.artesp.sisf.mobile:id/tvCodControle";
 
     /*
      *

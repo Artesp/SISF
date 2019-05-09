@@ -104,28 +104,15 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
     }
 
     public void respondeQuestionario(String questao, String opcao){
-        opcao = tratarRespostaQuestionario(opcao);
-        String path = "/hierarchy" +
-                "/android.widget.FrameLayout" +
-                "/android.widget.FrameLayout" +
-                "/android.widget.FrameLayout" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.FrameLayout" +
-                "/android.widget.FrameLayout" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.ScrollView" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.LinearLayout[5]" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.LinearLayout["+questao+"]" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.LinearLayout[1]" +
-                "/android.widget.LinearLayout" +
-                "/android.widget.RadioGroup" +
-                "/android.widget.RadioButton["+opcao+"]";
+        String path = "//android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:comp/qstfrm_content']" +
+                "/android.widget.LinearLayout[@index='"+questao+"']" +
+                "/android.widget.LinearLayout[@index='0']" +
+                "/android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:id/itmqstfrm_layout']" +
+                "/android.widget.LinearLayout[@resource-id='br.gov.sp.artesp.sisf.mobile:id/itmqstfrm_radio']" +
+                "/android.widget.LinearLayout[@index='0']" +
+                "/android.widget.RadioGroup[@index='1']" +
+                "/android.widget.RadioButton[@text='"+opcao+"']";
+
         getDriver().findElementByXPath(path).click();
     }
 
@@ -145,23 +132,6 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
             return true;
         }
         return false;
-    }
-
-    private String tratarRespostaQuestionario(String opcao) {
-        if (opcao!=null) {
-            if (opcao.equalsIgnoreCase("Sim")
-                    || opcao.equalsIgnoreCase("Bom")
-                    || opcao.equalsIgnoreCase("Regular")
-                    || opcao.equalsIgnoreCase("Ruim")
-                    || opcao.equalsIgnoreCase("Voluntariamente")) {
-                return opcao = "1";
-            } else if(opcao.equalsIgnoreCase("Péssima")){
-                return opcao = "4";
-            }else{
-                return opcao = "2";
-            }
-        }
-        return opcao;
     }
 
 

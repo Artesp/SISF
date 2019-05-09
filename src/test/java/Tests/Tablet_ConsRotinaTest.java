@@ -1,9 +1,9 @@
 package Tests;
 
-import Assistant.helperTabletWeb;
 import Assistant.MenuConsRotinaAssistant;
 import Assistant.MenuConsRotinaRetornoAssistant;
 import Assistant.PathsAssistant;
+import Assistant.helperTabletWeb;
 import Core.BaseTest;
 import Pages.ConsRotinaPage;
 import Pages.ConsRotinaRetornoPage;
@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class Tablet_ConsRotinaTest extends BaseTest {
 
@@ -96,8 +96,8 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         preencherDadosFiscalizacaoRetorno();
         salvar();
 
-        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
-        assertEquals("(RETORNO)", fiscRetorno);
+        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_RETORNO_PREENCHIDO));
+        assertEquals("Retorno", fiscRetorno);
 
         enviar(3000);
     }
@@ -107,9 +107,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         prepararCenario();
         preencherDadosFiscalizacao();
         gravar();
-
-        selecionaFiscalizacao();
-        botaoEditarFiscalizacao();
+        editarFiscalizacao();
         navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_PRAZO);
 
         page.preencherSecaoPrazo("Estruturas","Estruturas","Pichações e vandalismo");
@@ -124,12 +122,11 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         prepararCenario();
         preencherDadosFiscalizacao();
         salvar();
-        selecionaFiscalizacao();
         deletarFiscalizacao();
         atualizarTelaConsultaSisf();
         esperaCarregar(1000);
         int numFisc = listarFiscalizacoes();
-        //assertTrue(numFisc == 0);
+        assertTrue(numFisc == 0);
     }
 
 
@@ -143,6 +140,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
     private void preparaCenarioRetorno(){
         loginPage.realizaLogin();
         modulo.moduloConservacao();
+        page.clicarBotaoAtualizar();
         page.clicarBotaoAddRetorno();
     }
 
