@@ -125,7 +125,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         deletarFiscalizacao();
         atualizarTelaConsultaSisf();
         esperaCarregar(1000);
-        int numFisc = listarFiscalizacoes();
+        int numFisc = listarFiscalizacoes("Conservação de Rotina").length;
         assertTrue(numFisc == 0);
     }
 
@@ -158,7 +158,7 @@ public class Tablet_ConsRotinaTest extends BaseTest {
         page.preencherSecaoObservacao();
 
         navegarMenuPrincipal(MenuConsRotinaAssistant.MENUSISF_GALERIA);
-        page.fotosEmLote(4);
+        page.fotosEmLote(1);
 
     }
 

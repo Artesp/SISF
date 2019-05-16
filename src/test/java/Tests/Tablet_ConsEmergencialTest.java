@@ -11,8 +11,13 @@ import Pages.Tablet_ConsEmergencialPage;
 import Pages.Tablet_ConsEmergencialRetornoPage;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class Tablet_ConsEmergencialTest extends BaseTest {
 
@@ -26,8 +31,8 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         prepararCenario();
         preencherFiscalizacao();
         salvar();
-        String fisc = obterTextoElemento(By.id(PathsAssistant.ID_GRUPO_FISCALIZACAO));
-        assertEquals("Conservação Emergencial", fisc);
+        String[] fiscalizacoes = listarFiscalizacoes("Conservação Emergencial");
+        assertEquals("Conservação Emergencial", fiscalizacoes[0]);
         enviar(2000);
     }
 
@@ -38,7 +43,8 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         preencherFiscalizacao();
         salvar();
         enviar(1000);
-        String codigoWeb = getCodigoWeb();
+        String[] codigoWeb = getCodigoWeb();
+        String codigoAtualWeb = recuperarIDFiscalizacao(obterTextoElemento(By.xpath(PathsAssistant.XPATH_MSG_ENVIO_COM_SUCESSO_INDEX)));
 
         fecharSistemaSISF();
         classCleanup();
@@ -50,9 +56,11 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         preencherFiscalizacaoRetorno();
         salvar();
 
-        String fiscRetorno = obterTextoElemento(By.id(PathsAssistant.ID_CODIGO_WEB));
-        assertEquals(codigoWeb, fiscRetorno);
-
+        for (int i = 0;i<codigoWeb.length;i++){
+            if (codigoAtualWeb.equalsIgnoreCase(codigoWeb[i])) {
+            }
+                assertEquals(codigoAtualWeb, codigoWeb[i]);
+            }
         enviar(3000);
     }
 
@@ -149,9 +157,14 @@ public class Tablet_ConsEmergencialTest extends BaseTest {
         page.capturarFoto();
     }
 
-    private String getCodigoWeb(){
-        String codigoWeb = recuperarIDFiscalizacao(obterTextoElemento(By.xpath(PathsAssistant.XPATH_MSG_ENVIO_COM_SUCESSO)));
-        return codigoWeb;
+    private String[] getCodigoWeb(){
+       String[] codigoWeb = listaCodigoWebSucesso();
+       return codigoWeb;
+    }
+
+    private String codigoWeb(){
+        String codigo = recuperarIDFiscalizacao(PathsAssistant.XPATH_MSG_ENVIO_COM_SUCESSO_INDEX);
+        return codigo;
     }
 
 }
