@@ -39,8 +39,8 @@ public class PathsAssistant {
     public static final String ID_CALLBOX_TELA_ADICIONA_CALLBOX_BOTAO_OK = "android:id/button1";
 
     //Mensagem de sucesso: 'Fiscalizacao ID: 1 (<Código Web>) Enviado com sucesso!'
-    public static final String XPATH_MSG_ENVIO_COM_SUCESSO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']/android.widget.TextView[@index='0']";
-
+    public static final String XPATH_MSG_ENVIO_COM_SUCESSO = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']";
+    public static final String XPATH_MSG_ENVIO_COM_SUCESSO_INDEX = "//*[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']/android.widget.TextView[@index='0']";
     //Grupo da fiscalização na grid depois de salvar.
     public static final String ID_GRUPO_FISCALIZACAO = "br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao";
     public static final String ID_RETORNO_PREENCHIDO = "br.gov.sp.artesp.sisf.mobile:id/tvRegistro";

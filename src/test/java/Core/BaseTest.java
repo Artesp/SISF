@@ -1,5 +1,6 @@
 package Core;
 
+import Assistant.PathsAssistant;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -11,9 +12,9 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
-import static Assistant.PathsAssistant.*;
 import static Core.DriverFactory.*;
 
 public class BaseTest {
@@ -102,7 +103,7 @@ public class BaseTest {
         getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/btn_enviar").click();
         boolean fiscalizacaoEnviada = elementoExiste(By.id("br.gov.sp.artesp.sisf.mobile:id/error_msg_list"));
         if (!fiscalizacaoEnviada)
-        new BaseTest().esperaCarregar(milisegundos);
+            new BaseTest().esperaCarregar(milisegundos);
     }
 
     public void atualizarTelaConsultaSisf() {
@@ -127,10 +128,27 @@ public class BaseTest {
         return elemento;
     }
 
-    public int listarFiscalizacoes(){
+    public String[] listarFiscalizacoes(String fiscalizacao){
         WebElement listaFisc = getDriver().findElementById("br.gov.sp.artesp.sisf.mobile:id/listaFiscalizacao");
-        List<WebElement> listaFiscElements = listaFisc.findElements(By.className("android.widget.LinearLayout"));
-        return listaFiscElements.size();
+//        List<WebElement> listaFiscElements = listaFisc.findElements(By.id("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao"));
+        String[] listaFiscElements = new String[listaFisc.findElements(By.xpath("//*[@text='"+fiscalizacao+"']")).size()];
+        for (int i = 0;i < listaFiscElements.length;i++) {
+            listaFiscElements[i] = listaFisc.findElement(By.xpath("//*[@text='"+fiscalizacao+"']")).getText();
+        }
+        return listaFiscElements;
+    }
+
+    public String[] listaCodigoWebSucesso(){
+       WebElement listaMSG = getDriver().findElementByXPath("//android.widget.FrameLayout[@resource-id='android:id/content']" +
+               "/android.widget.FrameLayout[@index='0']" +
+               "/android.widget.ListView[@resource-id='br.gov.sp.artesp.sisf.mobile:id/error_msg_list']");
+       String[] stringList = new String[listaMSG.findElements(By.xpath("//*[contains(@text, 'Enviado com sucesso!')]")).size()];
+       String[] ids = new String[stringList.length];
+        for (int i = 0;i < stringList.length;i++) {
+            stringList[i] = listaMSG.findElement(By.xpath("//*[contains(@text, 'Enviado com sucesso!')]")).getText();
+            ids[i] = recuperarIDFiscalizacao(stringList[i]);
+        }
+        return ids;
     }
 
     public void modalData_ScroollUpDia(){

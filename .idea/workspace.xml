@@ -4,11 +4,9 @@
     <list default="true" id="d94684bb-87da-43c9-b0a6-bd35f07767be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Core/BaseTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,96 +23,73 @@
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
   </component>
-  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/../ReportsHTML/SISF - Automação" openResultsInEditor="true" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="SISF" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="67" column="48" lean-forward="true" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+              <folding>
+                <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#gerarFiscalizacao_ComRetorno#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#alterarFiscalizacao_ComSucesso#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#preencherFiscalizacaoRetorno#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#preencherFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#prepararCenario#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#prepararCenarioRetorno#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#alterarFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#getCodigoWeb#0;class#Tablet_ConsEmergencialTest#0" />
+                <element signature="method#codigoWeb#0;class#Tablet_ConsEmergencialTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="468" column="71" selection-start-line="468" selection-start-column="71" selection-end-line="468" selection-end-column="71" />
+            <state relative-caret-position="-135">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
               <folding>
-                <element signature="method#consultaFiscalizacao_CallBox#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#verificarAlteracao_CamposPadrões#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#verificarAlteracao_CamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#3638#3740#0" />
-                <element signature="e#4715#7074#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Transmissao#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#7276#7407#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#9345#9424#0" />
-                <element signature="e#10566#10750#1" />
-                <element signature="e#10759#10817#0" />
-                <element signature="e#11060#11123#0" />
-                <element signature="e#11755#12426#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Transmissao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#12873#12990#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Conservacao#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#14292#14424#0" />
-                <element signature="e#15768#15833#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Conservacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#16309#16389#0" />
-                <element signature="e#18596#18780#1" />
-                <element signature="e#18796#18855#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Conservacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#20406#20524#0" />
-                <element signature="e#22350#22599#1" />
-                <element signature="method#verificarQuestionario_Dados_De_Seguranca#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#19127#19258#0" />
-                <element signature="e#19729#19794#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#21158#21237#0" />
-                <element signature="e#22207#22265#0" />
-                <element signature="e#22508#22572#0" />
-                <element signature="e#23134#23221#1" />
-                <element signature="method#verificarQuestionario_Dados_De_Seguranca_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#23652#23769#0" />
-                <element signature="e#24281#24530#1" />
-                <element signature="method#verificarQuestionario_Dados_De_Instalacao#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#24701#24832#0" />
-                <element signature="e#25941#26006#0" />
-                <element signature="method#verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#26738#26817#0" />
-                <element signature="e#27369#27553#1" />
-                <element signature="e#27562#27620#0" />
-                <element signature="e#27863#27926#0" />
-                <element signature="e#28486#28573#1" />
-                <element signature="method#verificarQuestionario_Dados_De_Instalacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="e#29645#29894#1" />
-                <element signature="method#camposNaoEditaveisQuestionario#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#geraListaCamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#naoConformidades_DadosDeConservacao#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#naoConformidades_DadosDeTransmissao#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#naoConformidades_DadosDeSeguranca#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#naoConformidades_DadosDeInstalacao#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#preparaCenario#0;class#Web_Operacao_CallBoxTest#0" />
-                <element signature="method#preparaFiscalizacaoParaTeste#0;class#Web_Operacao_CallBoxTest#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#verificarBotaoMedir_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarBotaoCronometro_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificaQuestionario_HouveConexao_Sim_Nao#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarObrigatoriedade_IntensidadeDeSinal#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarObrigatoriedade_Km#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarObrigatoriedade_Metros#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="e#4691#5525#0" />
+                <element signature="method#verificarPreenchimentoManual_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveConexao_OpcaoNao#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveConexao_AusenciaDeSinal_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveConexao_SinalIntermitente_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveConexao_DuasOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveAtendimento_OpcaoNao#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveAtendimento_NaoRealizaChamada_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveAtendimento_SemAtendimentoCCO_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_HouveAtendimento_DuasOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QualidadeComunicacao_OpcaoPessima#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QualidadeComunicacao_AudioBaixo_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QualidadeComunicacao_AudioIntermitente_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QualidadeComunicacao_RuidoInterferencia_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QualidadeComunicacao_AtendenteNaoEscuta_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QualidadeComunicacao_TodasAsOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_EncerramentoChamada_OpcaoVoluntariamente#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_EncerramentoChamada_OpcaoInterrupcaoInesperada#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarQuestionario_QuestionarioEmBranco#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#inserirMedicao_EmLote_MenorQueLimite#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#gerarFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#verificarMenuLateralFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#preparaCenario#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#preencherFiscalizacao_MedicaoEmLote#0;class#Tablet_Operacao_WiFiTest#0" />
+                <element signature="method#assertsBotoes_WiFi_Medicao#0;class#Tablet_Operacao_WiFiTest#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-              <folding>
-                <element signature="method#clicarBotaoFiscalizacaoEnviadas#0;class#ModulosWebPage#0" />
-                <element signature="method#clicarBotaoRelatoriosDeFiscalizacao#0;class#ModulosWebPage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="90" column="235" selection-start-line="90" selection-start-column="235" selection-end-line="90" selection-end-column="235" />
             </state>
           </provider>
         </entry>
@@ -148,40 +123,40 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/LoginWebTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_WiFiAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFiPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaRetornoAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/DriverFactoryWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MenuConsEmergencialRetornoAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_ConsEmergencialRetornoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/MenuConsEmergencialAssistant.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_ConsEmergencialPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/DriverFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_CallBoxAssistant.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/InterfaceTabletWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/helperTabletWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java" />
         <option value="$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html" />
-        <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Core/BasePageWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Web_Operacao_CallBoxPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ModulosWebPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/Tablet_ConsEmergencialPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Core/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java" />
       </list>
     </option>
   </component>
@@ -210,10 +185,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1916" />
-    <option name="y" value="102" />
+    <option name="x" value="2185" />
+    <option name="y" value="10" />
     <option name="width" value="1934" />
-    <option name="height" value="1047" />
+    <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -223,6 +198,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +231,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Assistant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SISF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artesp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -268,8 +261,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Web_Operacao_CallBoxTest">
+  <component name="RunManager" selected="JUnit.Tablet_ConsEmergencialTest">
     <configuration name="All_Tests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -309,7 +300,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_ConsEmergencialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -318,13 +309,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsEmergencialTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_ConsEmergencialTest.alterarFiscalizacao_ComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -333,14 +324,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Instalacao" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsEmergencialTest" />
+      <option name="METHOD_NAME" value="alterarFiscalizacao_ComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -349,14 +340,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Instalacao_Inexistente" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsEmergencialTest" />
+      <option name="METHOD_NAME" value="gerarFiscalizacao_ComRetorno" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -365,14 +356,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsEmergencialTest" />
+      <option name="METHOD_NAME" value="gerarFiscalizacao_ComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artesp" />
       <extension name="coverage">
         <pattern>
@@ -381,8 +372,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Web_Operacao_CallBoxTest" />
-      <option name="METHOD_NAME" value="verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Tablet_ConsRotinaTest" />
+      <option name="METHOD_NAME" value="gerarFiscalizacao_ComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -390,19 +381,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All_Tests" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" />
-      <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" />
+      <item itemvalue="JUnit.Tablet_ConsEmergencialTest" />
+      <item itemvalue="JUnit.Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" />
+      <item itemvalue="JUnit.Tablet_ConsEmergencialTest.gerarFiscalizacao_ComSucesso" />
+      <item itemvalue="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" />
+      <item itemvalue="JUnit.Tablet_ConsEmergencialTest.alterarFiscalizacao_ComSucesso" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest" />
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" />
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" />
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" />
-        <item itemvalue="JUnit.Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" />
+        <item itemvalue="JUnit.Tablet_ConsEmergencialTest" />
+        <item itemvalue="JUnit.Tablet_ConsEmergencialTest.alterarFiscalizacao_ComSucesso" />
+        <item itemvalue="JUnit.Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" />
+        <item itemvalue="JUnit.Tablet_ConsEmergencialTest.gerarFiscalizacao_ComSucesso" />
+        <item itemvalue="JUnit.Tablet_ConsRotinaTest.gerarFiscalizacao_ComSucesso" />
       </list>
     </recent_temporary>
   </component>
@@ -601,39 +592,60 @@
       <option name="project" value="LOCAL" />
       <updated>1556921320104</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Automatizando Web - Call Box - 90% concluído - 07/05/2019">
+      <created>1557268468727</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1557268468727</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Corrigindo testes">
+      <created>1557438887447</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1557438887447</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Corrigindo testes">
+      <created>1558031664539</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1558031664539</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades - 2019.05.07 at 17h 12m 54s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 13h 32m 00s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades - 2019.05.07 at 17h 14m 16s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 13h 39m 55s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.07 at 17h 27m 44s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 13h 46m 01s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao - 2019.05.07 at 18h 47m 45s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 13h 52m 42s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades - 2019.05.07 at 18h 50m 39s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 14h 22m 36s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades - 2019.05.07 at 18h 51m 49s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 16h 22m 37s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades - 2019.05.07 at 18h 56m 17s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_gerarFiscalizacao_ComRetorno - 2019.05.13 at 16h 29m 38s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.gerarFiscalizacao_ComRetorno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Instalacao_Inexistente - 2019.05.07 at 18h 58m 13s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Instalacao_Inexistente" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest - 2019.05.13 at 16h 41m 09s.xml">
+      <configuration name="Tablet_ConsEmergencialTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest_verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades - 2019.05.07 at 19h 20m 31s.xml">
-      <configuration name="Web_Operacao_CallBoxTest.verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest_alterarFiscalizacao_ComSucesso - 2019.05.13 at 17h 07m 51s.xml">
+      <configuration name="Tablet_ConsEmergencialTest.alterarFiscalizacao_ComSucesso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Web_Operacao_CallBoxTest - 2019.05.07 at 19h 32m 04s.xml">
-      <configuration name="Web_Operacao_CallBoxTest" configurationId="JUnit" />
+    <history-entry file="Tablet_ConsEmergencialTest - 2019.05.13 at 17h 18m 21s.xml">
+      <configuration name="Tablet_ConsEmergencialTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -655,20 +667,20 @@
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.24360341" />
       <window_info id="Structure" order="3" sideWeight="0.5021882" side_tool="true" weight="0.2620064" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49781182" visible="true" weight="0.22654584" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49781182" visible="true" weight="0.23933902" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7990405" visible="true" weight="0.36967808" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7761194" weight="0.29283488" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7990405" weight="0.24714434" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7761194" weight="0.28037384" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49626866" weight="0.32827735" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49520257" weight="0.31310943" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32719395" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49520257" visible="true" weight="0.3125649" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.3271028" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.2238806" side_tool="true" weight="0.30877572" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.7137527" weight="0.24195223" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.7137527" weight="0.24091381" />
       <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -759,8 +771,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="estruturando Pages, Tests e Core&#10;criando Assistant" />
-    <MESSAGE value="Primeiro Teste de conservação de Rotina OK" />
     <MESSAGE value="Manutenção de tempo de espera" />
     <MESSAGE value="Estrutura automacao Web" />
     <MESSAGE value="Teste para Login no Sisf Web" />
@@ -784,7 +794,9 @@
     <MESSAGE value="Automatizando Tablet - CallBox - 29/04/2019" />
     <MESSAGE value="Automatizando Tablet - CallBox - 02/05/2019" />
     <MESSAGE value="Automatizando Tablet - CallBox - Concluído - 03/05/2019 - iniciando Web  - CallBox" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automatizando Tablet - CallBox - Concluído - 03/05/2019 - iniciando Web  - CallBox" />
+    <MESSAGE value="Automatizando Web - Call Box - 90% concluído - 07/05/2019" />
+    <MESSAGE value="Corrigindo testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo testes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,75 +821,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
-          <line>167</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
-          <line>354</line>
+          <line>356</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
-          <line>541</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Core/BasePage.java</url>
-          <line>192</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
-          <line>106</line>
-          <properties />
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
-          <line>143</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
-          <line>160</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java</url>
-          <line>106</line>
-          <properties />
-          <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java</url>
@@ -939,11 +909,78 @@
           <properties />
           <option name="timeStamp" value="178" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
+          <line>448</line>
+          <properties />
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java</url>
+          <line>258</line>
+          <properties />
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="textoElemento" language="JAVA" />
+        <watch expression="fiscalizacoes" language="JAVA" />
+        <watch expression="codigoWeb" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -953,6 +990,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>fiscalizacoes</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>codigoWeb</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>textoElemento</expression-string>
         <language-id>JAVA</language-id>
@@ -966,28 +1013,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MenuConsRotinaRetornoPage.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar!/org/aspectj/weaver/loadtime/ClassPreProcessorAgentAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="9" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaRetornoAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_ConsEmergencialRetornoPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1014,25 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_ConsEmergencialPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#grupoSubgrupo#0;class#Tablet_ConsEmergencialPage#0" />
-            <element signature="method#preencherSecaoEvento#0;class#Tablet_ConsEmergencialPage#0" />
-            <element signature="method#preencherRecursosMobilizados#0;class#Tablet_ConsEmergencialPage#0" />
-            <element signature="method#preencherSinalizacaoLocal#0;class#Tablet_ConsEmergencialPage#0" />
-            <element signature="method#preencherAnalisePreliminar#0;class#Tablet_ConsEmergencialPage#0" />
-            <element signature="method#preencherProvMedidasCorretivas#0;class#Tablet_ConsEmergencialPage#0" />
-            <element signature="e#2026#2027#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="method#alterarCampos#0;class#Tablet_ConsEmergencialPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Menu_Operacao_CallBoxAssistant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1046,23 +1052,6 @@
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#112#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#grupoSubgrupo#0;class#ConsRotinaPage#0" />
-            <element signature="method#preencherSecaoPrazo#0;class#ConsRotinaPage#0" />
-            <element signature="method#dataEstaHabilitada#0;class#ConsRotinaPage#0" />
-            <element signature="method#preencherSecaoTrecho#0;class#ConsRotinaPage#0" />
-            <element signature="method#preencherSecaoObservacao#0;class#ConsRotinaPage#0" />
-            <element signature="e#2263#2264#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1110,23 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0.jar!/io/appium/java_client/DefaultGenericMobileDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1146,13 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="141" lean-forward="true" selection-start-line="11" selection-start-column="141" selection-end-line="11" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/allure-results/c85abbe3-df59-4e40-aa25-6922a9eb87f5-testsuite.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1167,55 +1132,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testInitialize#0;class#BaseTest#0" />
-            <element signature="e#644#680#1" />
-            <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
-            <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
-            <element signature="method#deletarFiscalizacao#0;class#BaseTest#0" />
-            <element signature="method#salvar#0;class#BaseTest#0" />
-            <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
-            <element signature="method#esperaCarregar#0;class#BaseTest#0" />
-            <element signature="method#obterElementoPorPath#0;class#BaseTest#0" />
-            <element signature="method#listarFiscalizacoes#0;class#BaseTest#0" />
-            <element signature="method#modalData_ScroollUpDia#0;class#BaseTest#0" />
-            <element signature="method#elementoExiste#0;class#BaseTest#0" />
-            <element signature="method#campoPreenchimentoBloqueado#0;class#BaseTest#0" />
-            <element signature="method#recuperarIDFiscalizacao#0;class#BaseTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test Results - Tablet_Operacao_CallBoxTest.html" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#preencherWiFiEmLote#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="e#695#1711#1" />
-            <element signature="method#preencherWiFi#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#preencherWiFi_SemQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoIntensidadeSinal#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#clicarBotaoFinalizaCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#preencheKmInicial#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#preencheMetros#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#selecionaSentido#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#respondeQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#obterCheckBoxQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#verificaRespostaCheckBox#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-            <element signature="method#tratarRespostaQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBox_AddCallBoxPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1231,123 +1148,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="428" column="99" selection-start-line="428" selection-start-column="99" selection-end-line="428" selection-end-column="99" />
-          <folding>
-            <element signature="method#acessar_fiscalizacao_callbox#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#gerarFiscalizacao_Operacao_CallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarPreechimentoDoItem#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#adicionarCallBox_MaisDeUmEquipamento#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarQuestionario_ItensAdicionados#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarOrdenacaoPorLocalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#adicionarCallBox_ComMesmoRA#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarKMInicialFinalRodovia_NaoDeveSerIgualKMCallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarObrigatoriedade_Dados_de_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#9049#9114#0" />
-            <element signature="method#verificarRespostasQuestionario_Dados_De_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#10786#10830#0" />
-            <element signature="method#verificarObrigatoriedade_Dados_de_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarRespostasQuestionario_Dados_De_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#verificarObrigatoriedade_Dados_de_Seguranca#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#18937#19002#0" />
-            <element signature="e#19374#19402#0" />
-            <element signature="e#19661#19719#0" />
-            <element signature="method#verificarRespostasQuestionario_Dados_De_Seguranca#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#20667#20711#0" />
-            <element signature="e#21251#21317#0" />
-            <element signature="e#22529#22789#1" />
-            <element signature="e#22798#22837#0" />
-            <element signature="method#verificarObrigatoriedade_Dados_de_Seguranca#1;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="e#23763#23828#0" />
-            <element signature="e#24200#24228#0" />
-            <element signature="e#24487#24545#0" />
-            <element signature="e#25493#25537#0" />
-            <element signature="e#26062#26128#0" />
-            <element signature="e#27355#27615#1" />
-            <element signature="e#27624#27663#0" />
-            <element signature="method#preprararCenario#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#preencherCheckBox_Dados_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#preencherCheckBox_Dados_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#preencherCheckBox_Dados_Seguranca#0;class#Tablet_Operacao_CallBoxTest#0" />
-            <element signature="method#preencherCheckBox_Dados_Seguranca#1;class#Tablet_Operacao_CallBoxTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="596" column="17" selection-start-line="596" selection-start-column="17" selection-end-line="596" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#verificarBotaoMedir_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarBotaoCronometro_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarObrigatoriedade_Km#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarObrigatoriedade_Metros#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarObrigatoriedade_Sentido#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarPreenchimentoManual_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveConexao_AusenciaDeSinal_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveConexao_SinalIntermitente_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveConexao_DuasOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveAtendimento_OpcaoNao#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveAtendimento_NaoRealizaChamada_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveAtendimento_SemAtendimentoCCO_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_HouveAtendimento_DuasOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QualidadeComunicacao_OpcaoPessima#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QualidadeComunicacao_AudioBaixo_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QualidadeComunicacao_AudioIntermitente_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QualidadeComunicacao_RuidoInterferencia_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QualidadeComunicacao_AtendenteNaoEscuta_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QualidadeComunicacao_TodasAsOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_EncerramentoChamada_OpcaoVoluntariamente#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_EncerramentoChamada_OpcaoInterrupcaoInesperada#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#verificarQuestionario_QuestionarioEmBranco#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#inserirMedicao_EmLote_MaiorQueLimite#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#gerarFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
-            <element signature="method#assertsBotoes_WiFi_Medicao#0;class#Tablet_Operacao_WiFiTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test Results - Tests_in_Artesp.xml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="method#alterarFiscalizacao_ComSucesso#0;class#Tablet_ConsEmergencialTest#0" />
-            <element signature="method#preencherFiscalizacaoRetorno#0;class#Tablet_ConsEmergencialTest#0" />
-            <element signature="method#preencherFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
-            <element signature="method#prepararCenario#0;class#Tablet_ConsEmergencialTest#0" />
-            <element signature="method#prepararCenarioRetorno#0;class#Tablet_ConsEmergencialTest#0" />
-            <element signature="method#alterarFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="98" column="90" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="90" />
-          <folding>
-            <element signature="method#preencherDadosFiscalizacao#0;class#Tablet_ConsRotinaTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginWebPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1407,27 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
-            <element signature="method#preencherRodovia#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
-            <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
-            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
-            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
-            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
-            <element signature="method#grupoSubGrupo_ScrollUp#0;class#BasePage#0" />
-            <element signature="method#scroolUp_Tela#0;class#BasePage#0" />
-            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTestWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1444,41 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_CallBoxPage#0" />
-            <element signature="method#clicarBotaoAddCallBox#0;class#Tablet_Operacao_CallBoxPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/util/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#1191#1192#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1492,20 +1241,6 @@
             <element signature="method#obterTextoElemento#0;class#Web_Operacao_CallBoxPage#0" />
             <element signature="method#verificaCamposNaoEditaveis#0;class#Web_Operacao_CallBoxPage#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="90" column="235" selection-start-line="90" selection-start-column="235" selection-end-line="90" selection-end-column="235" />
         </state>
       </provider>
     </entry>
@@ -1537,10 +1272,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="e#4403#4404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MensagensPadrao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_CallBoxAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="90" column="235" selection-start-line="90" selection-start-column="235" selection-end-line="90" selection-end-column="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/Questionario_Operacao_WiFiAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_WiFi_AddMedicaoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" column="96" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#preencherWiFi#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#preencherWiFi_SemQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#clicarBotaoIntensidadeSinal#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#clicarBotaoCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#clicarBotaoFinalizaCronometro#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#preencheKmInicial#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#preencheMetros#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#selecionaSentido#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#respondeQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#obterCheckBoxQuestionario#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+            <element signature="method#verificaRespostaCheckBox#0;class#Tablet_Operacao_WiFi_AddMedicaoPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Web_Operacao_CallBoxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="468" column="71" selection-start-line="468" selection-start-column="71" selection-end-line="468" selection-end-column="71" />
+        <state relative-caret-position="-51">
+          <caret line="66" column="72" lean-forward="true" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
           <folding>
             <element signature="method#consultaFiscalizacao_CallBox#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#verificarAlteracao_CamposPadrões#0;class#Web_Operacao_CallBoxTest#0" />
@@ -1550,45 +1337,16 @@
             <element signature="method#verificarQuestionario_Dados_De_Transmissao#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="e#7276#7407#0" />
             <element signature="method#verificarQuestionario_Dados_De_Transmissao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#9345#9424#0" />
-            <element signature="e#10566#10750#1" />
-            <element signature="e#10759#10817#0" />
-            <element signature="e#11060#11123#0" />
-            <element signature="e#11755#12426#0" />
             <element signature="method#verificarQuestionario_Dados_De_Transmissao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#12873#12990#0" />
             <element signature="method#verificarQuestionario_Dados_De_Conservacao#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#14292#14424#0" />
-            <element signature="e#15768#15833#0" />
             <element signature="method#verificarQuestionario_Dados_De_Conservacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#16309#16389#0" />
-            <element signature="e#18596#18780#1" />
-            <element signature="e#18796#18855#0" />
             <element signature="method#verificarQuestionario_Dados_De_Conservacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#20406#20524#0" />
-            <element signature="e#22350#22599#1" />
             <element signature="method#verificarQuestionario_Dados_De_Seguranca#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#19127#19258#0" />
-            <element signature="e#19729#19794#0" />
             <element signature="method#verificarQuestionario_Dados_De_Seguranca_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#21158#21237#0" />
-            <element signature="e#22207#22265#0" />
-            <element signature="e#22508#22572#0" />
-            <element signature="e#23134#23221#1" />
             <element signature="method#verificarQuestionario_Dados_De_Seguranca_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#23652#23769#0" />
-            <element signature="e#24281#24530#1" />
             <element signature="method#verificarQuestionario_Dados_De_Instalacao#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#24701#24832#0" />
-            <element signature="e#25941#26006#0" />
             <element signature="method#verificarQuestionario_Dados_De_Instalacao_Nao_Conformidades#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#26738#26817#0" />
-            <element signature="e#27369#27553#1" />
-            <element signature="e#27562#27620#0" />
-            <element signature="e#27863#27926#0" />
-            <element signature="e#28486#28573#1" />
             <element signature="method#verificarQuestionario_Dados_De_Instalacao_Inexistente#0;class#Web_Operacao_CallBoxTest#0" />
-            <element signature="e#29645#29894#1" />
             <element signature="method#camposNaoEditaveisQuestionario#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#geraListaCamposNaoEditaveis#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#naoConformidades_DadosDeConservacao#0;class#Web_Operacao_CallBoxTest#0" />
@@ -1597,6 +1355,282 @@
             <element signature="method#naoConformidades_DadosDeInstalacao#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#preparaCenario#0;class#Web_Operacao_CallBoxTest#0" />
             <element signature="method#preparaFiscalizacaoParaTeste#0;class#Web_Operacao_CallBoxTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ConsRotinaPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grupoSubgrupo#0;class#ConsRotinaPage#0" />
+            <element signature="method#dataEstaHabilitada#0;class#ConsRotinaPage#0" />
+            <element signature="method#preencherSecaoTrecho#0;class#ConsRotinaPage#0" />
+            <element signature="method#preencherSecaoObservacao#0;class#ConsRotinaPage#0" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2589#2590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="method#realizarLoginSISF#0;class#BasePage#0" />
+            <element signature="method#preencherRodovia#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE#0;class#BasePage#0" />
+            <element signature="method#capturarFotosGaleria_LOTE_Randomico#0;class#BasePage#0" />
+            <element signature="method#gerarTextoPraTeste#0;class#BasePage#0" />
+            <element signature="method#botaoAddRetorno#0;class#BasePage#0" />
+            <element signature="method#botaoAtualizar#0;class#BasePage#0" />
+            <element signature="method#scroolConcessionaria#0;class#BasePage#0" />
+            <element signature="method#grupoSubGrupo_ScrollUp#0;class#BasePage#0" />
+            <element signature="method#scroolUp_Tela#0;class#BasePage#0" />
+            <element signature="method#numeroDeFotosRandomico#0;class#BasePage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_ConsEmergencialPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grupoSubgrupo#0;class#Tablet_ConsEmergencialPage#0" />
+            <element signature="method#preencherSecaoEvento#0;class#Tablet_ConsEmergencialPage#0" />
+            <element signature="method#preencherRecursosMobilizados#0;class#Tablet_ConsEmergencialPage#0" />
+            <element signature="method#preencherSinalizacaoLocal#0;class#Tablet_ConsEmergencialPage#0" />
+            <element signature="method#preencherAnalisePreliminar#0;class#Tablet_ConsEmergencialPage#0" />
+            <element signature="method#preencherProvMedidasCorretivas#0;class#Tablet_ConsEmergencialPage#0" />
+            <element signature="method#alterarCampos#0;class#Tablet_ConsEmergencialPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/ObjetosParaFiscalizacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/MenuConsRotinaAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="54" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Tablet_Operacao_CallBoxPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grupoSubgrupo#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#preencherObservacao#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#gerarTextoParaTeste#0;class#Tablet_Operacao_CallBoxPage#0" />
+            <element signature="method#clicarBotaoAddCallBox#0;class#Tablet_Operacao_CallBoxPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_171/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/DriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Core/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testInitialize#0;class#BaseTest#0" />
+            <element signature="method#fecharSistemaSISF#0;class#BaseTest#0" />
+            <element signature="method#cancelarFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#botaoAddFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#deletarFiscalizacao#0;class#BaseTest#0" />
+            <element signature="method#navegarMenuPrincipal#0;class#BaseTest#0" />
+            <element signature="method#salvar#0;class#BaseTest#0" />
+            <element signature="method#atualizarTelaConsultaSisf#0;class#BaseTest#0" />
+            <element signature="method#esperaCarregar#0;class#BaseTest#0" />
+            <element signature="method#obterElementoPorPath#0;class#BaseTest#0" />
+            <element signature="method#modalData_ScroollUpDia#0;class#BaseTest#0" />
+            <element signature="method#elementoExiste#0;class#BaseTest#0" />
+            <element signature="method#campoPreenchimentoBloqueado#0;class#BaseTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsRotinaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="120" column="57" lean-forward="true" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
+          <folding>
+            <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#gerarFiscalizacao_ComSucesso_EmLote#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#gerarFiscalizacao_ComRetorno#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#alterarFiscalizacao_ConservacaoDeRotina#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#excluirFiscalizacao_ConservacaoDeRotina#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#prepararCenario#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#preparaCenarioRetorno#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#preencherDadosFiscalizacao#0;class#Tablet_ConsRotinaTest#0" />
+            <element signature="method#preencherDadosFiscalizacaoRetorno#0;class#Tablet_ConsRotinaTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_ConsEmergencialTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="67" column="48" lean-forward="true" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+          <folding>
+            <element signature="method#gerarFiscalizacao_ComSucesso#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#gerarFiscalizacao_ComRetorno#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#alterarFiscalizacao_ComSucesso#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#preencherFiscalizacaoRetorno#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#preencherFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#prepararCenario#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#prepararCenarioRetorno#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#alterarFiscalizacao#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#getCodigoWeb#0;class#Tablet_ConsEmergencialTest#0" />
+            <element signature="method#codigoWeb#0;class#Tablet_ConsEmergencialTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_CallBoxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="442" column="14" selection-start-line="442" selection-start-column="8" selection-end-line="442" selection-end-column="14" />
+          <folding>
+            <element signature="method#acessar_fiscalizacao_callbox#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#gerarFiscalizacao_Operacao_CallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarPreechimentoDoItem#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#adicionarCallBox_MaisDeUmEquipamento#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarQuestionario_ItensAdicionados#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarOrdenacaoPorLocalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#adicionarCallBox_ComMesmoRA#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarKMInicialFinalRodovia_NaoDeveSerIgualKMCallBox#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarObrigatoriedade_Dados_de_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="e#9049#9114#0" />
+            <element signature="method#verificarRespostasQuestionario_Dados_De_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="e#10786#10830#0" />
+            <element signature="method#verificarObrigatoriedade_Dados_de_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarRespostasQuestionario_Dados_De_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#verificarObrigatoriedade_Dados_de_Seguranca#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="e#18937#19002#0" />
+            <element signature="e#19374#19402#0" />
+            <element signature="e#19661#19719#0" />
+            <element signature="method#verificarRespostasQuestionario_Dados_De_Seguranca#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="e#20667#20711#0" />
+            <element signature="e#21251#21317#0" />
+            <element signature="e#22529#22789#1" />
+            <element signature="e#22798#22837#0" />
+            <element signature="method#verificarObrigatoriedade_Dados_de_Instalacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preprararCenario#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preencherCheckBox_Dados_Transmissao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preencherCheckBox_Dados_Conservacao#0;class#Tablet_Operacao_CallBoxTest#0" />
+            <element signature="method#preencherCheckBox_Dados_Seguranca#0;class#Tablet_Operacao_CallBoxTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Assistant/PathsAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="42" column="64" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Tablet_Operacao_WiFiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#verificarBotaoMedir_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarBotaoCronometro_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificaQuestionario_HouveConexao_Sim_Nao#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarObrigatoriedade_IntensidadeDeSinal#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarObrigatoriedade_Km#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarObrigatoriedade_Metros#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="e#4691#5525#0" />
+            <element signature="method#verificarPreenchimentoManual_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveConexao_OpcaoNao#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveConexao_AusenciaDeSinal_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveConexao_SinalIntermitente_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveConexao_DuasOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveAtendimento_OpcaoNao#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveAtendimento_NaoRealizaChamada_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveAtendimento_SemAtendimentoCCO_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_HouveAtendimento_DuasOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QualidadeComunicacao_OpcaoPessima#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QualidadeComunicacao_AudioBaixo_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QualidadeComunicacao_AudioIntermitente_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QualidadeComunicacao_RuidoInterferencia_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QualidadeComunicacao_AtendenteNaoEscuta_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QualidadeComunicacao_TodasAsOpcoes_Checked#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_EncerramentoChamada_OpcaoVoluntariamente#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_EncerramentoChamada_OpcaoInterrupcaoInesperada#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarQuestionario_QuestionarioEmBranco#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#inserirMedicao_EmLote_MenorQueLimite#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#gerarFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#verificarMenuLateralFiscalizacao_Operacao_WiFi#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#preparaCenario#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#preencherFiscalizacao#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#preencherFiscalizacao_MedicaoEmLote#0;class#Tablet_Operacao_WiFiTest#0" />
+            <element signature="method#assertsBotoes_WiFi_Medicao#0;class#Tablet_Operacao_WiFiTest#0" />
           </folding>
         </state>
       </provider>
