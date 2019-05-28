@@ -35,6 +35,10 @@ public class BasePageWeb {
         getNav().findElementByXPath("//button[contains(@id, 'marcarRetorno')]").click();
     }
 
+    protected void clicarBotaoPorID(String ID){
+        getNav().findElementById(ID).click();
+    }
+
     protected void clicarBotaoDetalhar(){
         getNav().findElementByXPath("//button[contains(@id, 'detalhar')]").click();
     }
@@ -85,6 +89,11 @@ public class BasePageWeb {
 
     protected void selecionaRadioButtonWeb(By by){
         getNav().findElement(by).click();
+    }
+
+    protected String quebraString(String msgSucesso){
+        String[] words = msgSucesso.split(" ");
+        return words[3];
     }
 
 }

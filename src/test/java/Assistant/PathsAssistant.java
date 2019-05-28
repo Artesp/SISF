@@ -85,6 +85,8 @@ public class PathsAssistant {
     public static final String WEB_CAMPOS_NAO_EDITAVEIS_NAME_QUESTIONARIO_STATUS_EQUIPAMENTO = "//input[contains(@name, 'listaCallboxPanel:container:containerLista:forms:1:localizacaoComponentePanel:statusEquipamento:campoEntrada')]";
 
 
+    //RELATÓRIOS: Botões
+    public static final String WEB_BOTAO_EXPORTAR_PDF = "//button[contains(@id, 'botaoPdf')]";
 
 
 
