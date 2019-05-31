@@ -6,15 +6,14 @@ import Core.BasePageWeb;
 import Core.BaseTestWeb;
 import Pages.LoginWebPage;
 import Pages.ModulosWebPage;
-import SISF_WEB_RelatoriosPages.Web_Relatorios_ConservacaoPage;
+import SISF_WEB_RelatoriosPages.Web_Relatorios_AmpliacaoPage;
 import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
 import org.easetech.easytest.runner.DataDrivenTestRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import sun.rmi.runtime.Log;
+import org.openqa.selenium.By;
 
-import java.io.Console;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -22,18 +21,19 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(DataDrivenTestRunner.class)
-@DataLoader(filePaths = "Web_Relatorios_Conservacao.csv")
-public class Web_Relatorios_Conservacao extends BaseTestWeb {
+@DataLoader(filePaths = "Web_Relatorios_Ampliacao.csv")
+public class Web_Relatorios_Ampliacao extends BaseTestWeb {
 
     private ModulosWebPage webPageModulos = new ModulosWebPage();
     private LoginWebPage webLoginPage = new LoginWebPage();
-    private Web_Relatorios_ConservacaoPage pageRelatoriosCosnervacao = new Web_Relatorios_ConservacaoPage();
+    private Web_Relatorios_AmpliacaoPage pageRelatoriosAmpliacaoPage = new Web_Relatorios_AmpliacaoPage();
     long tamanhoArquivo;
 
     @Test
     public void verificarGridDeGrupos_Relatorios(
             @Param(name = "Tipo")String Tipo,
             @Param(name = "Grupo")String Grupo,
+            @Param(name = "Subgrupo")String Subgrupo,
             @Param(name = "campo0")String campo0,
             @Param(name = "campo1")String campo1,
             @Param(name = "campo2")String campo2,
@@ -51,13 +51,19 @@ public class Web_Relatorios_Conservacao extends BaseTestWeb {
             @Param(name = "campo14")String campo14,
             @Param(name = "campo15")String campo15,
             @Param(name = "campo16")String campo16,
-            @Param(name = "campo17")String campo17
+            @Param(name = "campo17")String campo17,
+            @Param(name = "campo18")String campo18,
+            @Param(name = "campo19")String campo19,
+            @Param(name = "campo20")String campo20
     ){
         boolean arquivoExiste = false;
         preparaCenario();
         selecionaDataInicialFinalConstatacao();
-        pageRelatoriosCosnervacao.selecionaValorCombo("campoTipoFisc",Tipo);
-        pageRelatoriosCosnervacao.selecionaValorCombo("campogrupoFisc",Grupo);
+        pageRelatoriosAmpliacaoPage.selecionaValorCombo("campoTipoFisc",Tipo);
+        pageRelatoriosAmpliacaoPage.selecionaValorCombo("campogrupoFisc",Grupo);
+        esperaJanelaCarregar(1000);
+        if(pageRelatoriosAmpliacaoPage.campoEstaHabilitado(By.id("campoSubGrupo")))
+            pageRelatoriosAmpliacaoPage.selecionaValorCombo("campoSubGrupo", Subgrupo);
 
         ArrayList<String> listaParametros = new ArrayList<>();
 
@@ -84,9 +90,12 @@ public class Web_Relatorios_Conservacao extends BaseTestWeb {
             listaParametros.add(campo15);
             listaParametros.add(campo16);
             listaParametros.add(campo17);
+            listaParametros.add(campo18);
+            listaParametros.add(campo19);
+            listaParametros.add(campo20);
 
             if (listaParametros.get(indexListaParametros).equalsIgnoreCase("null")){
-                String textoColunaObtido = pageRelatoriosCosnervacao.obterTextoDoElemento("//div[@id='tabelaResultado']" +
+                String textoColunaObtido = pageRelatoriosAmpliacaoPage.obterTextoDoElemento("//div[@id='tabelaResultado']" +
                         "/table//tr[@class='tabela_linha_destaque']" +
                         "/th["+indexXPATH+"]");
                 String textoColunaEsperado = quebrarTextoObtido(textoColunaObtido);
@@ -100,12 +109,12 @@ public class Web_Relatorios_Conservacao extends BaseTestWeb {
             }
         }while (contador <= 17);
         esperaJanelaCarregar(1000);
-        pageRelatoriosCosnervacao.clicarBotaoGerarRelatorio();
-        boolean exportarPDFExiste = pageRelatoriosCosnervacao.rolarATelaAteExportarPDF();
+        pageRelatoriosAmpliacaoPage.clicarBotaoGerarRelatorio();
+        boolean exportarPDFExiste = pageRelatoriosAmpliacaoPage.rolarATelaAteRelatorioPDF();
         assertEquals(true, exportarPDFExiste);
         verificaDiretorioRelatorio();
         if (exportarPDFExiste){
-            pageRelatoriosCosnervacao.clicarBotaoExportarPDF();
+            pageRelatoriosAmpliacaoPage.clicarBotaoExportarPDF();
             esperaJanelaCarregar(2000);
             do {
                 String nomeAquivo = verificarArquivoDownLoad();
@@ -147,15 +156,15 @@ public class Web_Relatorios_Conservacao extends BaseTestWeb {
 
     private void selecionaDataInicialFinalConstatacao() {
         //Data inicial de constatação
-        pageRelatoriosCosnervacao.datePickerSelect(PathsAssistant.WEB_DATEPICKER_CONSTATACAO_INICIAL);
-        pageRelatoriosCosnervacao.opcaoMesDatePicker("Jan");
-        pageRelatoriosCosnervacao.opcaoDataDatePicker("1");
+        pageRelatoriosAmpliacaoPage.datePickerSelect(PathsAssistant.WEB_DATEPICKER_CONSTATACAO_INICIAL);
+        pageRelatoriosAmpliacaoPage.opcaoMesDatePicker("Jan");
+        pageRelatoriosAmpliacaoPage.opcaoDataDatePicker("1");
         esperaJanelaCarregar(1000);
 
         //Data final de constatação
-        pageRelatoriosCosnervacao.datePickerSelect(PathsAssistant.WEB_DATEPICKER_CONSTATACAO_FINAL);
-        pageRelatoriosCosnervacao.opcaoMesDatePicker("Mai");
-        pageRelatoriosCosnervacao.opcaoDataDatePicker("1");
+        pageRelatoriosAmpliacaoPage.datePickerSelect(PathsAssistant.WEB_DATEPICKER_CONSTATACAO_FINAL);
+        pageRelatoriosAmpliacaoPage.opcaoMesDatePicker("Mai");
+        pageRelatoriosAmpliacaoPage.opcaoDataDatePicker("30");
     }
 
     private String quebrarTextoObtido(String textoColunaEsperado) {
@@ -168,5 +177,6 @@ public class Web_Relatorios_Conservacao extends BaseTestWeb {
         webLoginPage.entrar();
         webPageModulos.clicarBotaoRelatoriosDeFiscalizacao();
     }
+
 
 }

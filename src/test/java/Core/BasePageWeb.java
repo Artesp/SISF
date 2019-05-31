@@ -10,6 +10,8 @@ import static Core.DriverFactoryWeb.*;
 
 public class BasePageWeb {
 
+    public static final String pastaRelatorios = "D:/SISF_RELATORIOS";
+
     protected void selecionarModulosWeb(String xpath){
         getNav().findElementByXPath(xpath).click();
     }
@@ -19,12 +21,16 @@ public class BasePageWeb {
         getNav().findElementByXPath("//select[@id = '" + comboID + "']/option[contains(.,'"+ comboValor + "')]").click();
     }
 
-    protected void clicarOpcaoMesWeb(String mesCombo, String mesValor){
-        getNav().findElementByXPath("//select[@class = '" + mesCombo + "']/option[contains(.,'" + mesValor + "')]").click();
+    protected void clicarOpcaoMesWeb(String mes){
+        getNav().findElementByXPath("//select[@class ='ui-datepicker-month']/option[contains(.,'" +mes+ "')]").click();
     }
 
-    protected void clicarOpcaoDataWeb(String mesCombo, String mesValor){
-        getNav().findElementByXPath("//select[@class='"+mesCombo+ "']/option[contains(.,'"+mesValor+"')]").click();
+    protected void clicarOpcaoDataWeb(String data){
+        getNav().findElementByLinkText(data).click();
+    }
+
+    protected void clicarDatePickerWeb(By by){
+        getNav().findElement(by).click();
     }
 
     protected void clicarBotaoFiltrar(){
@@ -33,6 +39,10 @@ public class BasePageWeb {
 
     protected void clicarBotaoMarcarRetorno(){
         getNav().findElementByXPath("//button[contains(@id, 'marcarRetorno')]").click();
+    }
+
+    protected void clicarBotaoPorXPath(String XPath){
+        getNav().findElementByXPath(XPath).click();
     }
 
     protected void clicarBotaoPorID(String ID){

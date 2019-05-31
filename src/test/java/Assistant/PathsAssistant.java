@@ -86,7 +86,12 @@ public class PathsAssistant {
 
 
     //RELATÓRIOS: Botões
-    public static final String WEB_BOTAO_EXPORTAR_PDF = "//button[contains(@id, 'botaoPdf')]";
+    public static final String WEB_BOTAO_EXPORTAR_PDF = "//button[@title='Exportar para PDF']";
+    public static final String WEB_BOTAO_RELATORIO_PDF = "//button[@title='Relatório PDF']";
+    public static final String WEB_DATEPICKER_CONSTATACAO_INICIAL = "//input[@id='dataInicioe']/following-sibling::label[text()='até']/preceding-sibling::button[contains(@class, 'ui-datepicker-trigger')]/img[@alt='Calendário']";
+    public static final String WEB_DATEPICKER_CONSTATACAO_FINAL = "//input[@id='dataInicioe']/following-sibling::label[text()='até']/following-sibling::button[contains(@class, 'ui-datepicker-trigger')]/img[@alt='Calendário']";
+
+
 
 
 

@@ -4,8 +4,7 @@ import Assistant.PathsAssistant;
 import Core.BasePageWeb;
 import org.openqa.selenium.By;
 
-public class Web_Relatorios_ConservacaoPage extends BasePageWeb {
-
+public class Web_Relatorios_AmpliacaoPage extends BasePageWeb {
 
     public void selecionaValorCombo(String comboID, String tipoConservacao){
         clicarOpcaoListaWeb(comboID, tipoConservacao);
@@ -21,7 +20,7 @@ public class Web_Relatorios_ConservacaoPage extends BasePageWeb {
     }
 
     public void clicarBotaoExportarPDF(){
-        clicarBotaoPorXPath(PathsAssistant.WEB_BOTAO_EXPORTAR_PDF);
+        clicarBotaoPorXPath(PathsAssistant.WEB_BOTAO_RELATORIO_PDF);
     }
 
     public String obterTextoDoElemento(String pathElemento){
@@ -29,9 +28,9 @@ public class Web_Relatorios_ConservacaoPage extends BasePageWeb {
         return texto;
     }
 
-    public boolean rolarATelaAteExportarPDF(){
+    public boolean rolarATelaAteRelatorioPDF(){
         try {
-            rolarTelaAteElementoSerEncontrado(By.xpath(PathsAssistant.WEB_BOTAO_EXPORTAR_PDF));
+            rolarTelaAteElementoSerEncontrado(By.xpath(PathsAssistant.WEB_BOTAO_RELATORIO_PDF));
             return true;
         }catch (Exception e){
             return false;
@@ -50,5 +49,9 @@ public class Web_Relatorios_ConservacaoPage extends BasePageWeb {
         clicarOpcaoDataWeb(data);
     }
 
+    public boolean campoEstaHabilitado(By by){
+        boolean campoHabilidato = camposNaoEditaveis(by);
+        return campoHabilidato;
+    }
 
 }
