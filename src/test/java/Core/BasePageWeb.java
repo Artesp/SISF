@@ -10,7 +10,7 @@ import static Core.DriverFactoryWeb.*;
 
 public class BasePageWeb {
 
-    public static final String pastaRelatorios = "D:/SISF_RELATORIOS";
+    public static final String pastaRelatorios = "C:/SISF_RELATORIOS";
 
     protected void selecionarModulosWeb(String xpath){
         getNav().findElementByXPath(xpath).click();

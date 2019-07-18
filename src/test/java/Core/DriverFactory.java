@@ -31,6 +31,7 @@ public class DriverFactory {
 
         try {
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capacidade);
+            //driver = new AndroidDriver(new URL("http://10.23.42.141:4723/wd/hub"), capacidade);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

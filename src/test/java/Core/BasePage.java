@@ -17,7 +17,9 @@ public class BasePage {
     private ObjetosParaFiscalizacao obj = new ObjetosParaFiscalizacao();
 
     protected String retornaHora(){
-        return obj.HORA;
+        String hora;
+        hora = obj.retornaHora();
+        return hora;
     }
 
     protected void realizarLoginSISF(){

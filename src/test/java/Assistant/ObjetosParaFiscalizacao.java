@@ -10,7 +10,9 @@ import java.util.Locale;
 public class ObjetosParaFiscalizacao {
 
     //Hora atual
-    public String HORA = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
+    public static String retornaHora(){
+        return new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
+    }
 
     //Autenticação
     public static String usuario = "automacao_sisf"; /*artesp/*automacao_sisf*//*testeconservacao*/

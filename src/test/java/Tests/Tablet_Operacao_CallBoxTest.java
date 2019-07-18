@@ -311,6 +311,7 @@ public class Tablet_Operacao_CallBoxTest extends BaseTest {
         pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_SEGURANCA, "Adequado");
         pageAddCallbox.respondeQuestionario(Questionario_Operacao_CallBoxAssistant.DADOS_DE_INSTALACAO, "Adequado");
         pageAddCallbox.clickOK_AdicionaCallBox();
+        esperaCarregar(1000);
         isTrue(elementoExiste(By.xpath("//*[@text='"+ObjetosParaFiscalizacao.RA+"']")), "Número de RA deve ser exibido na lista de callbox incluidos.");
         salvar();
         enviar(3000);

@@ -19,7 +19,7 @@ public class Tablet_Operacao_WiFi_AddMedicaoPage extends BasePage {
     public void preencherWiFiEmLote(int qtdMed){
 
         int contador = 0;
-        int incrementaKM = 100;
+        int incrementaKM = 14;
 
         do {
             pageWiFi.clicarBotaoAddMedicao();

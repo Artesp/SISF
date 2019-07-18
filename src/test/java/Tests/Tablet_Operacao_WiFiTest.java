@@ -526,6 +526,17 @@ public class Tablet_Operacao_WiFiTest extends BaseTest {
         enviar(3000);
     }
 
+    @Test //"MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi."
+    public void inserirMedicao_EmLote_IgualAoLimite(){
+        preparaCenario();
+        preencherFiscalizacao_MedicaoEmLote(50);
+        salvar();
+
+        String expected = MensagensPadrao.WIFI;
+        assertEquals(expected, obterTextoElemento(By.id("br.gov.sp.artesp.sisf.mobile:id/tvGrupoFiscalizacao")));
+        enviar(3000);
+    }
+
     /* Teste não Elegível para automação
     @Test //"MTM_ID 4505: FP13/RVN3 - Verificar número máximo de medições na seção Wi-Fi."
     @Ignore
