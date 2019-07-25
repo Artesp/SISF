@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Artesp" />
         <module name="SISF" />
+        <module name="master" />
+        <module name="Artesp" />
       </profile>
     </annotationProcessing>
   </component>
